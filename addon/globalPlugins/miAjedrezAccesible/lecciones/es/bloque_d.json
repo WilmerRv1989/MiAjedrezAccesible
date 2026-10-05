@@ -1,0 +1,222 @@
+{
+	"id": "D",
+	"titulo": "Reglas especiales",
+	"mensaje_final": "¡Terminaste el bloque D! Ya conoces todas las reglas del ajedrez.",
+	"lecciones": [
+		{
+			"id": "19",
+			"titulo": "El enroque",
+			"explicacion": [
+				"El enroque es una jugada especial en la que se mueven a la vez el rey y una torre. Sirve para poner al rey a salvo y sacar la torre. Solo se puede hacer una vez por partida.",
+				"En el enroque corto, el rey va de e1 a g1 y la torre de h1 salta a f1. En el enroque largo, el rey va de e1 a c1 y la torre de a1 salta a d1.",
+				"Para enrocar en el tablero, toma el rey y suéltalo dos casillas hacia la torre: la torre se mueve sola. También puedes escribir O-O para el corto y O-O-O para el largo.",
+				"Solo se puede enrocar si ni el rey ni esa torre se han movido, si las casillas entre ellos están vacías, si el rey no está en jaque y si no pasa ni termina en una casilla atacada."
+			],
+			"ejercicios": [
+				{
+					"id": "19.1",
+					"tipo": "jugada",
+					"objetivo": "enroque",
+					"forma": "corto",
+					"posicion": "4k3/8/8/8/8/8/8/4K2R",
+					"enroques": "K",
+					"inicio": "e1",
+					"solucion": "e1g1",
+					"instruccion": "Haz el enroque corto: toma el rey de e1 y suéltalo en g1.",
+					"pistas": [
+						"El rey se mueve dos casillas hacia la torre de h1.",
+						"Toma el rey en e1 y suéltalo en g1. También puedes pulsar J y escribir O-O."
+					]
+				},
+				{
+					"id": "19.2",
+					"tipo": "jugada",
+					"objetivo": "enroque",
+					"forma": "largo",
+					"posicion": "4k3/8/8/8/8/8/8/R3K3",
+					"enroques": "Q",
+					"inicio": "e1",
+					"solucion": "e1c1",
+					"instruccion": "Ahora el enroque largo: el rey va de e1 a c1 y la torre de a1 salta a d1.",
+					"pistas": [
+						"El rey se mueve dos casillas hacia la torre de a1.",
+						"Toma el rey en e1 y suéltalo en c1. O pulsa J y escribe O-O-O."
+					]
+				},
+				{
+					"id": "19.3",
+					"tipo": "ir_a",
+					"posicion": "4k3/8/8/8/8/8/8/R3K2R",
+					"enroques": "KQ",
+					"inicio": "e1",
+					"respuestas": ["f1"],
+					"instruccion": "Sin mover nada: si enrocas corto, ¿a qué casilla irá tu torre de h1? Ve a ella y pulsa Intro.",
+					"pistas": [
+						"En el enroque corto, la torre salta por encima del rey y queda a su lado.",
+						"El rey va a g1 y la torre a f1."
+					]
+				},
+				{
+					"id": "19.4",
+					"titulo": "Un enroque prohibido",
+					"tipo": "jugada",
+					"objetivo": "enroque",
+					"posicion": "4kr2/8/8/8/8/8/8/R3K2R",
+					"enroques": "KQ",
+					"inicio": "e1",
+					"solucion": "e1c1",
+					"instruccion": "Un enroque prohibido. La torre negra de f8 ataca la casilla f1. El rey no puede pasar por una casilla atacada, así que el enroque corto está prohibido. Enroca por el otro lado.",
+					"pistas": [
+						"Si el corto no se puede, queda el largo.",
+						"Toma el rey en e1 y suéltalo en c1."
+					]
+				},
+				{
+					"id": "19.5",
+					"titulo": "En jaque no se enroca",
+					"tipo": "jugada",
+					"objetivo": "salir_jaque",
+					"posicion": "4k3/8/8/8/1b6/8/8/R3K2R",
+					"enroques": "KQ",
+					"inicio": "e1",
+					"solucion": "e1f1",
+					"instruccion": "En jaque no se enroca. El alfil negro de b4 da jaque a tu rey. Con el rey en jaque no se puede enrocar: sal del jaque de otra forma.",
+					"pistas": [
+						"Mueve el rey a una casilla que el alfil no ataque.",
+						"Por ejemplo, rey de e1 a f1."
+					]
+				}
+			]
+		},
+		{
+			"id": "20",
+			"titulo": "La captura al paso",
+			"explicacion": [
+				"La captura al paso es una regla especial de los peones.",
+				"Cuando un peón rival avanza dos casillas desde su posición inicial y queda justo al lado de un peón tuyo, puedes capturarlo como si hubiera avanzado solo una: tu peón va en diagonal a la casilla que el peón rival se saltó, y el peón rival sale del tablero.",
+				"Solo se puede hacer en la jugada inmediatamente siguiente. Si esperas, se pierde la ocasión."
+			],
+			"ejercicios": [
+				{
+					"id": "20.1",
+					"tipo": "jugada",
+					"objetivo": "al_paso",
+					"posicion": "4k3/8/8/3pP3/8/8/8/4K3",
+					"al_paso": "d6",
+					"inicio": "e5",
+					"solucion": "e5d6",
+					"instruccion": "El peón negro acaba de avanzar dos casillas, de d7 a d5, y quedó al lado de tu peón de e5. Captúralo al paso: tu peón va a d6, la casilla que el peón negro se saltó.",
+					"pistas": [
+						"Tu peón va en diagonal hacia delante, a una casilla vacía.",
+						"Toma el peón en e5 y suéltalo en d6."
+					]
+				},
+				{
+					"id": "20.2",
+					"tipo": "ir_a",
+					"posicion": "4k3/8/8/4Pp2/8/8/8/4K3",
+					"al_paso": "f6",
+					"inicio": "e5",
+					"respuestas": ["f6"],
+					"instruccion": "El peón negro acaba de llegar a f5 desde f7. Si capturas al paso, ¿a qué casilla irá tu peón? Ve a ella y pulsa Intro.",
+					"pistas": [
+						"Es la casilla que el peón negro se saltó al avanzar dos.",
+						"Es f6."
+					]
+				},
+				{
+					"id": "20.3",
+					"tipo": "jugada",
+					"objetivo": "al_paso",
+					"posicion": "4k3/8/8/4Pp2/8/8/8/4K3",
+					"al_paso": "f6",
+					"inicio": "e5",
+					"solucion": "e5f6",
+					"instruccion": "Ahora hazlo: captura al paso el peón de f5.",
+					"pistas": [
+						"Tu peón va a f6.",
+						"Toma el peón en e5 y suéltalo en f6."
+					]
+				},
+				{
+					"id": "20.4",
+					"tipo": "jugada",
+					"objetivo": "al_paso",
+					"posicion": "4k3/8/8/pP6/8/8/8/4K3",
+					"al_paso": "a6",
+					"inicio": "b5",
+					"solucion": "b5a6",
+					"instruccion": "En la otra punta del tablero: el peón negro acaba de pasar de a7 a a5. Captúralo al paso con tu peón de b5.",
+					"pistas": [
+						"La casilla que el peón negro se saltó es a6.",
+						"Toma el peón en b5 y suéltalo en a6."
+					]
+				}
+			]
+		},
+		{
+			"id": "21",
+			"titulo": "Las tablas y el ahogado",
+			"explicacion": [
+				"Una partida de ajedrez también puede terminar en tablas, es decir, en empate.",
+				"Hay tablas por ahogado: cuando al que le toca mover no está en jaque pero no tiene ninguna jugada. Por material insuficiente: cuando ya nadie puede dar mate, por ejemplo rey contra rey, o rey y alfil contra rey. Por triple repetición: cuando la misma posición se repite tres veces. Por la regla de las 50 jugadas: si en 50 jugadas seguidas nadie mueve un peón ni captura. Y por acuerdo: cuando los dos jugadores lo aceptan.",
+				"Cuando vas ganando, ten cuidado de no ahogar al rey rival. Cuando vas perdiendo, unas tablas pueden salvarte."
+			],
+			"ejercicios": [
+				{
+					"id": "21.1",
+					"tipo": "jugada",
+					"objetivo": "mate",
+					"posicion": "k7/8/K7/8/8/8/8/7R",
+					"inicio": "h1",
+					"solucion": "h1h8",
+					"instruccion": "Da jaque mate con la torre. Cuidado: hay una jugada de torre que ahogaría al rey negro.",
+					"pistas": [
+						"Tu rey de a6 ya le quita al rey negro a7 y b7. Ataca la fila 8.",
+						"Torre de h1 a h8. En cambio, torre a b1 sería ahogado."
+					]
+				},
+				{
+					"id": "21.2",
+					"tipo": "ir_a",
+					"posicion": "1k6/3K4/Q7/8/8/8/8/8",
+					"inicio": "d7",
+					"respuestas": ["d8", "d6", "c6"],
+					"instruccion": "Tu rey está en d7. Hay tres casillas a las que no debes moverlo, porque el rey negro quedaría ahogado. Ve a una de ellas y pulsa Intro, solo para reconocerla.",
+					"pistas": [
+						"El rey negro de b8 solo puede ir a c8 o a c7. Si tu rey le quita esas casillas sin darle jaque, queda ahogado.",
+						"Son d8, d6 y c6."
+					]
+				},
+				{
+					"id": "21.3",
+					"tipo": "jugada",
+					"objetivo": "no_ahogar",
+					"posicion": "1k6/3K4/Q7/8/8/8/8/8",
+					"inicio": "d7",
+					"solucion": "a6b6",
+					"instruccion": "En la misma posición, haz una jugada que no ahogue al rey negro.",
+					"pistas": [
+						"Evita llevar el rey a d8, d6 o c6.",
+						"Por ejemplo, dama de a6 a b6: es jaque, y el rey negro todavía puede ir a a8."
+					]
+				},
+				{
+					"id": "21.4",
+					"titulo": "Sin material para ganar",
+					"tipo": "jugada",
+					"objetivo": "capturar",
+					"casilla": "a5",
+					"posicion": "4k3/8/8/p7/8/8/8/R3K2b",
+					"inicio": "a1",
+					"solucion": "a1a5",
+					"instruccion": "Sin material para ganar. Las negras tienen rey, alfil y un peón. Un rey con un alfil solo no puede dar mate: si capturas el peón, las negras ya no podrán ganarte nunca. Captura el peón de a5.",
+					"pistas": [
+						"Tu torre de a1 está en la misma columna que el peón.",
+						"Torre de a1 a a5."
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,19 @@
+addon/doc/*.css
+addon/doc/en/
+*_docHandler.py
+*.html
+manifest.ini
+*.mo
+*.pot
+*.py[co]
+*.nvda-addon
+.sconsign.dblite
+/[0-9]*.[0-9]*.[0-9]*.json
+*.egg-info
+
+# Entorno virtual de uv
+.venv/
+
+
+# Stockfish: se obtiene con herramientas/obtener_stockfish.py (pesa más de 100 MB)
+addon/globalPlugins/miAjedrezAccesible/bin/

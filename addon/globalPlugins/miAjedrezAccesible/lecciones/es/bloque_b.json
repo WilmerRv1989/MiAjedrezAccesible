@@ -1,0 +1,457 @@
+{
+	"id": "B",
+	"titulo": "Las piezas",
+	"mensaje_final": "¡Terminaste el bloque B! Ya conoces todas las piezas.",
+	"lecciones": [
+		{
+			"id": "4",
+			"titulo": "La torre",
+			"explicacion": [
+				"La torre se mueve en línea recta: hacia delante, hacia atrás y hacia los lados, tantas casillas como quiera. No puede saltar por encima de otras piezas.",
+				"En estos ejercicios hay manzanas en algunas casillas. Lleva tu pieza hasta cada manzana: toma la pieza con Intro, ve a la casilla de la manzana y pulsa Intro otra vez.",
+				"Si lo haces con pocas jugadas, ganarás hasta tres estrellas. Pulsa M para saber dónde quedan manzanas."
+			],
+			"ejercicios": [
+				{
+					"id": "4.1",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/3R4/8/8/8",
+					"manzanas": ["d7"],
+					"minimo": 1,
+					"instruccion": "Lleva la torre a la manzana de d7.",
+					"pistas": [
+						"d7 está en la misma columna que la torre, más arriba.",
+						"Toma la torre en d4 y suéltala en d7."
+					]
+				},
+				{
+					"id": "4.2",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/R7",
+					"manzanas": ["a6", "f6"],
+					"minimo": 2,
+					"instruccion": "Recoge las dos manzanas.",
+					"pistas": [
+						"Primero sube por la columna a; después ve por la fila 6.",
+						"Torre de a1 a a6, y de a6 a f6."
+					]
+				},
+				{
+					"id": "4.3",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/7R",
+					"manzanas": ["h5", "c5", "c8"],
+					"minimo": 3,
+					"instruccion": "Recoge las tres manzanas con el menor número de jugadas que puedas.",
+					"pistas": [
+						"Cada manzana está en línea recta con la siguiente.",
+						"h5, después c5, después c8."
+					]
+				},
+				{
+					"id": "4.4",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/4P3/8/8/4R3",
+					"inicio": "e1",
+					"manzanas": ["e7"],
+					"minimo": 3,
+					"instruccion": "Tu propio peón está en e4 y la torre no puede saltarlo. Busca otro camino hasta la manzana de e7.",
+					"pistas": [
+						"Rodea el peón: sal de la columna e, sube y vuelve.",
+						"Por ejemplo: torre a d1, después a d7 y después a e7."
+					]
+				},
+				{
+					"id": "4.5",
+					"titulo": "¡Come los peones!",
+					"tipo": "manzanas",
+					"posicion": "4p3/8/8/p3p3/8/8/8/R7",
+					"capturar": "todas",
+					"minimo": 3,
+					"instruccion": "¡Come los peones! La torre también captura: si llega a una casilla con una pieza del rival, se la come. Captura los tres peones negros. Los peones no se mueven.",
+					"pistas": [
+						"El primer peón está en la misma columna que tu torre.",
+						"a5, después e5, después e8."
+					]
+				},
+				{
+					"id": "4.6",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/R6R",
+					"manzanas": ["a7", "h7", "d1", "e8"],
+					"minimo": 5,
+					"instruccion": "Ahora tienes dos torres. Úsalas para recoger las cuatro manzanas.",
+					"pistas": [
+						"Una de las torres solo necesita una jugada para su manzana. La otra hace un recorrido más largo.",
+						"La torre de a1 va a d1. La de h1 va a h7, luego a a7, a a8 y a e8."
+					]
+				}
+			]
+		},
+		{
+			"id": "5",
+			"titulo": "El alfil",
+			"explicacion": [
+				"El alfil se mueve en diagonal, tantas casillas como quiera, hacia delante o hacia atrás. Tampoco puede saltar por encima de otras piezas.",
+				"Como las diagonales son de un solo color, un alfil que empieza en casillas claras siempre se queda en casillas claras, y uno que empieza en oscuras siempre está en oscuras. Por eso cada bando tiene dos alfiles: uno para cada color."
+			],
+			"ejercicios": [
+				{
+					"id": "5.1",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/2B5",
+					"manzanas": ["f4"],
+					"minimo": 1,
+					"instruccion": "Lleva el alfil a la manzana de f4.",
+					"pistas": [
+						"f4 está en una diagonal que sube hacia la derecha desde c1.",
+						"Toma el alfil en c1 y suéltalo en f4."
+					]
+				},
+				{
+					"id": "5.2",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/5B2",
+					"manzanas": ["c4", "e6"],
+					"minimo": 2,
+					"instruccion": "Recoge las dos manzanas.",
+					"pistas": [
+						"Primero ve hacia la izquierda por la diagonal.",
+						"f1 a c4, y c4 a e6."
+					]
+				},
+				{
+					"id": "5.3",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/2B5",
+					"manzanas": ["h6", "f8", "a3"],
+					"minimo": 3,
+					"instruccion": "Recoge las tres manzanas.",
+					"pistas": [
+						"Empieza por la manzana de h6.",
+						"h6, después f8, después a3."
+					]
+				},
+				{
+					"id": "5.4",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/4B3/8/8/8",
+					"manzanas": ["b7", "h7", "c2"],
+					"minimo": 4,
+					"instruccion": "Tu alfil está en e4, una casilla clara. Las tres manzanas también están en casillas claras. Recógelas.",
+					"pistas": [
+						"h7 y c2 están en la misma diagonal, que pasa por e4.",
+						"h7, después c2, vuelve a e4 y termina en b7."
+					]
+				},
+				{
+					"id": "5.5",
+					"titulo": "¡Come los peones!",
+					"tipo": "manzanas",
+					"posicion": "7p/8/5p2/8/3p4/8/8/B7",
+					"capturar": "todas",
+					"minimo": 3,
+					"instruccion": "¡Come los peones! Captura los tres peones negros con tu alfil.",
+					"pistas": [
+						"Los tres están en la misma diagonal larga.",
+						"d4, f6 y h8."
+					]
+				}
+			]
+		},
+		{
+			"id": "6",
+			"titulo": "La dama",
+			"explicacion": [
+				"La dama es la pieza más poderosa: se mueve como la torre y como el alfil a la vez. Va en línea recta o en diagonal, tantas casillas como quiera, pero tampoco salta."
+			],
+			"ejercicios": [
+				{
+					"id": "6.1",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/3Q4",
+					"manzanas": ["h5"],
+					"minimo": 1,
+					"instruccion": "Lleva la dama a la manzana de h5.",
+					"pistas": [
+						"h5 está en una diagonal desde d1.",
+						"De d1 a h5 en una sola jugada."
+					]
+				},
+				{
+					"id": "6.2",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/Q7",
+					"manzanas": ["a8", "h8", "h1"],
+					"minimo": 3,
+					"instruccion": "Recoge las tres manzanas de las esquinas.",
+					"pistas": [
+						"Las esquinas están unidas por filas y columnas.",
+						"a8, h8 y h1."
+					]
+				},
+				{
+					"id": "6.3",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/4Q3/8/8/8",
+					"manzanas": ["b7", "b1", "h1", "h7"],
+					"minimo": 4,
+					"instruccion": "Recoge las cuatro manzanas. Combina líneas rectas y diagonales.",
+					"pistas": [
+						"Desde e4 llegas a b7 en diagonal.",
+						"b7, b1, h1 y h7: después de la primera, todas están en línea recta."
+					]
+				},
+				{
+					"id": "6.4",
+					"titulo": "¡Come los peones!",
+					"tipo": "manzanas",
+					"posicion": "8/8/3p4/7p/8/p4p2/8/3Q4",
+					"capturar": "todas",
+					"minimo": 4,
+					"instruccion": "¡Come los peones! Captura los cuatro peones negros.",
+					"pistas": [
+						"Busca un orden en el que cada peón esté en línea con el siguiente. Empieza por el de la columna d.",
+						"d6, después a3, después f3 y por último h5."
+					]
+				},
+				{
+					"id": "6.5",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/P7/1P6/Q7",
+					"inicio": "a1",
+					"manzanas": ["h8"],
+					"minimo": 2,
+					"instruccion": "Tus peones bloquean dos caminos de la dama. Llega a la manzana de h8.",
+					"pistas": [
+						"La fila 1 está libre.",
+						"Por ejemplo: a1 a h1, y h1 a h8."
+					]
+				}
+			]
+		},
+		{
+			"id": "7",
+			"titulo": "El rey",
+			"explicacion": [
+				"El rey es la pieza más importante: si lo atrapan, se pierde la partida. Por eso se mueve con cuidado: solo una casilla, en cualquier dirección.",
+				"Además, el rey nunca puede ir a una casilla donde una pieza del rival lo pueda capturar. El tablero no te dejará hacerlo."
+			],
+			"ejercicios": [
+				{
+					"id": "7.1",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/4K3",
+					"manzanas": ["e2"],
+					"minimo": 1,
+					"instruccion": "Lleva el rey a la manzana de e2.",
+					"pistas": [
+						"Está justo delante.",
+						"Toma el rey en e1 y suéltalo en e2."
+					]
+				},
+				{
+					"id": "7.2",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/4K3",
+					"manzanas": ["e4"],
+					"minimo": 3,
+					"instruccion": "Ahora la manzana está más lejos, en e4. Recuerda: el rey avanza de una en una.",
+					"pistas": [
+						"Necesitas tres jugadas.",
+						"e2, e3 y e4."
+					]
+				},
+				{
+					"id": "7.3",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/K7",
+					"manzanas": ["b2", "c3", "d4"],
+					"minimo": 3,
+					"instruccion": "El rey también se mueve en diagonal. Recoge las tres manzanas.",
+					"pistas": [
+						"Están en fila, en diagonal.",
+						"b2, c3 y d4."
+					]
+				},
+				{
+					"id": "7.4",
+					"titulo": "¡Cuidado con el peón!",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/3p4/8/8/8/4K3",
+					"manzanas": ["e5"],
+					"minimo": 4,
+					"instruccion": "¡Cuidado con el peón! El peón negro de d5 ataca las casillas c4 y e4: tu rey no puede pisarlas. Llega a la manzana de e5 sin pasar por ellas.",
+					"pistas": [
+						"Rodea la casilla e4 por un lado.",
+						"Por ejemplo: e2, f3, f4 y e5."
+					]
+				},
+				{
+					"id": "7.5",
+					"titulo": "¡Come los peones!",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/5p2/3p4/8/4K3",
+					"capturar": "todas",
+					"minimo": 4,
+					"instruccion": "¡Come los peones! El rey también captura. Come los dos peones negros.",
+					"pistas": [
+						"Ojo: el peón de d3 ataca e2, y el de f4 ataca e3. Tu rey no puede pisar esas casillas.",
+						"Rey a d2, come en d3, va a e4 y come en f4."
+					]
+				}
+			]
+		},
+		{
+			"id": "8",
+			"titulo": "El caballo",
+			"explicacion": [
+				"El caballo es la pieza más especial: se mueve en forma de L. Avanza dos casillas en línea recta y luego una hacia un lado. O al revés: una en línea recta y dos hacia el lado.",
+				"Y es la única pieza que puede saltar por encima de las demás.",
+				"Un dato curioso: cada vez que el caballo salta, cambia de color de casilla. Si está en una clara, va a una oscura, y al revés."
+			],
+			"ejercicios": [
+				{
+					"id": "8.1",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/6N1",
+					"manzanas": ["f3"],
+					"minimo": 1,
+					"instruccion": "Lleva el caballo a la manzana de f3.",
+					"pistas": [
+						"Dos hacia arriba y una a la izquierda.",
+						"Toma el caballo en g1 y suéltalo en f3."
+					]
+				},
+				{
+					"id": "8.2",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/5PPP/6N1",
+					"inicio": "g1",
+					"manzanas": ["f3"],
+					"minimo": 1,
+					"instruccion": "Esta vez tus peones rodean al caballo. No importa: el caballo salta. Llega a f3.",
+					"pistas": [
+						"El caballo salta por encima de los peones.",
+						"Exactamente igual que antes: de g1 a f3."
+					]
+				},
+				{
+					"id": "8.3",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/1N6",
+					"manzanas": ["c3", "d5"],
+					"minimo": 2,
+					"instruccion": "Recoge las dos manzanas.",
+					"pistas": [
+						"Desde c3, d5 también está a un salto.",
+						"b1 a c3, y c3 a d5."
+					]
+				},
+				{
+					"id": "8.4",
+					"titulo": "La casilla de al lado",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/3N4/8/8/8",
+					"manzanas": ["d5"],
+					"minimo": 3,
+					"instruccion": "La casilla de al lado. La manzana está justo delante del caballo, pero para él es difícil llegar. Inténtalo.",
+					"pistas": [
+						"Necesitas tres saltos.",
+						"Por ejemplo: d4 a c6, c6 a e7, e7 a d5."
+					]
+				},
+				{
+					"id": "8.5",
+					"titulo": "¡Come los peones!",
+					"tipo": "manzanas",
+					"posicion": "8/8/4p3/2p5/8/1p6/8/N7",
+					"capturar": "todas",
+					"minimo": 3,
+					"instruccion": "¡Come los peones! Captura los tres peones negros con el caballo.",
+					"pistas": [
+						"Cada peón está a un salto del anterior.",
+						"b3, c5 y e6."
+					]
+				}
+			]
+		},
+		{
+			"id": "9",
+			"titulo": "El peón y la coronación",
+			"explicacion": [
+				"El peón es la pieza más pequeña, pero puede convertirse en la más poderosa.",
+				"El peón solo avanza hacia delante, una casilla cada vez. Nunca retrocede. En su primera jugada, puede avanzar una o dos casillas.",
+				"Y captura de una forma distinta a como se mueve: en diagonal hacia delante, una casilla.",
+				"Cuando un peón llega a la última fila, se convierte en la pieza que elijas, menos en rey. Casi siempre se elige una dama. A esto se le llama coronar."
+			],
+			"ejercicios": [
+				{
+					"id": "9.1",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/4P3/8",
+					"manzanas": ["e4"],
+					"minimo": 1,
+					"instruccion": "En su primera jugada el peón puede avanzar dos casillas. Llévalo a e4 en una sola jugada.",
+					"pistas": [
+						"Del 2 al 4 son dos casillas.",
+						"Toma el peón en e2 y suéltalo en e4."
+					]
+				},
+				{
+					"id": "9.2",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/3P4/8",
+					"manzanas": ["d6"],
+					"minimo": 3,
+					"instruccion": "Avanza el peón hasta la manzana de d6.",
+					"pistas": [
+						"Primero dos casillas, luego de una en una.",
+						"d4, d5 y d6."
+					]
+				},
+				{
+					"id": "9.3",
+					"titulo": "El peón captura en diagonal",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/3pp3/3P4/8/8/8",
+					"capturar": ["e5"],
+					"minimo": 1,
+					"instruccion": "El peón negro de d5 te cierra el paso: el peón no puede capturar hacia delante. Pero puede capturar en diagonal. Come el peón de e5.",
+					"pistas": [
+						"Mira la casilla que está delante y a la derecha.",
+						"Toma el peón en d4 y suéltalo en e5."
+					]
+				},
+				{
+					"id": "9.4",
+					"titulo": "¡A coronar!",
+					"tipo": "coronar",
+					"posicion": "8/2P5/8/8/8/8/8/8",
+					"minimo": 1,
+					"instruccion": "¡A coronar! Tu peón está a un paso de la última fila. Llévalo a c8 y elige en qué pieza se convierte.",
+					"corona_dama": "¡Coronaste! Ahora tienes una dama nueva.",
+					"corona_otra": "¡Coronaste! Casi siempre conviene la dama, pero a veces otra pieza es mejor.",
+					"pistas": [
+						"Avanza una casilla.",
+						"Toma el peón en c7, suéltalo en c8 y elige dama."
+					]
+				},
+				{
+					"id": "9.5",
+					"titulo": "Capturar y coronar",
+					"tipo": "coronar",
+					"posicion": "6br/6P1/8/8/8/8/8/8",
+					"minimo": 1,
+					"instruccion": "El alfil negro bloquea tu peón. Pero puedes capturar la torre en diagonal y coronar a la vez.",
+					"corona_dama": "¡Capturaste y coronaste en una sola jugada!",
+					"corona_otra": "¡Capturaste y coronaste en una sola jugada! Casi siempre conviene la dama.",
+					"pistas": [
+						"La torre está en la casilla de delante a la derecha.",
+						"Toma el peón en g7, suéltalo en h8 y elige dama."
+					]
+				}
+			]
+		}
+	]
+}

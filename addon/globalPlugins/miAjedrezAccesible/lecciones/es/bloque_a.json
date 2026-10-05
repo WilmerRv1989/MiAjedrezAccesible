@@ -1,0 +1,234 @@
+{
+	"id": "A",
+	"titulo": "Conocer el tablero",
+	"mensaje_final": "¡Terminaste el bloque A! Ya sabes moverte por el tablero.",
+	"lecciones": [
+		{
+			"id": "1",
+			"titulo": "Filas, columnas y coordenadas",
+			"explicacion": [
+				"El tablero de ajedrez es un cuadrado con 64 casillas: ocho filas y ocho columnas.",
+				"Las columnas tienen letras, de la a a la h, de izquierda a derecha. Las filas tienen números, del 1 al 8, desde tu lado hacia el lado de tu rival.",
+				"Cada casilla se nombra con su letra y su número. Por ejemplo, e4 es la casilla de la columna e y la fila 4.",
+				"Muévete con las flechas: NVDA te dirá en qué casilla estás. Cuando llegues a la casilla que te pidan, pulsa Intro."
+			],
+			"ejercicios": [
+				{
+					"id": "1.1",
+					"tipo": "ir_a",
+					"posicion": "vacio",
+					"inicio": "a1",
+					"respuestas": ["h1"],
+					"instruccion": "Estás en a1, la esquina de abajo a la izquierda. Ve a h1, la esquina de abajo a la derecha, y pulsa Intro.",
+					"pistas": [
+						"Usa la flecha derecha: cada vez que la pulsas avanzas una columna.",
+						"Pulsa la flecha derecha siete veces y luego Intro."
+					]
+				},
+				{
+					"id": "1.2",
+					"tipo": "ir_a",
+					"posicion": "vacio",
+					"inicio": "h1",
+					"respuestas": ["h8"],
+					"instruccion": "Ahora sube hasta h8, la esquina de arriba a la derecha, y pulsa Intro.",
+					"pistas": [
+						"La flecha arriba sube una fila hacia el lado de tu rival.",
+						"Pulsa la flecha arriba siete veces y luego Intro."
+					]
+				},
+				{
+					"id": "1.3",
+					"tipo": "ir_a",
+					"posicion": "vacio",
+					"inicio": "a1",
+					"respuestas": ["e4"],
+					"instruccion": "Ve a la casilla e4 y pulsa Intro. Es una de las casillas del centro del tablero.",
+					"pistas": [
+						"Primero busca la columna e con las flechas derecha o izquierda; después sube hasta la fila 4.",
+						"La e es la quinta columna: desde a1, pulsa cuatro veces la flecha derecha y tres veces la flecha arriba."
+					]
+				},
+				{
+					"id": "1.4",
+					"tipo": "ir_a",
+					"posicion": "vacio",
+					"inicio": "e4",
+					"respuestas": ["d5"],
+					"instruccion": "Ve a d5 y pulsa Intro.",
+					"pistas": [
+						"d5 está muy cerca de e4: una columna a la izquierda y una fila más arriba.",
+						"Pulsa una vez la flecha izquierda, una vez la flecha arriba y luego Intro."
+					]
+				},
+				{
+					"id": "1.5",
+					"tipo": "ir_a",
+					"posicion": "vacio",
+					"inicio": "b1",
+					"respuestas": ["b7"],
+					"instruccion": "Un truco: las teclas del 1 al 8 te llevan a esa fila sin cambiar de columna. Ve a b7 pulsando la tecla 7, y luego Intro.",
+					"pistas": [
+						"Pulsa la tecla 7 de la fila de números, la de arriba de las letras.",
+						"Pulsa 7 y luego Intro."
+					]
+				},
+				{
+					"id": "1.6",
+					"tipo": "ir_a",
+					"posicion": "vacio",
+					"inicio": "a1",
+					"respuestas": ["c1", "e1", "g1"],
+					"instruccion": "Las casillas son claras u oscuras, alternadas. La casilla a1 es oscura. Ve a otra casilla oscura de la fila 1 y pulsa Intro. Con F3 puedes preguntar el color de cualquier casilla.",
+					"pistas": [
+						"Si a1 es oscura, b1 es clara. ¿Cómo será c1?",
+						"c1, e1 y g1 son oscuras. Ve a cualquiera de ellas."
+					]
+				}
+			]
+		},
+		{
+			"id": "2",
+			"titulo": "Diagonales y el centro",
+			"explicacion": [
+				"Además de filas y columnas, el tablero tiene diagonales: líneas de casillas que se tocan por las esquinas. Todas las casillas de una diagonal son del mismo color.",
+				"Por ejemplo, desde a1 sube una diagonal por b2, c3, d4, e5, f6, g7 y h8. Para avanzar por una diagonal con el teclado, pulsa una flecha hacia arriba y otra hacia un lado.",
+				"Las cuatro casillas del centro son d4, e4, d5 y e5. Son muy importantes: una pieza en el centro llega a más casillas que una en el borde."
+			],
+			"ejercicios": [
+				{
+					"id": "2.1",
+					"tipo": "ir_a",
+					"posicion": "vacio",
+					"inicio": "a1",
+					"respuestas": ["b2"],
+					"instruccion": "Estás en a1. Ve a la casilla siguiente de la diagonal, b2, y pulsa Intro.",
+					"pistas": [
+						"Una diagonal es un paso arriba y un paso a la derecha a la vez.",
+						"Pulsa flecha arriba, flecha derecha y luego Intro."
+					]
+				},
+				{
+					"id": "2.2",
+					"tipo": "ir_a",
+					"posicion": "vacio",
+					"inicio": "b2",
+					"respuestas": ["d4"],
+					"instruccion": "Sigue por la misma diagonal hasta d4 y pulsa Intro.",
+					"pistas": [
+						"Después de b2 viene c3, y después d4.",
+						"Repite dos veces: flecha arriba y flecha derecha."
+					]
+				},
+				{
+					"id": "2.3",
+					"tipo": "ir_a",
+					"posicion": "vacio",
+					"inicio": "h1",
+					"respuestas": ["e4"],
+					"instruccion": "La otra gran diagonal va de h1 a a8. Ve a la casilla de esa diagonal que está en la fila 4 y pulsa Intro.",
+					"pistas": [
+						"Desde h1, la diagonal sube hacia la izquierda: g2, f3…",
+						"Es e4."
+					]
+				},
+				{
+					"id": "2.4",
+					"tipo": "visitar",
+					"posicion": "vacio",
+					"inicio": "a1",
+					"respuestas": ["d4", "e4", "d5", "e5"],
+					"instruccion": "Visita las cuatro casillas del centro, d4, e4, d5 y e5, y pulsa Intro en cada una. El orden no importa.",
+					"pistas": [
+						"Las cuatro están juntas, formando un cuadrado en el medio del tablero.",
+						"Te faltan: {faltan}."
+					]
+				},
+				{
+					"id": "2.5",
+					"tipo": "ir_a",
+					"posicion": "vacio",
+					"inicio": "e4",
+					"respuestas": ["h7"],
+					"instruccion": "Desde e4 salen cuatro diagonales. Ve hasta el final de la que sube hacia la derecha y pulsa Intro.",
+					"pistas": [
+						"Sube una fila y avanza una columna a la derecha, una y otra vez, hasta que no puedas seguir.",
+						"f5, g6 y h7. Es h7."
+					]
+				}
+			]
+		},
+		{
+			"id": "3",
+			"titulo": "La posición inicial",
+			"explicacion": [
+				"Al empezar una partida, cada bando tiene 16 piezas: un rey, una dama, dos torres, dos alfiles, dos caballos y ocho peones.",
+				"Las blancas ocupan las filas 1 y 2; las negras, las filas 7 y 8.",
+				"En la fila 1, de a a h, están: torre, caballo, alfil, dama, rey, alfil, caballo y torre. Los ocho peones van delante, en la fila 2. Las negras están colocadas igual, enfrente.",
+				"Un truco para recordar: la dama empieza en la casilla de su color. La dama blanca está en d1, que es clara; la dama negra, en d8, que es oscura."
+			],
+			"ejercicios": [
+				{
+					"id": "3.1",
+					"tipo": "ir_a",
+					"posicion": "inicial",
+					"inicio": "a1",
+					"respuestas": ["h1"],
+					"instruccion": "Recorre la fila 1, de a1 a h1, con la flecha derecha. Escucha cada pieza. Cuando llegues a h1, pulsa Intro.",
+					"pistas": [
+						"Ve hacia la derecha hasta la última casilla de la fila.",
+						"Pulsa la flecha derecha hasta h1 y luego Intro."
+					]
+				},
+				{
+					"id": "3.2",
+					"tipo": "ir_a",
+					"posicion": "inicial",
+					"inicio": "a1",
+					"respuestas": ["e1"],
+					"instruccion": "Ve al rey blanco y pulsa Intro. Truco: la tecla R salta a tu rey.",
+					"pistas": [
+						"El rey está al lado de la dama, en la fila 1.",
+						"Pulsa R y luego Intro."
+					]
+				},
+				{
+					"id": "3.3",
+					"tipo": "ir_a",
+					"posicion": "inicial",
+					"inicio": "e1",
+					"respuestas": ["d8"],
+					"instruccion": "Ahora ve a la dama negra y pulsa Intro. Truco: Mayúsculas con D salta a la dama del rival.",
+					"pistas": [
+						"La dama negra está en la fila 8, en una casilla oscura.",
+						"Pulsa Mayúsculas+D y luego Intro."
+					]
+				},
+				{
+					"id": "3.4",
+					"tipo": "ir_a",
+					"posicion": "inicial",
+					"inicio": "e1",
+					"respuestas": ["b1", "g1"],
+					"instruccion": "¿Dónde están los caballos blancos? Ve a uno de ellos y pulsa Intro.",
+					"pistas": [
+						"Los caballos están al lado de las torres.",
+						"Pulsa C y luego Intro."
+					]
+				},
+				{
+					"id": "3.5",
+					"tipo": "ir_a",
+					"posicion": "inicial",
+					"inicio": "e1",
+					"respuestas": ["e7"],
+					"instruccion": "Ve a la casilla que está justo delante del rey negro, la que ocupa su peón, y pulsa Intro.",
+					"pistas": [
+						"El rey negro está en e8. Delante de él, desde su lado, está la fila 7.",
+						"Es e7: pulsa 7 desde la columna e."
+					]
+				}
+			]
+		}
+	]
+}

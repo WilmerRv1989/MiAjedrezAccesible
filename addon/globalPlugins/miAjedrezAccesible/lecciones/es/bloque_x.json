@@ -1,0 +1,146 @@
+{
+	"id": "X",
+	"titulo": "Extras",
+	"extra": true,
+	"mensaje_final": "Pronto habrá más extras para seguir practicando.",
+	"lecciones": [
+		{
+			"id": "x1",
+			"titulo": "Jugar solo escribiendo",
+			"solo_escrito": true,
+			"explicacion": [
+				"En este extra vas a jugar como en el ajedrez a ciegas de los torneos: todas las jugadas se escriben con la tecla J, sin tomar ninguna pieza con Intro.",
+				"Puedes seguir recorriendo el tablero con las flechas para mirar la posición, salvo en los retos sin mirar.",
+				"Recuerda la notación: la letra de la pieza (R rey, D dama, T torre, A alfil, C caballo; el peón no lleva), una x si captura, y la casilla de destino. Para coronar se añade la pieza: e8=D. Si dos piezas iguales pueden ir a la misma casilla, se añade la columna o la fila de origen: Cbd2."
+			],
+			"ejercicios": [
+				{
+					"id": "x1.1",
+					"titulo": "Coronar escribiendo",
+					"tipo": "jugada",
+					"objetivo": "notacion",
+					"jugadas": ["b7b8q"],
+					"mensaje_error": "Esa no es la jugada pedida. Pulsa J y escribe b8=D.",
+					"posicion": "4k3/1P6/8/8/8/8/8/4K3",
+					"inicio": "b7",
+					"solucion": "b7b8q",
+					"instruccion": "Coronar escribiendo. Tu peón de b7 está a punto de coronar. Pulsa J y escribe b8=D: el peón llega a b8 y se convierte en dama. También vale b8D.",
+					"pistas": [
+						"Primero la casilla de destino, después el signo igual y la letra de la nueva pieza.",
+						"Pulsa J, escribe b8=D y pulsa Intro."
+					]
+				},
+				{
+					"id": "x1.2",
+					"titulo": "Dos piezas pueden ir",
+					"tipo": "jugada",
+					"objetivo": "notacion",
+					"jugadas": ["b1d2"],
+					"mensaje_error": "Esa no es la jugada pedida. Pulsa J y escribe Cbd2.",
+					"posicion": "4k3/8/8/8/8/5N2/8/1N2K3",
+					"inicio": "b1",
+					"solucion": "b1d2",
+					"instruccion": "Dos piezas pueden ir. Tus dos caballos, el de b1 y el de f3, pueden ir a d2. Lleva a d2 el caballo de b1. Si escribes solo Cd2, no se sabe cuál: escribe Cbd2, con la columna de origen.",
+					"pistas": [
+						"La b indica que el caballo sale de la columna b.",
+						"Pulsa J, escribe Cbd2 y pulsa Intro."
+					]
+				},
+				{
+					"id": "x1.3",
+					"titulo": "Al paso, escrito",
+					"tipo": "jugada",
+					"objetivo": "al_paso",
+					"posicion": "4k3/8/8/3pP3/8/8/8/4K3",
+					"al_paso": "d6",
+					"inicio": "e5",
+					"solucion": "e5d6",
+					"instruccion": "Al paso, escrito. El peón negro acaba de pasar de d7 a d5. Captúralo al paso escribiendo exd6: el peón de la columna e captura en d6.",
+					"pistas": [
+						"Las capturas de peón empiezan con la columna del peón que captura.",
+						"Pulsa J, escribe exd6 y pulsa Intro."
+					]
+				},
+				{
+					"id": "x1.4",
+					"titulo": "El enroque largo",
+					"tipo": "jugada",
+					"objetivo": "enroque",
+					"forma": "largo",
+					"posicion": "4k3/8/8/8/8/8/8/R3K3",
+					"enroques": "Q",
+					"inicio": "e1",
+					"solucion": "e1c1",
+					"instruccion": "El enroque largo. Pulsa J y escribe O-O-O: tres letras O mayúsculas separadas por guiones. También vale con ceros: 0-0-0.",
+					"pistas": [
+						"El enroque largo lleva una O más que el corto.",
+						"Pulsa J, escribe O-O-O y pulsa Intro."
+					]
+				},
+				{
+					"id": "x1.5",
+					"titulo": "Mate en dos, escrito",
+					"tipo": "mate",
+					"jugadas_mate": 2,
+					"posicion": "k7/8/2K4Q/8/8/8/8/8",
+					"inicio": "h6",
+					"solucion": "h6h7",
+					"instruccion": "Mate en dos, escrito. El rey negro está en a8, tu rey en c6 y tu dama en h6. Escribe las dos jugadas que dan mate; las negras se defenderán.",
+					"pistas": [
+						"Primero encierra al rey negro: lleva la dama a la fila 7 sin darle jaque. Se escribe Dh7.",
+						"Después de Dh7, el rey negro irá a b8. Remata con Db7."
+					]
+				},
+				{
+					"id": "x1.6",
+					"titulo": "Partida escrita",
+					"tipo": "partida_escrita",
+					"posicion": "inicial",
+					"enroques": "KQkq",
+					"inicio": "e2",
+					"guion": [
+						["e2e4", "e7e5"],
+						["f1c4", "b8c6"],
+						["d1h5", "g8f6"],
+						["h5f7"]
+					],
+					"instruccion": "Partida escrita. Vas a jugar una partida corta y famosa, el mate del pastor. En cada jugada te diré con palabras qué mover, y tú la escribes en notación. Las negras responden solas.",
+					"pistas": [
+						"Escribe la letra de la pieza y la casilla de destino; el peón no lleva letra.",
+						"Escucha otra vez lo que te pido con F2, y tradúcelo: por ejemplo, alfil de f1 a c4 se escribe Ac4."
+					]
+				},
+				{
+					"id": "x1.7",
+					"titulo": "Sin mirar",
+					"tipo": "jugada",
+					"objetivo": "mate",
+					"a_ciegas": true,
+					"posicion": "6k1/5ppp/8/8/8/8/8/3R2K1",
+					"inicio": "a1",
+					"solucion": "d1d8",
+					"instruccion": "Sin mirar. En este reto el tablero no te dice qué hay en cada casilla: imagina la posición. El rey negro está en g8, con sus peones en f7, g7 y h7. Tú tienes una torre en d1 y el rey en g1. Escribe la jugada que da jaque mate.",
+					"pistas": [
+						"Es el mate del pasillo: el rey negro no puede subir porque sus peones le tapan la salida.",
+						"Escribe Td8."
+					]
+				},
+				{
+					"id": "x1.8",
+					"titulo": "Sin mirar, con la dama",
+					"tipo": "jugada",
+					"objetivo": "mate",
+					"a_ciegas": true,
+					"posicion": "7k/8/6K1/8/8/8/8/3Q4",
+					"inicio": "a1",
+					"solucion": "d1d8",
+					"instruccion": "Sin mirar, con la dama. El rey negro está en h8. Tu rey está en g6 y tu dama en d1. Escribe la jugada que da jaque mate.",
+					"pistas": [
+						"Tu rey ya le quita al rey negro las casillas g7 y h7. Falta atacarlo por la fila 8.",
+						"Escribe Dd8."
+					]
+				}
+			]
+		}
+	]
+}

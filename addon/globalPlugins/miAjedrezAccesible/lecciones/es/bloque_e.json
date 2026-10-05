@@ -1,0 +1,143 @@
+{
+	"id": "E",
+	"titulo": "¡A jugar!",
+	"mensaje_final": "¡Terminaste el curso! Ya sabes jugar al ajedrez. Ahora, a disfrutar de tus partidas.",
+	"lecciones": [
+		{
+			"id": "22",
+			"titulo": "Decir las jugadas",
+			"explicacion": [
+				"Cuando juegas con un tablero de verdad, sobre todo con un tablero en relieve, cada jugada se dice en voz alta, y tu rival la repite. Para eso existe la notación algebraica.",
+				"Se dice la letra de la pieza y la casilla adonde va: R rey, D dama, T torre, A alfil, C caballo. El peón no lleva letra: solo se dice la casilla. Por ejemplo, Cf3 es caballo a f3, y e4 es un peón que va a e4.",
+				"Si la jugada captura, se pone una x: Axf7 es alfil captura en f7. El enroque corto es O-O y el largo, O-O-O. Si da jaque, se añade un más al final.",
+				"En MiAjedrezAccesible, la tecla J abre un campo para escribir la jugada así. En estos ejercicios, usa la J.",
+				"Puedes jugar una partida entera escribiendo así, de la primera jugada al jaque mate, sin tomar ninguna pieza con Intro. Para practicarlo a fondo, al final de la lista de lecciones, en Extras, está «Jugar solo escribiendo»."
+			],
+			"ejercicios": [
+				{
+					"id": "22.1",
+					"tipo": "jugada",
+					"objetivo": "notacion",
+					"jugadas": ["e2e4"],
+					"mensaje_error": "Esa no es la jugada pedida. Pulsa J y escribe e4.",
+					"posicion": "inicial",
+					"inicio": "e2",
+					"solucion": "e2e4",
+					"instruccion": "Pulsa J y escribe tu primera jugada: e4. Es el peón que va a e4; el peón no lleva letra.",
+					"pistas": [
+						"Pulsa J, escribe e4 y pulsa Intro.",
+						"Escribe la letra e y el número 4, sin espacios."
+					]
+				},
+				{
+					"id": "22.2",
+					"tipo": "jugada",
+					"objetivo": "notacion",
+					"jugadas": ["g1f3"],
+					"mensaje_error": "Esa no es la jugada pedida. Pulsa J y escribe Cf3.",
+					"posicion": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR",
+					"inicio": "g1",
+					"solucion": "g1f3",
+					"instruccion": "Ahora el caballo: pulsa J y escribe Cf3. La C es de caballo y f3, la casilla adonde va.",
+					"pistas": [
+						"La C va en mayúscula, para que no se confunda con la columna c.",
+						"Pulsa J, escribe Cf3 y pulsa Intro."
+					]
+				},
+				{
+					"id": "22.3",
+					"tipo": "jugada",
+					"objetivo": "notacion",
+					"jugadas": ["f3e5"],
+					"mensaje_error": "Esa no es la jugada pedida. Pulsa J y escribe Cxe5.",
+					"posicion": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R",
+					"inicio": "f3",
+					"solucion": "f3e5",
+					"instruccion": "Una captura: pulsa J y escribe Cxe5. Significa: el caballo captura en e5. La x quiere decir captura.",
+					"pistas": [
+						"Escribe la C, la x y la casilla e5.",
+						"Pulsa J, escribe Cxe5 y pulsa Intro."
+					]
+				},
+				{
+					"id": "22.4",
+					"tipo": "jugada",
+					"objetivo": "enroque",
+					"forma": "corto",
+					"posicion": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R",
+					"enroques": "KQkq",
+					"inicio": "e1",
+					"solucion": "e1g1",
+					"instruccion": "El enroque: pulsa J y escribe O-O. Son dos letras O mayúsculas separadas por un guion. También vale con ceros: 0-0.",
+					"pistas": [
+						"O-O es el enroque corto, hacia el lado del rey.",
+						"Pulsa J, escribe O-O y pulsa Intro."
+					]
+				},
+				{
+					"id": "22.5",
+					"tipo": "jugada",
+					"objetivo": "notacion",
+					"jugadas": ["c4f7"],
+					"mensaje_error": "Esa no es la jugada pedida. Pulsa J y escribe Axf7+.",
+					"posicion": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/8/PPPP1PPP/RNBQK1NR",
+					"inicio": "c4",
+					"solucion": "c4f7",
+					"instruccion": "Captura con jaque: pulsa J y escribe Axf7+. El alfil captura en f7 y da jaque; el signo más indica jaque, y puedes escribirlo o no.",
+					"pistas": [
+						"La A es de alfil.",
+						"Pulsa J, escribe Axf7 y pulsa Intro."
+					]
+				}
+			]
+		},
+		{
+			"id": "23",
+			"titulo": "La guerra de peones y tu primera partida",
+			"explicacion": [
+				"La guerra de peones es un juego de las escuelas de ajedrez. Solo hay peones. Gana quien corona primero un peón, o quien deja al rival sin jugadas. Las negras se mueven solas.",
+				"Consejos para la guerra de peones: avanza los peones que nadie puede detener, y no dejes que un peón rival se escape sin vigilancia.",
+				"Y para tu primera partida: ocupa el centro con tus peones; saca pronto los caballos y los alfiles; enroca para proteger a tu rey; no saques la dama demasiado pronto; y antes de cada jugada, pregúntate qué amenaza tu rival.",
+				"Recuerda: si lo prefieres, puedes jugar toda la partida escribiendo las jugadas con la tecla J."
+			],
+			"ejercicios": [
+				{
+					"id": "23.1",
+					"titulo": "Tres contra tres",
+					"tipo": "guerra_peones",
+					"posicion": "8/ppp5/8/8/8/8/PPP5/8",
+					"inicio": "a2",
+					"instruccion": "Tres contra tres. Juega la guerra de peones con tres peones cada uno. Gana quien corone primero.",
+					"pistas": [
+						"Un peón que ya no tiene peones rivales delante, ni en su columna ni en las de al lado, no puede ser detenido.",
+						"Avanza con cuidado: si dejas un peón sin vigilar, el rival puede capturarlo."
+					]
+				},
+				{
+					"id": "23.2",
+					"titulo": "La guerra completa",
+					"tipo": "guerra_peones",
+					"posicion": "8/pppppppp/8/8/8/8/PPPPPPPP/8",
+					"inicio": "e2",
+					"instruccion": "La guerra completa: ocho peones contra ocho. Recuerda que en su primera jugada un peón puede avanzar dos casillas.",
+					"pistas": [
+						"Intenta crear un peón pasado: uno sin peones rivales delante.",
+						"Los cambios de peones pueden abrir camino a uno de los tuyos."
+					]
+				},
+				{
+					"id": "23.3",
+					"titulo": "Tu primera partida",
+					"tipo": "partida",
+					"posicion": "inicial",
+					"inicio": "e2",
+					"instruccion": "¡Tu primera partida! Jugarás con blancas contra la computadora en el nivel 1, el más fácil. Pulsa Intro cuando quieras empezar.",
+					"pistas": [
+						"Recuerda los consejos: centro, caballos y alfiles fuera, enroque, y mira qué amenaza tu rival.",
+						"Pulsa Intro para empezar la partida."
+					]
+				}
+			]
+		}
+	]
+}

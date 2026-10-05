@@ -1,0 +1,717 @@
+{
+	"id": "C",
+	"titulo": "Fundamentos",
+	"mensaje_final": "¡Terminaste el bloque C! Ya sabes capturar, proteger, dar jaque y dar jaque mate.",
+	"lecciones": [
+		{
+			"id": "10",
+			"titulo": "Capturar",
+			"explicacion": [
+				"Capturar es llevar una pieza a la casilla donde hay una pieza del rival. La pieza del rival sale del tablero.",
+				"Todas las piezas capturan igual que se mueven, menos el peón, que captura en diagonal hacia delante.",
+				"Cuando una pieza puede capturar a otra en la siguiente jugada, decimos que la ataca. La tecla X te dice qué piezas atacan una casilla."
+			],
+			"ejercicios": [
+				{
+					"id": "10.1",
+					"tipo": "ir_a",
+					"posicion": "n7/6b1/8/8/3R4/8/8/8",
+					"inicio": "d4",
+					"respuestas": ["g7"],
+					"instruccion": "Estás en tu torre de d4. Una pieza negra la ataca. Ve a esa pieza y pulsa Intro.",
+					"pistas": [
+						"Pulsa X sobre tu torre: te dirá quién la ataca.",
+						"Es el alfil negro de g7."
+					]
+				},
+				{
+					"id": "10.2",
+					"tipo": "jugada",
+					"objetivo": "capturar",
+					"casilla": "b7",
+					"posicion": "8/1r6/8/5n2/8/8/8/1Q6",
+					"inicio": "b1",
+					"solucion": "b1b7",
+					"instruccion": "Tu dama de b1 puede capturar dos piezas. Captura la torre negra.",
+					"pistas": [
+						"Pulsa Mayúsculas+T para encontrar la torre negra.",
+						"Toma la dama en b1 y suéltala en b7."
+					]
+				},
+				{
+					"id": "10.3",
+					"tipo": "jugada",
+					"objetivo": "capturar",
+					"casilla": "e5",
+					"posicion": "8/8/8/2nbr3/3P4/8/8/8",
+					"inicio": "d4",
+					"solucion": "d4e5",
+					"instruccion": "Tu peón de d4 tiene delante un alfil y, en diagonal, un caballo y una torre. Captura la torre. Recuerda: el peón captura en diagonal.",
+					"pistas": [
+						"La torre está delante y a la derecha del peón.",
+						"Toma el peón en d4 y suéltalo en e5."
+					]
+				},
+				{
+					"id": "10.4",
+					"tipo": "ir_a",
+					"posicion": "8/1r2q2n/8/8/4B3/8/8/8",
+					"inicio": "e4",
+					"respuestas": ["b7", "h7"],
+					"instruccion": "Tu alfil de e4 ataca dos piezas negras, pero no a la dama. Ve a una de las piezas atacadas y pulsa Intro.",
+					"pistas": [
+						"El alfil ataca en diagonal: sube hacia la izquierda y hacia la derecha desde e4.",
+						"Ataca a la torre de b7 y al caballo de h7."
+					]
+				},
+				{
+					"id": "10.5",
+					"titulo": "Captura en cadena",
+					"tipo": "manzanas",
+					"posicion": "5q2/8/n4b2/8/8/8/8/R7",
+					"capturar": "todas",
+					"minimo": 3,
+					"instruccion": "Captura en cadena. Tu torre puede capturar las tres piezas negras, una tras otra. Hazlo.",
+					"pistas": [
+						"La primera pieza está en tu misma columna.",
+						"Caballo de a6, después alfil de f6 y por último dama de f8."
+					]
+				}
+			]
+		},
+		{
+			"id": "11",
+			"titulo": "Proteger",
+			"explicacion": [
+				"Si una pieza tuya está atacada, el rival podría capturarla. Puedes salvarla de varias maneras.",
+				"Una: moverla a una casilla donde nadie la ataque. Otra: protegerla con otra pieza, para que si el rival la captura, tú puedas capturar de vuelta. Y a veces puedes capturar a la pieza que ataca.",
+				"Una pieza protegida también se llama defendida. La tecla X te dice qué piezas defienden una casilla."
+			],
+			"ejercicios": [
+				{
+					"id": "11.1",
+					"tipo": "jugada",
+					"objetivo": "proteger",
+					"forma": "mover",
+					"casilla": "c3",
+					"posicion": "2r5/7b/8/8/8/2N5/8/8",
+					"inicio": "c3",
+					"solucion": "c3d5",
+					"instruccion": "La torre negra de c8 ataca a tu caballo de c3. Muévelo a una casilla donde nadie lo ataque.",
+					"pistas": [
+						"Cuidado con el alfil negro de h7: ataca la casilla e4.",
+						"Por ejemplo, lleva el caballo a d5."
+					]
+				},
+				{
+					"id": "11.2",
+					"tipo": "jugada",
+					"objetivo": "proteger",
+					"forma": "defender",
+					"casilla": "e4",
+					"posicion": "8/8/5n2/8/4P3/8/3P4/1N1Q4",
+					"inicio": "e4",
+					"solucion": "b1c3",
+					"instruccion": "El caballo negro de f6 ataca a tu peón de e4. Protégelo con otra pieza, sin mover el peón.",
+					"pistas": [
+						"Tu caballo, tu dama o tu otro peón pueden ayudar.",
+						"Por ejemplo, caballo de b1 a c3, o peón de d2 a d3."
+					]
+				},
+				{
+					"id": "11.3",
+					"tipo": "jugada",
+					"objetivo": "proteger",
+					"forma": "mover",
+					"casilla": "d5",
+					"posicion": "8/8/4p3/3Q4/8/8/8/8",
+					"inicio": "d5",
+					"solucion": "d5d1",
+					"instruccion": "Un peón negro ataca a tu dama de d5. Protegerla no sirve: un peón vale mucho menos que una dama. Ponla a salvo.",
+					"pistas": [
+						"El peón de e6 ataca las casillas d5 y f5.",
+						"Por ejemplo, retírala a d1."
+					]
+				},
+				{
+					"id": "11.4",
+					"tipo": "jugada",
+					"objetivo": "capturar",
+					"casilla": "a5",
+					"posicion": "8/8/8/n7/1PB5/8/8/8",
+					"inicio": "c4",
+					"solucion": "b4a5",
+					"instruccion": "El caballo negro de a5 ataca a tu alfil de c4. A veces la mejor defensa es capturar al atacante. ¡Hazlo!",
+					"pistas": [
+						"Tu alfil no puede capturarlo, pero tu peón sí.",
+						"Toma el peón en b4 y suéltalo en a5."
+					]
+				},
+				{
+					"id": "11.5",
+					"tipo": "jugada",
+					"objetivo": "proteger",
+					"forma": "defender",
+					"casilla": "f5",
+					"posicion": "5r2/8/8/5P2/8/4K3/8/8",
+					"inicio": "e3",
+					"solucion": "e3e4",
+					"instruccion": "La torre negra ataca a tu peón de f5. El rey también puede proteger. Llévalo junto al peón.",
+					"pistas": [
+						"El rey protege las casillas que tiene alrededor.",
+						"Por ejemplo, rey de e3 a e4."
+					]
+				}
+			]
+		},
+		{
+			"id": "12",
+			"titulo": "Capturar sin perder la pieza",
+			"explicacion": [
+				"Antes de capturar, piensa: ¿puede el rival capturar mi pieza de vuelta?",
+				"Si la pieza que capturas está protegida, tu pieza quedará atacada en esa casilla, y podrías perderla.",
+				"Usa la tecla X sobre cada pieza negra: si dice que tiene defensores, cuidado."
+			],
+			"ejercicios": [
+				{
+					"id": "12.1",
+					"tipo": "jugada",
+					"objetivo": "captura_segura",
+					"posicion": "2b5/3n4/8/7p/8/8/8/3Q4",
+					"inicio": "d1",
+					"solucion": "d1h5",
+					"instruccion": "Tu dama puede capturar el caballo de d7 o el peón de h5. Solo una de esas capturas es segura. Elígela.",
+					"pistas": [
+						"Pulsa X sobre el caballo de d7: ¿quién lo defiende?",
+						"El alfil de c8 defiende al caballo. Captura el peón de h5."
+					]
+				},
+				{
+					"id": "12.2",
+					"tipo": "jugada",
+					"objetivo": "captura_segura",
+					"posicion": "r7/p7/8/8/8/8/8/R3n3",
+					"inicio": "a1",
+					"solucion": "a1e1",
+					"instruccion": "Tu torre puede capturar el peón de a7 o el caballo de e1. Captura sin perder la torre.",
+					"pistas": [
+						"La torre negra de a8 defiende al peón de a7.",
+						"Captura el caballo de e1."
+					]
+				},
+				{
+					"id": "12.3",
+					"tipo": "jugada",
+					"objetivo": "captura_segura",
+					"posicion": "8/8/3p3p/4p1p1/8/5N2/7b/8",
+					"inicio": "f3",
+					"solucion": "f3h2",
+					"instruccion": "Tu caballo de f3 puede capturar tres piezas. Dos de ellas están protegidas. Captura la que no lo está.",
+					"pistas": [
+						"Los peones negros se protegen entre ellos en diagonal.",
+						"Captura el alfil de h2."
+					]
+				},
+				{
+					"id": "12.4",
+					"tipo": "jugada",
+					"objetivo": "captura_segura",
+					"posicion": "8/8/2p5/3p1p2/4P3/8/8/8",
+					"inicio": "e4",
+					"solucion": "e4f5",
+					"instruccion": "Tu peón de e4 puede capturar en d5 o en f5. Elige la captura segura.",
+					"pistas": [
+						"El peón negro de c6 protege la casilla d5.",
+						"Captura en f5."
+					]
+				},
+				{
+					"id": "12.5",
+					"tipo": "jugada",
+					"objetivo": "captura_segura",
+					"posicion": "8/1p3p2/n3b3/8/2B5/8/4n3/8",
+					"inicio": "c4",
+					"solucion": "c4e2",
+					"instruccion": "Tu alfil de c4 puede capturar tres piezas. Solo una no está protegida. ¿Cuál?",
+					"pistas": [
+						"Revisa con X el caballo de a6, el alfil de e6 y el caballo de e2.",
+						"Captura el caballo de e2."
+					]
+				}
+			]
+		},
+		{
+			"id": "13",
+			"titulo": "El valor de las piezas",
+			"explicacion": [
+				"Las piezas no valen lo mismo. Se cuentan en peones: el peón vale 1; el caballo, 3; el alfil, 3; la torre, 5; y la dama, 9.",
+				"El rey no tiene precio: si lo atrapan, pierdes la partida.",
+				"Cuando puedas capturar varias piezas, elige la que más vale. Y antes de cambiar piezas, cuenta: dar un peón por un caballo es un buen negocio; dar una dama por un caballo, no."
+			],
+			"ejercicios": [
+				{
+					"id": "13.1",
+					"tipo": "ir_a",
+					"posicion": "8/4b3/1n6/8/8/6r1/2p5/8",
+					"inicio": "a1",
+					"respuestas": ["g3"],
+					"instruccion": "En el tablero hay cuatro piezas negras. Ve a la que más vale y pulsa Intro.",
+					"pistas": [
+						"Recuerda: peón 1, caballo 3, alfil 3, torre 5, dama 9.",
+						"La torre vale 5: está en g3."
+					]
+				},
+				{
+					"id": "13.2",
+					"tipo": "jugada",
+					"objetivo": "mejor_captura",
+					"posicion": "8/8/3p1r2/2b5/4N3/8/8/8",
+					"inicio": "e4",
+					"solucion": "e4f6",
+					"instruccion": "Tu caballo de e4 puede capturar un peón, un alfil o una torre. Captura la pieza que más vale.",
+					"pistas": [
+						"La torre vale 5; el alfil, 3; el peón, 1.",
+						"Captura la torre de f6."
+					]
+				},
+				{
+					"id": "13.3",
+					"tipo": "jugada",
+					"objetivo": "mejor_captura",
+					"posicion": "8/r2n2q1/8/8/3Q4/8/8/8",
+					"inicio": "d4",
+					"solucion": "d4g7",
+					"instruccion": "Tu dama de d4 puede capturar tres piezas. Elige la que más vale.",
+					"pistas": [
+						"Hay un caballo, una torre y una dama.",
+						"Captura la dama de g7: vale 9."
+					]
+				},
+				{
+					"id": "13.4",
+					"titulo": "Un buen cambio",
+					"tipo": "jugada",
+					"objetivo": "capturar",
+					"casilla": "d5",
+					"posicion": "8/8/2p5/3n1p2/4P3/8/8/8",
+					"inicio": "e4",
+					"solucion": "e4d5",
+					"instruccion": "Un buen cambio. Tu peón puede capturar el caballo de d5, aunque esté protegido, o el peón libre de f5. Si capturas el caballo y te comen el peón, das 1 y ganas 3. Captura el caballo.",
+					"pistas": [
+						"El caballo vale 3 y tu peón, 1.",
+						"Toma el peón en e4 y suéltalo en d5."
+					]
+				},
+				{
+					"id": "13.5",
+					"titulo": "Con la pieza correcta",
+					"tipo": "jugada",
+					"objetivo": "capturar",
+					"jugadas": ["c4d5"],
+					"mensaje_error": "Si capturas con la dama, el peón de e6 se la come: darías 9 a cambio de 3.",
+					"posicion": "8/8/4p3/3n4/2P5/8/8/3Q4",
+					"inicio": "c4",
+					"solucion": "c4d5",
+					"instruccion": "Con la pieza correcta. El caballo negro de d5 está protegido por un peón. Puedes capturarlo con tu peón de c4 o con tu dama. Elige bien: si te lo devuelven, ¿qué prefieres perder?",
+					"pistas": [
+						"Si capturas con la dama, el peón negro se come tu dama.",
+						"Captura con el peón: de c4 a d5."
+					]
+				}
+			]
+		},
+		{
+			"id": "14",
+			"titulo": "El jaque",
+			"explicacion": [
+				"Cuando una pieza ataca al rey del rival, decimos que le da jaque.",
+				"El rey en jaque tiene que salir del jaque en la siguiente jugada: nunca puede quedarse atacado.",
+				"Cuando das jaque, NVDA lo dice al anunciar tu jugada."
+			],
+			"ejercicios": [
+				{
+					"id": "14.1",
+					"tipo": "jugada",
+					"objetivo": "jaque",
+					"posicion": "4k3/8/8/8/8/8/8/R5K1",
+					"inicio": "a1",
+					"solucion": "a1a8",
+					"instruccion": "Da jaque al rey negro de e8 con tu torre.",
+					"pistas": [
+						"La torre ataca en línea recta: busca la fila o la columna del rey.",
+						"Por ejemplo, torre a a8, o torre a e1."
+					]
+				},
+				{
+					"id": "14.2",
+					"tipo": "jugada",
+					"objetivo": "jaque",
+					"posicion": "4k3/8/8/8/8/8/8/5BK1",
+					"inicio": "f1",
+					"solucion": "f1b5",
+					"instruccion": "Ahora da jaque con tu alfil de f1.",
+					"pistas": [
+						"El alfil ataca en diagonal. Desde el rey de e8, una diagonal baja por d7, c6 y b5.",
+						"Lleva el alfil a b5."
+					]
+				},
+				{
+					"id": "14.3",
+					"tipo": "jugada",
+					"objetivo": "jaque",
+					"posicion": "4k3/8/8/8/4N3/8/8/6K1",
+					"inicio": "e4",
+					"solucion": "e4d6",
+					"instruccion": "Da jaque con tu caballo de e4.",
+					"pistas": [
+						"El caballo ataca en forma de L. Hay dos casillas desde las que ataca al rey.",
+						"Caballo a d6 o a f6."
+					]
+				},
+				{
+					"id": "14.4",
+					"tipo": "jugada",
+					"objetivo": "jaque",
+					"posicion": "7k/8/8/8/8/8/8/3Q2K1",
+					"inicio": "d1",
+					"solucion": "d1d4",
+					"instruccion": "Tu dama puede dar jaque de muchas maneras. Encuentra una.",
+					"pistas": [
+						"La dama ataca en línea recta y en diagonal.",
+						"Por ejemplo, dama a d4: la diagonal de d4 llega a h8."
+					]
+				},
+				{
+					"id": "14.5",
+					"tipo": "jugada",
+					"objetivo": "jaque",
+					"posicion": "5k2/8/4P3/8/8/8/8/6K1",
+					"inicio": "e6",
+					"solucion": "e6e7",
+					"instruccion": "También el peón da jaque. Tu peón de e6 puede dar jaque al rey negro de f8. ¿Cómo?",
+					"pistas": [
+						"El peón ataca en diagonal hacia delante.",
+						"Avanza el peón a e7: desde ahí ataca d8 y f8."
+					]
+				}
+			]
+		},
+		{
+			"id": "15",
+			"titulo": "Salir del jaque",
+			"explicacion": [
+				"Si tu rey está en jaque, tienes que salir del jaque. Hay tres maneras.",
+				"Una: mover el rey a una casilla donde nadie lo ataque. Dos: tapar el jaque, poniendo una pieza entre el rey y la pieza que da jaque. Tres: capturar la pieza que da jaque.",
+				"Cuando estás en jaque, el tablero solo te deja hacer jugadas que salen del jaque."
+			],
+			"ejercicios": [
+				{
+					"id": "15.1",
+					"tipo": "jugada",
+					"objetivo": "salir_jaque",
+					"forma": "rey",
+					"posicion": "4r3/8/8/8/8/8/8/4K3",
+					"inicio": "e1",
+					"solucion": "e1d1",
+					"instruccion": "La torre negra de e8 da jaque a tu rey de e1. Sal del jaque moviendo el rey.",
+					"pistas": [
+						"Toda la columna e está atacada: sal de ella.",
+						"Por ejemplo, rey a d1 o a f2."
+					]
+				},
+				{
+					"id": "15.2",
+					"tipo": "jugada",
+					"objetivo": "salir_jaque",
+					"forma": "tapar",
+					"posicion": "4r3/8/8/8/8/8/8/2B1K3",
+					"inicio": "c1",
+					"solucion": "c1e3",
+					"instruccion": "Otra vez la torre da jaque. Esta vez tapa el jaque con tu alfil.",
+					"pistas": [
+						"El alfil tiene que ponerse en la columna e, entre la torre y el rey.",
+						"Alfil de c1 a e3."
+					]
+				},
+				{
+					"id": "15.3",
+					"tipo": "jugada",
+					"objetivo": "salir_jaque",
+					"forma": "capturar",
+					"posicion": "8/8/8/7b/8/8/R3q3/4K3",
+					"inicio": "a2",
+					"solucion": "a2e2",
+					"instruccion": "La dama negra de e2 da jaque. Captúrala. Ojo: el alfil negro de h5 la protege, así que tu rey no puede capturarla.",
+					"pistas": [
+						"Tu torre de a2 está en la misma fila que la dama.",
+						"Torre de a2 a e2."
+					]
+				},
+				{
+					"id": "15.4",
+					"tipo": "jugada",
+					"objetivo": "salir_jaque",
+					"posicion": "8/8/8/8/8/5n2/6P1/6K1",
+					"inicio": "g1",
+					"solucion": "g2f3",
+					"instruccion": "El caballo negro de f3 da jaque. Sal del jaque como quieras. Pista: hay una forma que además gana una pieza.",
+					"pistas": [
+						"Tu peón de g2 ataca la casilla f3.",
+						"Peón de g2 a f3, capturando el caballo."
+					]
+				},
+				{
+					"id": "15.5",
+					"tipo": "jugada",
+					"objetivo": "salir_jaque",
+					"posicion": "8/8/8/8/8/3n4/8/4KB2",
+					"inicio": "e1",
+					"solucion": "f1d3",
+					"instruccion": "Al jaque de caballo no se le puede tapar, porque el caballo salta. Sal del jaque.",
+					"pistas": [
+						"Puedes mover el rey o capturar el caballo con tu alfil.",
+						"Alfil de f1 a d3."
+					]
+				}
+			]
+		},
+		{
+			"id": "16",
+			"titulo": "El jaque mate",
+			"explicacion": [
+				"Jaque mate es un jaque del que el rey no puede salir: no puede ir a ninguna casilla segura, nadie puede tapar el jaque y nadie puede capturar a la pieza que lo da.",
+				"Quien da jaque mate gana la partida.",
+				"Para encontrar un mate, piensa: ¿a qué casillas podría escapar el rey? ¿Con qué jugada le doy jaque y le cierro todas a la vez?"
+			],
+			"ejercicios": [
+				{
+					"id": "16.1",
+					"titulo": "El mate del pasillo",
+					"tipo": "jugada",
+					"objetivo": "mate",
+					"posicion": "6k1/5ppp/8/8/8/8/8/R5K1",
+					"inicio": "a1",
+					"solucion": "a1a8",
+					"instruccion": "El mate del pasillo. El rey negro de g8 está encerrado por sus propios peones. Dale jaque mate con la torre.",
+					"pistas": [
+						"El rey no puede subir: sus peones le tapan la salida.",
+						"Torre de a1 a a8."
+					]
+				},
+				{
+					"id": "16.2",
+					"tipo": "jugada",
+					"objetivo": "mate",
+					"posicion": "7k/8/6K1/8/8/8/8/3Q4",
+					"inicio": "d1",
+					"solucion": "d1d8",
+					"instruccion": "Tu dama y tu rey trabajan juntos. Da jaque mate al rey de h8.",
+					"pistas": [
+						"Tu rey de g6 ya le quita al rey negro las casillas g7 y h7. Falta atacarlo por la fila 8.",
+						"Dama de d1 a d8."
+					]
+				},
+				{
+					"id": "16.3",
+					"tipo": "jugada",
+					"objetivo": "mate",
+					"posicion": "4k3/8/4K3/8/8/8/8/R7",
+					"inicio": "a1",
+					"solucion": "a1a8",
+					"instruccion": "Tu rey de e6 le quita al rey negro las casillas de la fila 7. Remata con la torre.",
+					"pistas": [
+						"Ataca al rey por su fila, la 8.",
+						"Torre de a1 a a8."
+					]
+				},
+				{
+					"id": "16.4",
+					"titulo": "Las dos torres",
+					"tipo": "jugada",
+					"objetivo": "mate",
+					"posicion": "7k/R7/8/8/8/8/8/1R4K1",
+					"inicio": "b1",
+					"solucion": "b1b8",
+					"instruccion": "Las dos torres. Una torre ya cierra la fila 7. Da jaque mate con la otra.",
+					"pistas": [
+						"La torre de b1 puede subir hasta la fila 8.",
+						"Torre de b1 a b8."
+					]
+				},
+				{
+					"id": "16.5",
+					"titulo": "El mate de la coz",
+					"tipo": "jugada",
+					"objetivo": "mate",
+					"posicion": "6rk/6pp/8/6N1/8/8/8/6K1",
+					"inicio": "g5",
+					"solucion": "g5f7",
+					"instruccion": "El mate de la coz. El rey negro de h8 está rodeado por sus propias piezas. Tu caballo puede darle mate.",
+					"pistas": [
+						"El caballo ataca a h8 desde f7 o desde g6.",
+						"Caballo de g5 a f7."
+					]
+				}
+			]
+		},
+		{
+			"id": "17",
+			"titulo": "Mate con dama y rey",
+			"explicacion": [
+				"Con dama y rey contra el rey solo, siempre se puede dar mate.",
+				"La idea: con la dama, empujas al rey rival hacia el borde. Después acercas tu rey y das mate con la dama, protegida por tu rey.",
+				"Cuidado con el ahogado: si el rey rival no está en jaque pero no tiene ninguna jugada, la partida termina en tablas.",
+				"En los ejercicios de mate en dos, las negras se defienden: responderán con su mejor jugada."
+			],
+			"ejercicios": [
+				{
+					"id": "17.1",
+					"tipo": "jugada",
+					"objetivo": "mate",
+					"posicion": "k7/8/1K6/8/8/8/7Q/8",
+					"inicio": "h2",
+					"solucion": "h2h8",
+					"instruccion": "El rey negro está en la esquina a8. Da jaque mate.",
+					"pistas": [
+						"Tu rey de b6 protege a7, b7 y c7.",
+						"Por ejemplo, dama de h2 a h8."
+					]
+				},
+				{
+					"id": "17.2",
+					"tipo": "jugada",
+					"objetivo": "mate",
+					"posicion": "4k3/8/4K3/8/8/8/8/Q7",
+					"inicio": "a1",
+					"solucion": "a1a8",
+					"instruccion": "Tu rey ya está frente al rey negro. Da jaque mate con la dama.",
+					"pistas": [
+						"Ataca al rey por la fila 8.",
+						"Dama de a1 a a8."
+					]
+				},
+				{
+					"id": "17.3",
+					"titulo": "¡No lo ahogues!",
+					"tipo": "jugada",
+					"objetivo": "mate",
+					"posicion": "k7/2K5/8/8/8/8/8/1Q6",
+					"inicio": "b1",
+					"solucion": "b1b7",
+					"instruccion": "¡No lo ahogues! Hay un mate, pero también una jugada que ahoga al rey negro. Encuentra el mate.",
+					"pistas": [
+						"Si la dama va a b6, el rey negro no está en jaque y no puede moverse: sería ahogado.",
+						"Dama a b7 o a b8: tu rey de c7 la protege."
+					]
+				},
+				{
+					"id": "17.4",
+					"titulo": "Mate en dos",
+					"tipo": "mate",
+					"jugadas_mate": 2,
+					"posicion": "7k/8/Q4K2/8/8/8/8/8",
+					"inicio": "a6",
+					"solucion": "a6a7",
+					"instruccion": "Mate en dos. Tienes dos jugadas para dar jaque mate, y las negras se defienden. El rey negro está en h8. Primero enciérralo en la última fila; después, remata.",
+					"pistas": [
+						"Si tu dama ocupa la fila 7, el rey negro solo podrá moverse por la fila 8.",
+						"Dama de a6 a a7. Después, busca el mate con la dama protegida por tu rey."
+					]
+				},
+				{
+					"id": "17.5",
+					"titulo": "Otro mate en dos",
+					"tipo": "mate",
+					"jugadas_mate": 2,
+					"posicion": "k7/8/2K4Q/8/8/8/8/8",
+					"inicio": "h6",
+					"solucion": "h6h7",
+					"instruccion": "Otro mate en dos. El rey negro está en a8 y tu rey en c6. Usa la misma idea: enciérralo y remata.",
+					"pistas": [
+						"Con la dama en la fila 7, al rey negro solo le queda la casilla b8.",
+						"Dama de h6 a h7. Después, dama a b7, protegida por tu rey."
+					]
+				}
+			]
+		},
+		{
+			"id": "18",
+			"titulo": "El ataque doble",
+			"explicacion": [
+				"Un ataque doble es una jugada que ataca dos piezas del rival a la vez. El rival solo puede salvar una, así que tú ganas la otra.",
+				"El caballo es un experto en ataques dobles: los suyos se llaman horquillas. La dama, que ataca en muchas direcciones, también.",
+				"El mejor ataque doble es el que incluye un jaque: el rey tiene que salir del jaque y la otra pieza queda indefensa."
+			],
+			"ejercicios": [
+				{
+					"id": "18.1",
+					"titulo": "La horquilla",
+					"tipo": "jugada",
+					"objetivo": "ataque_doble",
+					"posicion": "r3k3/8/8/1N6/8/8/8/6K1",
+					"inicio": "b5",
+					"solucion": "b5c7",
+					"instruccion": "La horquilla. Con tu caballo de b5, ataca a la vez al rey negro de e8 y a la torre de a8.",
+					"pistas": [
+						"Busca una casilla desde la que el caballo llegue a a8 y a e8.",
+						"Caballo de b5 a c7."
+					]
+				},
+				{
+					"id": "18.2",
+					"tipo": "jugada",
+					"objetivo": "ataque_doble",
+					"posicion": "3q3r/8/8/6N1/8/8/8/6K1",
+					"inicio": "g5",
+					"solucion": "g5f7",
+					"instruccion": "Ahora ataca a la vez a la dama de d8 y a la torre de h8.",
+					"pistas": [
+						"Una casilla de la fila 7 sirve.",
+						"Caballo de g5 a f7."
+					]
+				},
+				{
+					"id": "18.3",
+					"tipo": "jugada",
+					"objetivo": "ataque_doble",
+					"posicion": "4k3/8/8/b7/8/8/7Q/6K1",
+					"inicio": "h2",
+					"solucion": "h2e5",
+					"instruccion": "La dama también hace ataques dobles. Da jaque al rey de e8 y ataca a la vez al alfil de a5.",
+					"pistas": [
+						"Busca una casilla en la columna e y en la fila 5.",
+						"Dama de h2 a e5."
+					]
+				},
+				{
+					"id": "18.4",
+					"titulo": "El peón también",
+					"tipo": "jugada",
+					"objetivo": "ataque_doble",
+					"posicion": "8/8/2n1b3/8/3PP3/8/8/6K1",
+					"inicio": "d4",
+					"solucion": "d4d5",
+					"instruccion": "El peón también ataca dos piezas. Avanza un peón para atacar a la vez al caballo de c6 y al alfil de e6.",
+					"pistas": [
+						"El peón ataca en diagonal hacia delante.",
+						"Peón de d4 a d5."
+					]
+				},
+				{
+					"id": "18.5",
+					"titulo": "La horquilla real",
+					"tipo": "jugada",
+					"objetivo": "ataque_doble",
+					"posicion": "3q1k2/8/8/6N1/8/8/8/6K1",
+					"inicio": "g5",
+					"solucion": "g5e6",
+					"instruccion": "La horquilla real. Da jaque al rey de f8 y ataca a la vez a la dama de d8.",
+					"pistas": [
+						"Busca la casilla que ataca a d8 y a f8 a la vez.",
+						"Caballo de g5 a e6."
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,2466 @@
+# Spanish translation of MiAjedrezAccesible.
+# Copyright (C) 2026 Wilmer Rodríguez Vega
+# This file is distributed under the same license as the miAjedrezAccesible package.
+# Wilmer Rodríguez Vega <contacto@wilmer-rv.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: miAjedrezAccesible 0.2.0\n"
+"Report-Msgid-Bugs-To: contacto@wilmer-rv.com\n"
+"PO-Revision-Date: 2026-09-30 18:00-0600\n"
+"Last-Translator: Wilmer Rodríguez Vega <contacto@wilmer-rv.com>\n"
+"Language-Team: Español\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Translators: name of the add-on, used as the submenu label and the input gestures category.
+#. Translators: title of the add-on panel in NVDA's settings.
+#. Translators: category of the add-on commands in the Input gestures dialog.
+#. Add-on summary/title, usually the user visible name of the add-on
+#. Translators: Summary/title for this add-on
+#. to be shown on installation and add-on information found in add-on store
+msgid "MiAjedrezAccesible"
+msgstr "MiAjedrezAccesible"
+
+#. Translators: item of the add-on submenu that starts a new chess game.
+msgid "&New game..."
+msgstr "&Nueva partida..."
+
+#. Translators: help text of the "New game" menu item.
+msgid "Start a new chess game"
+msgstr "Iniciar una nueva partida de ajedrez"
+
+#. Translators: item of the add-on submenu that opens a saved game.
+msgid "&Open game..."
+msgstr "A&brir partida..."
+
+#. Translators: help text of the "Open game" menu item.
+msgid "Continue a saved game or review a finished one"
+msgstr "Continuar una partida guardada o repasar una terminada"
+
+#. Translators: item of the add-on submenu that opens the chess course.
+msgid "&Learn to play..."
+msgstr "&Aprender a jugar..."
+
+#. Translators: help text of the "Learn to play" menu item.
+msgid "Guided lessons for people who are learning chess"
+msgstr "Lecciones guiadas para quien está aprendiendo ajedrez"
+
+#. Translators: item of the add-on submenu that opens the chess puzzles.
+msgid "&Challenges..."
+msgstr "&Retos..."
+
+#. Translators: help text of the "Challenges" menu item.
+msgid "Chess puzzles that adapt to your level"
+msgstr "Problemas de ajedrez que se adaptan a tu nivel"
+
+#. Translators: item of the add-on submenu that shows the statistics.
+msgid "My &statistics..."
+msgstr "&Mis estadísticas..."
+
+#. Translators: help text of the "My statistics" menu item.
+msgid "Your games, your progress in the course and in Challenges"
+msgstr "Tus partidas y tu progreso en el curso y en los Retos"
+
+#. Translators: item of the add-on submenu that shows all the keyboard shortcuts.
+msgid "&Keyboard shortcuts..."
+msgstr "Ata&jos de teclado..."
+
+#. Translators: help text of the "Keyboard shortcuts" menu item.
+msgid "The keys of the board, the lessons, Challenges and the review"
+msgstr "Las teclas del tablero, las lecciones, los Retos y el repaso"
+
+#. Translators: item of the add-on submenu that shows a hidden game again.
+msgid "&Return to the game"
+msgstr "&Volver a la partida"
+
+#. Translators: help text of the "Return to the game" menu item.
+msgid "Show the board of the game in progress"
+msgstr "Mostrar el tablero de la partida en curso"
+
+#. Translators: label of the add-on submenu inside NVDA's Tools menu.
+msgid "Mi&AjedrezAccesible"
+msgstr "Mi&AjedrezAccesible"
+
+#. Translators: help text of the add-on submenu.
+msgid "Accessible chess games"
+msgstr "Partidas de ajedrez accesibles"
+
+#. Translators: description of the command that opens the chess course, shown in the Input gestures dialog.
+msgid "Opens the chess course Learn to play"
+msgstr "Abre el curso de ajedrez Aprender a jugar"
+
+#. Translators: description of the command that opens the chess puzzles, shown in the Input gestures dialog.
+msgid "Opens the chess Challenges"
+msgstr "Abre los Retos de ajedrez"
+
+#. Translators: description of the command that shows the statistics, shown in the Input gestures dialog.
+msgid "Shows your chess statistics"
+msgstr "Muestra tus estadísticas de ajedrez"
+
+#. Translators: asked when starting a game while an unfinished game was saved.
+msgid "You have an unfinished game, after {moves} moves. Do you want to continue it?"
+msgstr "Tienes una partida sin terminar, después de {moves} jugadas. ¿Quieres continuarla?"
+
+#. Translators: title of the question about an unfinished game.
+msgid "Unfinished game"
+msgstr "Partida sin terminar"
+
+#. Translators: button that continues the unfinished game.
+msgid "&Continue the game"
+msgstr "&Continuar la partida"
+
+#. Translators: button that discards the unfinished game and starts a new one.
+#. Translators: item of the game menu.
+msgid "&New game"
+msgstr "&Nueva partida"
+
+msgid "A game is in progress. If you start a new one, the current game will be lost. Start a new game?"
+msgstr "Hay una partida en curso. Si empiezas otra, la actual se perderá. ¿Empezar una nueva partida?"
+
+#. Translators: title of the confirmation to start a new game.
+#. Translators: title of the new game dialog.
+msgid "New game"
+msgstr "Nueva partida"
+
+#. Translators: said when a saved game is continued; followed by the game state.
+msgid "Game continued."
+msgstr "Partida continuada."
+
+#. Translators: title of the dialog to open a saved game.
+msgid "Open game"
+msgstr "Abrir partida"
+
+#. Translators: reported when the chosen file does not contain a chess game.
+msgid "This file does not contain a chess game that can be read."
+msgstr "Este archivo no contiene una partida de ajedrez que se pueda leer."
+
+#. Translators: description of the command that opens the chess board, shown in the Input gestures dialog.
+msgid "Opens the chess board: returns to the game in progress or starts a new one"
+msgstr "Abre el tablero de ajedrez: vuelve a la partida en curso o inicia una nueva"
+
+#. Translators: joins the last two items of a spoken list, for example "a1, b1 and c1".
+msgid " and "
+msgstr " y "
+
+#. Translators: a chess piece, lowercase.
+msgid "white king"
+msgstr "rey blanco"
+
+#. Translators: a chess piece, lowercase.
+msgid "white queen"
+msgstr "dama blanca"
+
+#. Translators: a chess piece, lowercase.
+msgid "white rook"
+msgstr "torre blanca"
+
+#. Translators: a chess piece, lowercase.
+msgid "white bishop"
+msgstr "alfil blanco"
+
+#. Translators: a chess piece, lowercase.
+msgid "white knight"
+msgstr "caballo blanco"
+
+#. Translators: a chess piece, lowercase.
+msgid "white pawn"
+msgstr "peón blanco"
+
+#. Translators: a chess piece, lowercase.
+msgid "black king"
+msgstr "rey negro"
+
+#. Translators: a chess piece, lowercase.
+msgid "black queen"
+msgstr "dama negra"
+
+#. Translators: a chess piece, lowercase.
+msgid "black rook"
+msgstr "torre negra"
+
+#. Translators: a chess piece, lowercase.
+msgid "black bishop"
+msgstr "alfil negro"
+
+#. Translators: a chess piece, lowercase.
+msgid "black knight"
+msgstr "caballo negro"
+
+#. Translators: a chess piece, lowercase.
+msgid "black pawn"
+msgstr "peón negro"
+
+#. Translators: a chess piece with its definite article, lowercase.
+msgid "the white king"
+msgstr "el rey blanco"
+
+#. Translators: a chess piece with its definite article, lowercase.
+msgid "the white queen"
+msgstr "la dama blanca"
+
+#. Translators: a chess piece with its definite article, lowercase.
+msgid "the white rook"
+msgstr "la torre blanca"
+
+#. Translators: a chess piece with its definite article, lowercase.
+msgid "the white bishop"
+msgstr "el alfil blanco"
+
+#. Translators: a chess piece with its definite article, lowercase.
+msgid "the white knight"
+msgstr "el caballo blanco"
+
+#. Translators: a chess piece with its definite article, lowercase.
+msgid "the white pawn"
+msgstr "el peón blanco"
+
+#. Translators: a chess piece with its definite article, lowercase.
+msgid "the black king"
+msgstr "el rey negro"
+
+#. Translators: a chess piece with its definite article, lowercase.
+msgid "the black queen"
+msgstr "la dama negra"
+
+#. Translators: a chess piece with its definite article, lowercase.
+msgid "the black rook"
+msgstr "la torre negra"
+
+#. Translators: a chess piece with its definite article, lowercase.
+msgid "the black bishop"
+msgstr "el alfil negro"
+
+#. Translators: a chess piece with its definite article, lowercase.
+msgid "the black knight"
+msgstr "el caballo negro"
+
+#. Translators: a chess piece with its definite article, lowercase.
+msgid "the black pawn"
+msgstr "el peón negro"
+
+#. Translators: a chess piece type, lowercase, singular and plural.
+msgid "king"
+msgid_plural "kings"
+msgstr[0] "rey"
+msgstr[1] "reyes"
+
+#. Translators: a chess piece type, lowercase, singular and plural.
+msgid "queen"
+msgid_plural "queens"
+msgstr[0] "dama"
+msgstr[1] "damas"
+
+#. Translators: a chess piece type, lowercase, singular and plural.
+msgid "rook"
+msgid_plural "rooks"
+msgstr[0] "torre"
+msgstr[1] "torres"
+
+#. Translators: a chess piece type, lowercase, singular and plural.
+msgid "bishop"
+msgid_plural "bishops"
+msgstr[0] "alfil"
+msgstr[1] "alfiles"
+
+#. Translators: a chess piece type, lowercase, singular and plural.
+msgid "knight"
+msgid_plural "knights"
+msgstr[0] "caballo"
+msgstr[1] "caballos"
+
+#. Translators: a chess piece type, lowercase, singular and plural.
+msgid "pawn"
+msgid_plural "pawns"
+msgstr[0] "peón"
+msgstr[1] "peones"
+
+#. Translators: a piece and the square where it stands, for example "white knight on f3".
+msgid "{piece} on {square}"
+msgstr "{piece} en {square}"
+
+#. Translators: spoken when the focus lands on an occupied square, with the square first,
+#. for example "g1, white knight".
+msgid "{square}, {piece}"
+msgstr "{square}, {piece}"
+
+#. Translators: spoken when the focus lands on an occupied square, for example "white knight, g1".
+msgid "{piece}, {square}"
+msgstr "{piece}, {square}"
+
+#. Translators: color of a square of the chess board.
+msgid "dark square"
+msgstr "casilla oscura"
+
+#. Translators: color of a square of the chess board.
+msgid "light square"
+msgstr "casilla clara"
+
+#. Translators: content of a square with no piece.
+msgid "empty"
+msgstr "vacía"
+
+#. Translators: announced after a move when it is white's turn.
+msgid "White to move."
+msgstr "Juegan blancas."
+
+#. Translators: announced after a move when it is black's turn.
+msgid "Black to move."
+msgstr "Juegan negras."
+
+#. Translators: announced at the end of a game.
+#. Translators: final result of a loaded game that ended without checkmate on the board.
+msgid "White wins."
+msgstr "Ganan las blancas."
+
+#. Translators: announced at the end of a game.
+#. Translators: final result of a loaded game that ended without checkmate on the board.
+msgid "Black wins."
+msgstr "Ganan las negras."
+
+#. Translators: announcement of a castling move.
+msgid "White castles kingside."
+msgstr "Blancas enrocan corto."
+
+msgid "White castles queenside."
+msgstr "Blancas enrocan largo."
+
+#. Translators: announcement of a castling move.
+msgid "Black castles kingside."
+msgstr "Negras enrocan corto."
+
+msgid "Black castles queenside."
+msgstr "Negras enrocan largo."
+
+#. Translators: announcement of an en passant capture, for example
+#. "white pawn from e5 captures en passant on d6".
+msgid "{piece} from {origin} captures en passant on {target}"
+msgstr "{piece} de {origin} captura al paso en {target}"
+
+#. Translators: announcement of a capture, for example
+#. "white bishop from c4 captures black pawn on f7".
+msgid "{piece} from {origin} captures {captured} on {target}"
+msgstr "{piece} de {origin} captura {captured} en {target}"
+
+#. Translators: announcement of a normal move, for example "white knight from g1 to f3".
+msgid "{piece} from {origin} to {target}"
+msgstr "{piece} de {origin} a {target}"
+
+#. Translators: added to a move when a pawn promotes, for example
+#. "white pawn from e7 to e8, promotes to queen".
+msgid "{move}, promotes to {piece}"
+msgstr "{move}, corona en {piece}"
+
+#. Translators: announced when a game ends by checkmate; followed by the winner.
+#. Translators: announced after a move that gives checkmate in a lesson.
+msgid "Checkmate."
+msgstr "Jaque mate."
+
+#. Translators: announced when a game ends in a draw.
+msgid "Draw by stalemate."
+msgstr "Tablas por ahogado."
+
+#. Translators: announced when a game ends in a draw.
+msgid "Draw by insufficient material."
+msgstr "Tablas por material insuficiente."
+
+#. Translators: announced when a game ends in a draw.
+msgid "Draw by the fifty-move rule."
+msgstr "Tablas por la regla de las 50 jugadas."
+
+#. Translators: announced when a game ends in a draw.
+msgid "Draw by threefold repetition."
+msgstr "Tablas por triple repetición."
+
+#. Translators: announced when a game ends for another reason; followed by the winner.
+msgid "Game over."
+msgstr "Partida terminada."
+
+#. Translators: announced when a game ends in a draw for another reason.
+msgid "Game over. Draw."
+msgstr "Partida terminada. Tablas."
+
+#. Translators: pieces attacking an empty square (they could capture there), followed by a list.
+msgid "Controlled by: {list}."
+msgstr "Controlada por: {list}."
+
+#. Translators: no piece attacks an empty square.
+msgid "No piece controls this square."
+msgstr "Ninguna pieza controla esta casilla."
+
+#. Translators: opponent pieces attacking the piece on a square, followed by a list.
+msgid "Attackers: {list}."
+msgstr "Atacantes: {list}."
+
+#. Translators: no opponent piece attacks the piece on a square.
+msgid "No attackers."
+msgstr "Sin atacantes."
+
+#. Translators: own pieces defending the piece on a square, followed by a list.
+msgid "Defenders: {list}."
+msgstr "Defensores: {list}."
+
+#. Translators: no own piece defends the piece on a square.
+msgid "No defenders."
+msgstr "Sin defensores."
+
+#. Translators: header of the list of all white pieces on the board.
+msgid "White pieces:"
+msgstr "Piezas blancas:"
+
+#. Translators: header of the list of all black pieces on the board.
+msgid "Black pieces:"
+msgstr "Piezas negras:"
+
+#. Translators: pieces of one type and their squares, for example "rooks on a1 and h1".
+msgid "{pieces} on {squares}"
+msgstr "{pieces} en {squares}"
+
+#. Translators: name of the white player in a saved game between two people.
+msgid "Player 1"
+msgstr "Persona 1"
+
+#. Translators: name of the black player in a saved game between two people.
+msgid "Player 2"
+msgstr "Persona 2"
+
+#. Translators: name of the person in a saved game against the computer.
+msgid "Player"
+msgstr "Persona"
+
+#. Translators: name of the computer in a saved game, for example "Computer, level 3".
+msgid "Computer, level {level}"
+msgstr "Computadora, nivel {level}"
+
+#. Translators: start of the file name proposed when saving a game, for example "Game 2026-10-03 15.30.pgn".
+msgid "Game {date}"
+msgstr "Partida {date}"
+
+#. Translators: said when the last move of a reviewed game is reached, followed by the result.
+msgid "End of the game: {result}"
+msgstr "Fin de la partida: {result}"
+
+#. Translators: said when going back one move while reviewing a game, for example
+#. "Back: 12. White knight from g1 to f3."
+msgid "Back: {move}"
+msgstr "Atrás: {move}"
+
+#. Translators: position in a reviewed game, for example "After 12 of 40 moves."
+msgid "After {n} of {total} moves."
+msgstr "Tras {n} de {total} jugadas."
+
+#. Translators: game mode in the new game dialog.
+msgid "Against the computer"
+msgstr "Contra la computadora"
+
+#. Translators: game mode in the new game dialog.
+msgid "Two people on this computer"
+msgstr "Dos personas en este equipo"
+
+#. Translators: color choice in the new game dialog.
+msgid "White"
+msgstr "Blancas"
+
+#. Translators: color choice in the new game dialog.
+msgid "Black"
+msgstr "Negras"
+
+#. Translators: color choice in the new game dialog.
+msgid "Random"
+msgstr "Al azar"
+
+msgid "Against the computer: {n} game. Won {won}, drawn {drawn}, lost {lost}."
+msgid_plural "Against the computer: {n} games. Won {won}, drawn {drawn}, lost {lost}."
+msgstr[0] "Contra la computadora: {n} partida. Ganadas {won}, tablas {drawn}, perdidas {lost}."
+msgstr[1] "Contra la computadora: {n} partidas. Ganadas {won}, tablas {drawn}, perdidas {lost}."
+
+msgid "Level {level}: won {won}, drawn {drawn}, lost {lost}."
+msgstr "Nivel {level}: ganadas {won}, tablas {drawn}, perdidas {lost}."
+
+#. Translators: in the statistics, the highest computer level beaten.
+msgid "Highest level you have beaten: {level}."
+msgstr "Nivel más alto al que has ganado: {level}."
+
+#. Translators: in the statistics, games lost on time against the computer.
+msgid "Lost on time: {n}."
+msgstr "Perdidas por tiempo: {n}."
+
+msgid "Between two people: {n} game."
+msgid_plural "Between two people: {n} games."
+msgstr[0] "Entre dos personas: {n} partida."
+msgstr[1] "Entre dos personas: {n} partidas."
+
+#. Translators: in the statistics, when no game has been finished yet.
+msgid "You have not finished any game yet."
+msgstr "Todavía no has terminado ninguna partida."
+
+#. Translators: in the statistics, lessons of the course completed, for example "Lessons completed: 15 of 23."
+msgid "Lessons completed: {done} of {total}."
+msgstr "Lecciones completadas: {done} de {total}."
+
+#. Translators: in the statistics, stars earned in the course, for example "Stars: 120 of 207."
+msgid "Stars: {stars} of {total}."
+msgstr "Estrellas: {stars} de {total}."
+
+#. Translators: in the statistics, extra lessons completed, for example "Extras completed: 1 of 1."
+msgid "Extras completed: {done} of {total}."
+msgstr "Extras completados: {done} de {total}."
+
+#. Translators: in the statistics, when the whole course is completed.
+msgid "You completed the whole course. Congratulations!"
+msgstr "Completaste todo el curso. ¡Felicidades!"
+
+msgid "Next lesson: {number}, {title}."
+msgstr "Siguiente lección: {number}, {title}."
+
+msgid "Lessons practiced: {n}. Best practice round: {best} of {total} stars."
+msgstr "Lecciones practicadas: {n}. Mejor ronda de práctica: {best} de {total} estrellas."
+
+#. Translators: in the statistics, when the Challenges have not been started.
+msgid "You have not started the Challenges yet."
+msgstr "Todavía no has empezado los Retos."
+
+#. Translators: in the statistics, the Challenges level, for example "Your level: 1050. Highest level: 1100."
+msgid "Your level: {level}. Highest level: {highest}."
+msgstr "Tu nivel: {level}. Nivel más alto: {highest}."
+
+msgid "Puzzles solved at the first attempt: {solved} of {tried} ({percent}%)."
+msgstr "Problemas resueltos a la primera: {solved} de {tried} ({percent} %)."
+
+msgid "{theme}: {solved} of {tried}."
+msgstr "{theme}: {solved} de {tried}."
+
+#. Translators: in the statistics, the best streak of puzzles in a row.
+msgid "Streak record: {n}."
+msgstr "Récord de racha: {n}."
+
+msgid "Daily challenge: best run of {n} day in a row."
+msgid_plural "Daily challenge: best run of {n} days in a row."
+msgstr[0] "Reto del día: mejor marca de {n} día seguido."
+msgstr[1] "Reto del día: mejor marca de {n} días seguidos."
+
+#. Translators: heading of a section of the statistics.
+msgid "Games"
+msgstr "Partidas"
+
+#. Translators: heading of a section of the statistics.
+#. Translators: title of the list of lessons of the course.
+msgid "Learn to play"
+msgstr "Aprender a jugar"
+
+#. Translators: heading of a section of the statistics.
+#. Translators: heading in the list of keyboard shortcuts.
+#. Translators: title of the Challenges dialogs.
+msgid "Challenges"
+msgstr "Retos"
+
+#. Translators: description of a difficulty level of the computer.
+msgid "learning the rules"
+msgstr "aprender las reglas"
+
+#. Translators: description of a difficulty level of the computer.
+msgid "beginner"
+msgstr "principiante"
+
+#. Translators: description of a difficulty level of the computer.
+msgid "intermediate"
+msgstr "intermedio"
+
+#. Translators: description of a difficulty level of the computer.
+msgid "advanced"
+msgstr "avanzado"
+
+#. Translators: description of a difficulty level of the computer.
+msgid "maximum"
+msgstr "máximo"
+
+#. Translators: a difficulty level in the new game dialog, for example "3: beginner".
+msgid "{level}: {description}"
+msgstr "{level}: {description}"
+
+#. Translators: error when the typed move cannot be understood.
+msgid "I do not understand that move. Examples: Nf3, exd5, O-O, e8=Q or g1f3."
+msgstr "No entiendo esa jugada. Ejemplos: Cf3, exd5, O-O, e8=D o g1f3."
+
+#. Translators: error when a move is not allowed in the current position.
+msgid "That move is not possible in this position."
+msgstr "Esa jugada no es posible en esta posición."
+
+msgid "That move is ambiguous: more than one piece can go there. Add the origin file or rank, for example Nbd2."
+msgstr "Jugada ambigua: más de una pieza puede ir ahí. Añade la columna o la fila de origen, por ejemplo Cbd2."
+
+#. Translators: error when the move field is empty.
+msgid "Type a move first."
+msgstr "Escribe primero una jugada."
+
+#. Translators: one line of the score sheet, for example "1. White knight from g1 to f3. (Nf3)".
+msgid "{number}. {description} ({notation})"
+msgstr "{number}. {description} ({notation})"
+
+#. Translators: announced when both players agree to a draw.
+msgid "Draw by agreement."
+msgstr "Tablas por acuerdo."
+
+#. Translators: announced when white resigns.
+msgid "White resigns. Black wins."
+msgstr "Las blancas abandonan. Ganan las negras."
+
+#. Translators: announced when black resigns.
+msgid "Black resigns. White wins."
+msgstr "Las negras abandonan. Ganan las blancas."
+
+#. Translators: announced when white runs out of time but black has no mating material.
+msgid "White's time is up, but black cannot checkmate: draw."
+msgstr "Se acabó el tiempo de las blancas, pero las negras no pueden dar mate: tablas."
+
+#. Translators: announced when black runs out of time but white has no mating material.
+msgid "Black's time is up, but white cannot checkmate: draw."
+msgstr "Se acabó el tiempo de las negras, pero las blancas no pueden dar mate: tablas."
+
+#. Translators: announced when white runs out of time.
+msgid "White's time is up. Black wins."
+msgstr "Se acabó el tiempo de las blancas. Ganan las negras."
+
+#. Translators: announced when black runs out of time.
+msgid "Black's time is up. White wins."
+msgstr "Se acabó el tiempo de las negras. Ganan las blancas."
+
+#. Translators: final result of a loaded game that ended in a draw.
+msgid "Draw."
+msgstr "Tablas."
+
+#. Translators: error when trying to move after the game has ended.
+msgid "The game is over."
+msgstr "La partida ha terminado."
+
+#. Translators: announced after a move that gives check.
+msgid "Check."
+msgstr "Jaque."
+
+#. Translators: announced after undoing a move; followed by whose turn it is.
+msgid "Move undone: {move}"
+msgstr "Jugada deshecha: {move}"
+
+#. Translators: announced after undoing your move and the computer's reply;
+#. followed by whose turn it is.
+msgid "Last two moves undone."
+msgstr "Deshechas las dos últimas jugadas."
+
+#. Translators: current move number of the game.
+msgid "Move {number}."
+msgstr "Jugada {number}."
+
+#. Translators: announced when the side to move is in check.
+msgid "In check."
+msgstr "En jaque."
+
+#. Translators: the last move played, followed by its description.
+msgid "Last move: {move}"
+msgstr "Última jugada: {move}"
+
+#. Translators: announced when no move has been played yet.
+msgid "No moves yet."
+msgstr "Todavía no hay jugadas."
+
+#. Translators: clock choice in the new game dialog.
+msgid "No clock"
+msgstr "Sin reloj"
+
+#. Translators: clock choice in the new game dialog, for example "10 minutes + 5 seconds per move".
+msgid "{minutes} minutes + {seconds} seconds per move"
+msgstr "{minutes} minutos + {seconds} segundos por jugada"
+
+#. Translators: clock choice in the new game dialog, for example "30 minutes".
+msgid "{minutes} minutes"
+msgstr "{minutes} minutos"
+
+#. Translators: part of a time on the clock, for example "4 minutes".
+msgid "{n} minute"
+msgid_plural "{n} minutes"
+msgstr[0] "{n} minuto"
+msgstr[1] "{n} minutos"
+
+#. Translators: part of a time on the clock, for example "32 seconds".
+msgid "{n} second"
+msgid_plural "{n} seconds"
+msgstr[0] "{n} segundo"
+msgstr[1] "{n} segundos"
+
+#. Translators: name of a puzzle theme.
+msgid "Mate in one"
+msgstr "Mate en una"
+
+#. Translators: name of a puzzle theme.
+msgid "Mate in two"
+msgstr "Mate en dos"
+
+#. Translators: name of a puzzle theme: checkmate on the first or last rank.
+msgid "Back rank mate"
+msgstr "Mate del pasillo"
+
+#. Translators: name of a puzzle theme.
+msgid "Undefended piece"
+msgstr "Pieza sin defender"
+
+#. Translators: name of a puzzle theme.
+msgid "Double attack"
+msgstr "Ataque doble"
+
+#. Translators: name of a puzzle theme.
+msgid "Pin"
+msgstr "Clavada"
+
+#. Translators: name of a puzzle theme.
+msgid "Discovered attack"
+msgstr "Ataque a la descubierta"
+
+#. Translators: name of a puzzle theme.
+#. Translators: title of the dialog shown when a pawn reaches the last rank.
+msgid "Promotion"
+msgstr "Coronación"
+
+#. Translators: name of a puzzle theme.
+msgid "En passant"
+msgstr "Captura al paso"
+
+msgid "Find the move that gives checkmate right away. Look at every check you can give: one of them leaves the king with no escape. You learned it in lesson 16."
+msgstr "Encuentra la jugada que da jaque mate enseguida. Revisa todos los jaques que puedes dar: uno de ellos deja al rey sin escapatoria. Lo aprendiste en la lección 16."
+
+msgid "Checkmate in two moves of yours. The first move usually forces the reply: a check, or a threat the opponent must answer. Then comes the mate. You learned it in lessons 16 and 17."
+msgstr "Jaque mate en dos jugadas tuyas. La primera suele obligar a responder: un jaque, o una amenaza que el rival tiene que atender. Después llega el mate. Lo aprendiste en las lecciones 16 y 17."
+
+msgid "The king is shut in on its first row, behind its own pawns, and cannot get out. A rook or a queen that reaches that row gives checkmate. Look for the open row and for pieces that can no longer defend it."
+msgstr "El rey está encerrado en su primera fila, detrás de sus propios peones, y no puede salir. Una torre o una dama que llegue a esa fila da jaque mate. Busca la fila abierta y las piezas que ya no pueden defenderla."
+
+msgid "There is a piece that nobody defends, or that is badly defended. Capture it without losing yours. You learned it in lessons 12 and 13: check who attacks and who defends."
+msgstr "Hay una pieza que nadie defiende, o que está mal defendida. Captúrala sin perder la tuya. Lo aprendiste en las lecciones 12 y 13: revisa quién ataca y quién defiende."
+
+msgid "One move that attacks two things at once: two pieces, or the king and a piece. The opponent can only save one. The knight is the specialist. You learned it in lesson 18."
+msgstr "Una jugada que ataca dos cosas a la vez: dos piezas, o el rey y una pieza. El rival solo puede salvar una. El caballo es el especialista. Lo aprendiste en la lección 18."
+
+msgid "A piece is pinned when it cannot move, or should not move, because it would leave a more valuable piece behind it exposed, usually the king. If the piece behind is the king, the pinned piece cannot move at all. Bishops, rooks and queens pin along their lines. To take advantage of a pin, attack the pinned piece again: it cannot run away."
+msgstr "Una pieza está clavada cuando no puede moverse, o no le conviene, porque dejaría al descubierto una pieza más valiosa que está detrás, normalmente el rey. Si la de detrás es el rey, la pieza clavada no puede moverse en absoluto. Los alfiles, las torres y las damas clavan a lo largo de sus líneas. Para aprovechar una clavada, ataca otra vez a la pieza clavada: no puede escapar."
+
+msgid "In a discovered attack you move a piece out of the way and uncover the attack of a bishop, rook or queen behind it. One move creates two threats: the piece that moves and the piece that is uncovered. If the uncovered piece gives check, it is a discovered check, and it is very strong."
+msgstr "En un ataque a la descubierta apartas una pieza y destapas el ataque de un alfil, una torre o una dama que estaba detrás. Una sola jugada crea dos amenazas: la de la pieza que se mueve y la de la pieza destapada. Si la pieza destapada da jaque, es un jaque a la descubierta, y es muy fuerte."
+
+msgid "A pawn can reach the last row and become a queen. Sometimes you first have to clear the way or win a tempo. You learned it in lesson 9."
+msgstr "Un peón puede llegar a la última fila y convertirse en dama. A veces antes hay que abrirle paso o ganar tiempo. Lo aprendiste en la lección 9."
+
+msgid "The opponent just moved a pawn two squares and it landed beside yours: you can capture it en passant, only now. You learned it in lesson 20."
+msgstr "El rival acaba de avanzar un peón dos casillas y quedó al lado del tuyo: puedes capturarlo al paso, solo ahora. Lo aprendiste en la lección 20."
+
+#. Translators: goal of a puzzle chosen by theme.
+msgid "Give checkmate in one move."
+msgstr "Da jaque mate en una jugada."
+
+#. Translators: goal of a puzzle chosen by theme.
+msgid "Give checkmate in two moves."
+msgstr "Da jaque mate en dos jugadas."
+
+#. Translators: goal of a puzzle chosen by theme.
+msgid "Give checkmate on the back rank."
+msgstr "Da jaque mate en el pasillo, la primera fila del rey."
+
+#. Translators: goal of a puzzle chosen by theme.
+msgid "Win a piece that is not well defended."
+msgstr "Gana una pieza que no está bien defendida."
+
+#. Translators: goal of a puzzle chosen by theme.
+msgid "Make a double attack."
+msgstr "Haz un ataque doble."
+
+#. Translators: goal of a puzzle chosen by theme.
+msgid "Take advantage of a pin."
+msgstr "Aprovecha una clavada."
+
+#. Translators: goal of a puzzle chosen by theme.
+msgid "Make a discovered attack."
+msgstr "Haz un ataque a la descubierta."
+
+#. Translators: goal of a puzzle chosen by theme.
+msgid "Promote a pawn, or make it unstoppable."
+msgstr "Corona un peón, o déjalo imparable."
+
+#. Translators: goal of a puzzle chosen by theme.
+msgid "Use the en passant capture."
+msgstr "Usa la captura al paso."
+
+#. Translators: said at the end of some lessons, for example
+#. 'You can now solve real puzzles in Challenges, theme "Double attack".'
+msgid "You can now solve real puzzles in Challenges, theme \"{theme}\"."
+msgstr "Ya puedes resolver problemas reales en Retos, tema «{theme}»."
+
+#. Translators: start of a puzzle when the learner has the white pieces.
+msgid "You play white."
+msgstr "Juegas con blancas."
+
+#. Translators: start of a puzzle when the learner has the black pieces.
+msgid "You play black."
+msgstr "Juegas con negras."
+
+#. Translators: in a puzzle, the opponent's move that has just been played.
+msgid "Your opponent just played: {move}"
+msgstr "Tu rival acaba de jugar: {move}"
+
+#. Translators: goal of a puzzle whose theme is not said.
+msgid "Find the best move."
+msgstr "Encuentra la mejor jugada."
+
+msgid "The solution has {n} move of yours."
+msgid_plural "The solution has {n} moves of yours."
+msgstr[0] "La solución tiene {n} jugada tuya."
+msgstr[1] "La solución tiene {n} jugadas tuyas."
+
+msgid "Theme: {theme}. {explanation}"
+msgstr "Tema: {theme}. {explanation}"
+
+#. Translators: said when the check was escaped in another way than the one requested.
+msgid "You got out of check, but this exercise asks you to move the king."
+msgstr "Saliste del jaque, pero este ejercicio pide mover el rey."
+
+#. Translators: said when the check was escaped in another way than the one requested.
+msgid "You got out of check, but this exercise asks you to block the check."
+msgstr "Saliste del jaque, pero este ejercicio pide tapar el jaque."
+
+#. Translators: said when the check was escaped in another way than the one requested.
+msgid "You got out of check, but this exercise asks you to capture the piece that gives check."
+msgstr "Saliste del jaque, pero este ejercicio pide capturar la pieza que da jaque."
+
+#. Translators: said when the wrong castling was played.
+msgid "That was queenside castling; this exercise asks for kingside castling."
+msgstr "Ese fue el enroque largo; este ejercicio pide el enroque corto."
+
+#. Translators: said when the wrong castling was played.
+msgid "That was kingside castling; this exercise asks for queenside castling."
+msgstr "Ese fue el enroque corto; este ejercicio pide el enroque largo."
+
+#. Translators: said when a piece was protected instead of moved away.
+msgid "Here protecting is not enough: move the piece to a safe square."
+msgstr "Aquí protegerla no basta: lleva la pieza a una casilla segura."
+
+#. Translators: said when a piece was moved away instead of protected.
+msgid "This exercise asks you to protect the piece without moving it."
+msgstr "Este ejercicio pide proteger la pieza sin moverla."
+
+#. Translators: said when a move is not castling; explains how to castle on the board.
+msgid "That move is not castling. Pick up the king and drop it two squares towards the rook."
+msgstr "Esa jugada no es un enroque. Toma el rey y suéltalo dos casillas hacia la torre."
+
+msgid "That is not an en passant capture. Your pawn must move diagonally to the square the black pawn skipped."
+msgstr "Esa no es una captura al paso. Tu peón tiene que ir en diagonal a la casilla que el peón negro se saltó."
+
+#. Translators: said when a move stalemates the black king in an exercise.
+msgid "Stalemate! The black king is not in check and has no moves: that would be a draw."
+msgstr "¡Ahogado! El rey negro no está en jaque y no tiene jugadas: serían tablas."
+
+#. Translators: said when a move was expected to give check.
+msgid "That move does not give check."
+msgstr "Esa jugada no da jaque."
+
+#. Translators: said when a check is not checkmate; {squares} lists where the king can go.
+msgid "It is check, but not checkmate: the black king can go to {squares}."
+msgstr "Es jaque, pero no es jaque mate: el rey negro puede ir a {squares}."
+
+#. Translators: said when a check is not checkmate because black can block or capture.
+msgid "It is check, but not checkmate: black can defend by blocking or capturing."
+msgstr "Es jaque, pero no es jaque mate: las negras pueden defenderse tapando o capturando."
+
+#. Translators: said when a capture was expected.
+msgid "That move does not capture anything."
+msgstr "Esa jugada no captura nada."
+
+#. Translators: said when the wrong piece was captured; {square} is the requested square.
+msgid "You captured {piece}, but this exercise asks for the piece on {square}."
+msgstr "Capturaste {piece}, pero este ejercicio pide la pieza de {square}."
+
+#. Translators: said when a capture is not safe, for example
+#. "Careful: on d7 your piece can be captured by black bishop on c8."
+msgid "Careful: on {square} your piece can be captured by {attackers}."
+msgstr "Cuidado: en {square} tu pieza puede ser capturada por {attackers}."
+
+#. Translators: said when a capture is not the most valuable one.
+msgid "You captured {piece}, worth {value}, but there is a piece worth more."
+msgstr "Capturaste {piece}, que vale {value}, pero hay una pieza que vale más."
+
+#. Translators: said when a double attack leaves the attacking piece unprotected.
+msgid "You attack two pieces, but on {square} your piece can be captured for free."
+msgstr "Atacas dos piezas, pero en {square} tu pieza puede ser capturada sin que puedas recuperarla."
+
+msgid "From there your piece attacks only {n} valuable piece."
+msgid_plural "From there your piece attacks only {n} valuable pieces."
+msgstr[0] "Desde ahí tu pieza ataca solo {n} pieza valiosa."
+msgstr[1] "Desde ahí tu pieza ataca solo {n} piezas valiosas."
+
+#. Translators: said when the attacked piece is still in danger after the move.
+msgid "Your piece is still in danger: {attackers} can capture it."
+msgstr "Tu pieza sigue en peligro: la puede capturar {attackers}."
+
+#. Translators: generic message when a move does not solve the exercise.
+msgid "That move does not solve the exercise."
+msgstr "Esa jugada no resuelve el ejercicio."
+
+#. Translators: practice instruction; {squares} is a list like "c3, f6 and h2".
+msgid "You are on {start}. Visit {squares} and press Enter on each one."
+msgstr "Estás en {start}. Visita {squares}, y pulsa Intro en cada una."
+
+#. Translators: practice hint.
+msgid "The number keys take you to a row without changing the column."
+msgstr "Las teclas de números te llevan a una fila sin cambiar de columna."
+
+#. Translators: practice hint; {faltan} is replaced by the squares still to visit.
+msgid "You still have to visit: {faltan}."
+msgstr "Te falta visitar: {faltan}."
+
+#. Translators: practice instruction to go to a square.
+msgid "You are on {start}. Go to {target} and press Enter."
+msgstr "Estás en {start}. Ve a {target} y pulsa Intro."
+
+#. Translators: practice hint; {file} is a letter and {rank} a number.
+msgid "First find the column {file}, then the row {rank}."
+msgstr "Busca primero la columna {file} y después la fila {rank}."
+
+#. Translators: practice hint, for example "From a1, e4 is four columns to the right and three rows up."
+msgid "From {start}, {target} is {directions}."
+msgstr "Desde {start}, {target} está {directions}."
+
+#. Translators: direction of a diagonal, used in practice exercises.
+msgid "up to the right"
+msgstr "hacia arriba a la derecha"
+
+msgid "up"
+msgstr "arriba"
+
+msgid "right"
+msgstr "derecha"
+
+#. Translators: direction of a diagonal, used in practice exercises.
+msgid "up to the left"
+msgstr "hacia arriba a la izquierda"
+
+msgid "left"
+msgstr "izquierda"
+
+#. Translators: direction of a diagonal, used in practice exercises.
+msgid "down to the right"
+msgstr "hacia abajo a la derecha"
+
+msgid "down"
+msgstr "abajo"
+
+#. Translators: direction of a diagonal, used in practice exercises.
+msgid "down to the left"
+msgstr "hacia abajo a la izquierda"
+
+msgid "You are on {start}. Go to the next square of the diagonal that goes {direction}, and press Enter."
+msgstr "Estás en {start}. Ve a la siguiente casilla de la diagonal que va {direction}, y pulsa Intro."
+
+msgid "You are on {start}. Follow the diagonal that goes {direction} to row {rank}, and press Enter."
+msgstr "Estás en {start}. Sigue la diagonal que va {direction} hasta la fila {rank}, y pulsa Intro."
+
+msgid "You are on {start}. Go to the end of the diagonal that goes {direction}, and press Enter."
+msgstr "Estás en {start}. Ve hasta el final de la diagonal que va {direction}, y pulsa Intro."
+
+#. Translators: practice hint about moving diagonally with the arrow keys.
+msgid "For each step, press the {vertical} arrow and the {horizontal} arrow."
+msgstr "En cada paso, pulsa la flecha {vertical} y la flecha {horizontal}."
+
+#. Translators: practice hint that gives the answer.
+msgid "It is {target}."
+msgstr "Es {target}."
+
+#. Translators: a pawn described by its file, for example "the white pawn of the c file".
+msgid "{piece} of the {file} file"
+msgstr "{piece} de la columna {file}"
+
+#. Translators: a piece described by its side, for example "the white rook on the king's side".
+msgid "{piece} on the king's side"
+msgstr "{piece} del lado del rey"
+
+#. Translators: a piece described by its side, for example "the white rook on the queen's side".
+msgid "{piece} on the queen's side"
+msgstr "{piece} del lado de la dama"
+
+#. Translators: practice hint; {key} is a letter like T.
+msgid "Press {key} to jump to your pieces of that type."
+msgstr "Pulsa {key} para saltar a tus piezas de ese tipo."
+
+#. Translators: practice hint; {key} is a letter like T.
+msgid "Press Shift+{key} to jump to your opponent's pieces of that type."
+msgstr "Pulsa Mayúsculas+{key} para saltar a las piezas del rival de ese tipo."
+
+#. Translators: practice hint about where the pawns start.
+msgid "The white pawns start on row 2, and the black pawns on row 7."
+msgstr "Los peones blancos empiezan en la fila 2, y los negros en la fila 7."
+
+msgid "Remember the first row: rook, knight, bishop, queen, king, bishop, knight and rook."
+msgstr "Recuerda la primera fila: torre, caballo, alfil, dama, rey, alfil, caballo y torre."
+
+#. Translators: practice instruction; {piece} is a piece like "white knight".
+msgid "Find a square with a {piece} and press Enter."
+msgstr "Busca una casilla con esta pieza: {piece}. Luego pulsa Intro."
+
+#. Translators: practice instruction; {piece} is a description like "the white rook on the king's side".
+msgid "Find {piece} and press Enter."
+msgstr "Busca {piece} y pulsa Intro."
+
+msgid "Find {piece}. Then go to the square right in front of it, from its side, and press Enter."
+msgstr "Busca {piece}. Luego ve a la casilla que tiene justo delante, mirando desde su lado, y pulsa Intro."
+
+#. Translators: start of a practice instruction, for example "Your white rook is on d4."
+msgid "Your {piece} is on {square}."
+msgstr "Tu {piece} está en {square}."
+
+msgid "The black pawn on {square} blocks your way."
+msgstr "El peón negro de {square} te cierra el paso."
+
+msgid "Collect the apple on {squares}."
+msgid_plural "Collect the apples on {squares}."
+msgstr[0] "Recoge la manzana de {squares}."
+msgstr[1] "Recoge las manzanas de {squares}."
+
+msgid "Capture the black pawn on {squares}."
+msgid_plural "Capture the black pawns on {squares}."
+msgstr[0] "Come el peón negro de {squares}."
+msgstr[1] "Come los peones negros de {squares}."
+
+#. Translators: practice instruction; {pieces} is a list like "black knight on c5 and black rook on e7".
+msgid "Capture: {pieces}."
+msgstr "Captura: {pieces}."
+
+msgid "Your pawn on {squares} is in the way."
+msgid_plural "Your pawns on {squares} are in the way."
+msgstr[0] "Tu peón de {squares} estorba el camino."
+msgstr[1] "Tus peones de {squares} estorban el camino."
+
+#. Translators: practice hint; {square} is the first target to go for.
+msgid "Start with {square}."
+msgstr "Empieza por {square}."
+
+#. Translators: practice hint; {squares} lists the destination of each move of a solution.
+msgid "For example, move to {squares}."
+msgstr "Por ejemplo, mueve a {squares}."
+
+msgid "A black bishop blocks the last row, but you can capture the rook on {square} and promote."
+msgstr "Un alfil negro te cierra el paso, pero puedes capturar la torre de {square} y coronar."
+
+#. Translators: practice hint.
+msgid "The pawn captures diagonally forward."
+msgstr "El peón captura en diagonal hacia delante."
+
+#. Translators: practice instruction to promote a pawn.
+msgid "Take it to the last row and promote it."
+msgstr "Llévalo hasta la última fila y corónalo."
+
+#. Translators: practice hint.
+msgid "The pawn moves forward one square at a time."
+msgstr "El peón avanza de una casilla en una casilla."
+
+#. Translators: said when a pawn is promoted to a queen in a practice exercise.
+msgid "You promoted!"
+msgstr "¡Coronaste!"
+
+#. Translators: said when a pawn is promoted to another piece in a practice exercise.
+msgid "You promoted! The queen is almost always the best choice."
+msgstr "¡Coronaste! Casi siempre la dama es la mejor elección."
+
+msgid "Round completed! You earned {stars} of {total} stars."
+msgstr "¡Ronda completada! Ganaste {stars} de {total} estrellas."
+
+#. Translators: said when the practice level goes up.
+msgid "Great! Next round, level {level}."
+msgstr "¡Genial! La próxima ronda será de nivel {level}."
+
+#. Translators: said when the practice level goes down.
+msgid "Next round, level {level}, to practice calmly."
+msgstr "La próxima ronda será de nivel {level}, para practicar con calma."
+
+#. Translators: said when the practice level stays the same.
+msgid "Next round, again level {level}."
+msgstr "La próxima ronda seguirá en el nivel {level}."
+
+#. Translators: list of the learner's pieces in a practice exercise.
+msgid "Your pieces: {pieces}."
+msgstr "Tus piezas: {pieces}."
+
+#. Translators: practice hint that shows one correct move, for example "For example: White knight from b1 to c3."
+msgid "For example: {move}"
+msgstr "Por ejemplo: {move}"
+
+msgid "The {attacker} attacks your {piece} on {square}. Protect it with another piece, without moving it."
+msgstr "Peligro: {attacker} ataca a tu {piece} de {square}. Protege tu pieza con otra, sin moverla."
+
+msgid "The {attacker} attacks your {piece} on {square}. Save it: move it to a safe square, protect it, or capture the attacker."
+msgstr "Peligro: {attacker} ataca a tu {piece} de {square}. Pon tu pieza a salvo: llévala a una casilla segura, protégela o captura a la pieza atacante."
+
+#. Translators: practice hint.
+msgid "Press X on your piece to hear who attacks it and who defends it."
+msgstr "Pulsa X sobre tu pieza para saber quién la ataca y quién la defiende."
+
+msgid "Your {piece} on {square} can capture several pieces. Capture without losing your piece."
+msgstr "Tu {piece} de {square} puede capturar varias piezas. Captura sin perder tu pieza."
+
+#. Translators: practice hint.
+msgid "Press X on each black piece: if it has defenders, be careful."
+msgstr "Pulsa X sobre cada pieza negra: si tiene defensores, cuidado."
+
+msgid "Your {piece} on {square} can capture several pieces. Capture the one worth the most."
+msgstr "Tu {piece} de {square} puede capturar varias piezas. Captura la que más vale."
+
+#. Translators: practice hint with the values of the pieces.
+msgid "Remember: pawn 1, knight 3, bishop 3, rook 5, queen 9."
+msgstr "Recuerda: peón 1, caballo 3, alfil 3, torre 5, dama 9."
+
+#. Translators: practice instruction.
+msgid "Give check to the black king on {square}."
+msgstr "Da jaque al rey negro de {square}."
+
+#. Translators: practice hint.
+msgid "Look for a square from which one of your pieces attacks the king."
+msgstr "Busca una casilla desde la que una de tus piezas ataque al rey."
+
+msgid "The {piece} gives check to your king. Get out of check by moving the king."
+msgstr "Jaque: {piece} ataca a tu rey. Sal del jaque moviendo el rey."
+
+msgid "The {piece} gives check to your king. Get out of check by blocking it."
+msgstr "Jaque: {piece} ataca a tu rey. Sal del jaque tapándolo."
+
+msgid "The {piece} gives check to your king. Get out of check by capturing it."
+msgstr "Jaque: {piece} ataca a tu rey. Sal del jaque capturando a la pieza que lo da."
+
+msgid "There are three ways out of check: move the king, block the check, or capture the piece."
+msgstr "Hay tres maneras de salir del jaque: mover el rey, tapar el jaque o capturar la pieza que lo da."
+
+#. Translators: practice instruction.
+msgid "Give checkmate to the black king on {square}."
+msgstr "Da jaque mate al rey negro de {square}."
+
+#. Translators: practice hint.
+msgid "Where could the king escape? Give check and close every escape at the same time."
+msgstr "¿Por dónde podría escapar el rey? Da jaque y ciérrale todas las salidas a la vez."
+
+#. Translators: practice instruction for a mate in two.
+msgid "Mate in two: the black king is on {square}. Black will defend."
+msgstr "Mate en dos: el rey negro está en {square}. Las negras se defenderán."
+
+#. Translators: practice hint for a mate in two.
+msgid "First lock the king on its row without giving check; then finish."
+msgstr "Primero encierra al rey en su fila sin darle jaque; después, remata."
+
+#. Translators: practice instruction; {targets} is like "black rook on a8 and black king on e8".
+msgid "With your {piece} on {square}, attack at the same time {targets}."
+msgstr "Con tu {piece} de {square}, ataca a la vez a: {targets}."
+
+#. Translators: practice hint.
+msgid "Look for one square from which your piece reaches both targets, and where it is safe."
+msgstr "Busca una casilla desde la que tu pieza llegue a las dos, y donde esté a salvo."
+
+msgid "Castle. Careful: one of the two castlings is forbidden, because the king would pass over an attacked square."
+msgstr "Enroca. Cuidado: uno de los dos enroques está prohibido, porque el rey pasaría por una casilla atacada."
+
+#. Translators: practice instruction.
+msgid "Castle kingside: the king goes from e1 to g1."
+msgstr "Haz el enroque corto: el rey va de e1 a g1."
+
+#. Translators: practice instruction.
+msgid "Castle queenside: the king goes from e1 to c1."
+msgstr "Haz el enroque largo: el rey va de e1 a c1."
+
+msgid "Pick up the king and drop it two squares towards the rook. Or press J and type O-O or O-O-O."
+msgstr "Toma el rey y suéltalo dos casillas hacia la torre. O pulsa J y escribe O-O u O-O-O."
+
+msgid "The black pawn has just moved two squares, from {origin} to {target}, next to your pawn. Capture it en passant."
+msgstr "El peón negro acaba de avanzar dos casillas, de {origin} a {target}, y quedó junto a tu peón. Captúralo al paso."
+
+#. Translators: practice hint about en passant.
+msgid "Your pawn moves diagonally to the square the black pawn skipped: {square}."
+msgstr "Tu peón va en diagonal a la casilla que el peón negro se saltó: {square}."
+
+msgid "Give checkmate to the black king on {square}. Careful: some moves would stalemate it."
+msgstr "Da jaque mate al rey negro de {square}. Cuidado: algunas jugadas lo ahogarían."
+
+#. Translators: practice instruction; several moves would stalemate.
+msgid "Make a move that does not stalemate the black king on {square}."
+msgstr "Haz una jugada que no ahogue al rey negro de {square}."
+
+msgid "Stalemate: the black king is not in check and has no moves. Count its free squares after your move."
+msgstr "Ahogado es cuando el rey negro no está en jaque y no tiene jugadas. Cuenta sus casillas libres después de tu jugada."
+
+#. Translators: practice instruction; {move} describes a move in words.
+msgid "Press J and type this move in notation: {move}"
+msgstr "Pulsa J y escribe esta jugada en notación: {move}"
+
+#. Translators: practice hint about notation.
+msgid "Piece letter (none for pawns), an x if it captures, and the destination square."
+msgstr "La letra de la pieza (el peón no lleva), una x si captura, y la casilla de destino."
+
+#. Translators: practice hint that gives the notation of the move.
+msgid "It is written {notation}."
+msgstr "Se escribe {notation}."
+
+#. Translators: said when another move was played in a notation exercise.
+msgid "That is not the requested move. Its notation is {notation}."
+msgstr "Esa no es la jugada pedida. Su notación es {notation}."
+
+#. Translators: practice instruction for the pawn war; {n} is the number of pawns of each side.
+msgid "Pawn war, {n} against {n}. Whoever promotes first wins."
+msgstr "Guerra de peones, {n} contra {n}. Gana quien corone primero."
+
+#. Translators: practice hint for the pawn war.
+msgid "A pawn with no enemy pawns ahead, on its file or the next ones, cannot be stopped."
+msgstr "Un peón sin peones rivales delante, ni en su columna ni en las de al lado, no puede ser detenido."
+
+#. Translators: practice hint for the pawn war.
+msgid "Do not leave an enemy pawn free to run: block it or capture it."
+msgstr "No dejes un peón rival libre para correr: bloquéalo o captúralo."
+
+msgid "Without looking. Black pieces: {black}. Your pieces: {white}. Type the move that gives checkmate."
+msgstr "Sin mirar. Piezas negras: {black}. Tus piezas: {white}. Escribe la jugada que da jaque mate."
+
+#. Translators: announcement of white's reply in a puzzle, for example "White: white king from g1 to h1."
+msgid "White: {move}"
+msgstr "Blancas: {move}"
+
+#. Translators: announcement of black's reply in a mate exercise, for example "Black: black king from h8 to g8."
+#. Translators: announcement of black's reply in a pawn war, for example "Black: black pawn from d7 to d5."
+msgid "Black: {move}"
+msgstr "Negras: {move}"
+
+#. Translators: praise said when an exercise of the course is solved.
+msgid "Very good!"
+msgstr "¡Muy bien!"
+
+#. Translators: praise said when an exercise of the course is solved.
+msgid "Excellent!"
+msgstr "¡Excelente!"
+
+#. Translators: praise said when an exercise of the course is solved.
+msgid "That's it!"
+msgstr "¡Eso es!"
+
+#. Translators: praise said when an exercise of the course is solved.
+msgid "Perfect!"
+msgstr "¡Perfecto!"
+
+#. Translators: praise said when an exercise of the course is solved.
+msgid "You did it!"
+msgstr "¡Lo lograste!"
+
+#. Translators: said when an exercise is solved with the fewest possible moves.
+msgid "With the fewest moves, amazing! Three stars."
+msgstr "¡Con el mínimo de jugadas, increíble! Tres estrellas."
+
+#. Translators: said when an exercise is solved with a few extra moves.
+msgid "You earned two stars. Try with fewer moves to get three."
+msgstr "Ganaste dos estrellas. Prueba con menos jugadas para conseguir tres."
+
+#. Translators: said when an exercise is solved with many extra moves.
+msgid "You earned one star. Try with fewer moves to get more."
+msgstr "Ganaste una estrella. Prueba con menos jugadas para conseguir más."
+
+msgid "one column to the right"
+msgid_plural "{n} columns to the right"
+msgstr[0] "una columna a la derecha"
+msgstr[1] "{n} columnas a la derecha"
+
+msgid "one column to the left"
+msgid_plural "{n} columns to the left"
+msgstr[0] "una columna a la izquierda"
+msgstr[1] "{n} columnas a la izquierda"
+
+#. Translators: direction to a square; {n} is a number of ranks (rows).
+msgid "one row up"
+msgid_plural "{n} rows up"
+msgstr[0] "una fila más arriba"
+msgstr[1] "{n} filas más arriba"
+
+#. Translators: direction to a square; {n} is a number of ranks (rows).
+msgid "one row down"
+msgid_plural "{n} rows down"
+msgstr[0] "una fila más abajo"
+msgstr[1] "{n} filas más abajo"
+
+#. Translators: said when a practice square is found at the first attempt and without hints.
+msgid "At the first attempt! Three stars."
+msgstr "¡A la primera! Tres estrellas."
+
+#. Translators: said when a practice square is found after a mistake or a hint.
+msgid "You earned two stars."
+msgstr "Ganaste dos estrellas."
+
+#. Translators: said when a practice square is found after several mistakes or hints.
+msgid "You earned one star. Keep practicing!"
+msgstr "Ganaste una estrella. ¡Sigue practicando!"
+
+#. Translators: guidance when Enter is pressed on a wrong square, for example
+#. "You are on c4. Look for e4: it is two columns to the right."
+msgid "You are on {current}. Look for {target}: it is {directions}."
+msgstr "Estás en {current}. Busca {target}: está {directions}."
+
+msgid "{square} is not one of them. Press F6 if you need a hint."
+msgstr "{square} no es una de ellas. Pulsa F6 si necesitas una pista."
+
+msgid "{square} is not one of the squares you are looking for."
+msgstr "{square} no es una de las casillas que buscas."
+
+#. Translators: said when a square to visit is chosen again.
+msgid "You already visited {square}."
+msgstr "Ya visitaste {square}."
+
+#. Translators: said when one of the squares to visit is found; {n} is how many remain.
+msgid "{square}! {n} left."
+msgid_plural "{square}! {n} left."
+msgstr[0] "¡{square}! Queda {n}."
+msgstr[1] "¡{square}! Quedan {n}."
+
+#. Translators: said after a wrong move in an exercise; the move is taken back.
+msgid "Try again."
+msgstr "Inténtalo otra vez."
+
+#. Translators: said when the moves of a mate exercise run out; the position is reset.
+msgid "That was not checkmate. Try again from the start."
+msgstr "No fue jaque mate. Inténtalo de nuevo desde el principio."
+
+#. Translators: said when a mate exercise ends in stalemate; the position is reset.
+msgid "Stalemate! That would be a draw. Try again from the start."
+msgstr "¡Ahogado! Serían tablas. Inténtalo de nuevo desde el principio."
+
+msgid "With that move black defends: {move} And then there is no checkmate. Try again from the start."
+msgstr "Con esa jugada las negras se defienden: {move} Y entonces ya no hay jaque mate. Inténtalo de nuevo desde el principio."
+
+#. Translators: said when the learner wins the pawn war by promoting.
+msgid "You promoted first: you win the pawn war!"
+msgstr "¡Coronaste primero: ganaste la guerra de peones!"
+
+#. Translators: said when the learner wins the pawn war because black cannot move.
+msgid "Black has no moves left: you win the pawn war!"
+msgstr "Las negras se quedaron sin jugadas: ¡ganaste la guerra de peones!"
+
+#. Translators: said when black wins the pawn war; the game starts again.
+msgid "Black promoted first. Let's play again from the start!"
+msgstr "Las negras coronaron primero. ¡Juguemos otra vez desde el principio!"
+
+#. Translators: said when the learner has no moves in the pawn war; the game starts again.
+msgid "You have no moves left, so black wins. Let's play again from the start!"
+msgstr "Te quedaste sin jugadas, así que ganan las negras. ¡Juguemos otra vez desde el principio!"
+
+#. Translators: the move requested in a written game, for example "Your move: white pawn from e2 to e4."
+msgid "Your move: {move}"
+msgstr "Tu jugada: {move}"
+
+#. Translators: said when another move than the requested one is played in a written game.
+msgid "That is not the requested move."
+msgstr "Esa no es la jugada pedida."
+
+#. Translators: said after a wrong move in a puzzle; the move is taken back.
+msgid "That is not the best move."
+msgstr "Esa no es la mejor jugada."
+
+#. Translators: said in a puzzle after a correct move when the solution goes on.
+msgid "Correct! Now find the next move."
+msgstr "¡Correcto! Ahora encuentra la siguiente jugada."
+
+msgid "Apple! {n} left."
+msgid_plural "Apple! {n} left."
+msgstr[0] "¡Manzana! Queda {n}."
+msgstr[1] "¡Manzana! Quedan {n}."
+
+#. Translators: said when the last apple is collected.
+msgid "Apple!"
+msgstr "¡Manzana!"
+
+#. Translators: said when an exercise has no hints.
+msgid "There are no hints for this exercise."
+msgstr "Este ejercicio no tiene pistas."
+
+#. Translators: said when asking for a hint after a puzzle is solved.
+msgid "The puzzle is solved."
+msgstr "El problema ya está resuelto."
+
+#. Translators: hint in a puzzle, for example "Move the white knight on e4."
+msgid "Move {piece} on {square}."
+msgstr "Mueve {piece} de {square}."
+
+#. Translators: said when asking for the move as a hint during a puzzle streak.
+msgid "In a streak the hint cannot tell you the move. Think about it!"
+msgstr "En la racha la pista no puede decirte la jugada. ¡Piénsalo!"
+
+#. Translators: last hint of a puzzle, for example "The move is: white knight from e4 to f6."
+msgid "The move is: {move}"
+msgstr "La jugada es: {move}"
+
+#. Translators: said when asking for apples in an exercise without apples.
+msgid "There are no apples in this exercise."
+msgstr "En este ejercicio no hay manzanas."
+
+#. Translators: said when all apples have been collected.
+msgid "You collected all the apples."
+msgstr "Recogiste todas las manzanas."
+
+#. Translators: how many apples remain and where; {squares} is a list like "a6 and f6".
+msgid "{n} apple left: {squares}."
+msgid_plural "{n} apples left: {squares}."
+msgstr[0] "Queda {n} manzana: {squares}."
+msgstr[1] "Quedan {n} manzanas: {squares}."
+
+#. Translators: heading in the list of keyboard shortcuts.
+msgid "Moving around the board"
+msgstr "Moverse por el tablero"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Move between the squares"
+msgstr "Moverse por las casillas"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "First or last square of the row"
+msgstr "Primera o última casilla de la fila"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Go to that rank, keeping the file"
+msgstr "Ir a esa fila sin cambiar de columna"
+
+msgid "Go to your next king, queen, rook, bishop, knight or pawn (R, D, T, A, C, P); with shift, to the opponent's pieces"
+msgstr "Ir a tu siguiente rey, dama, torre, alfil, caballo o peón (R, D, T, A, C, P); con Mayúsculas, a las piezas del rival"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Go to the square of the last move"
+msgstr "Ir a la casilla de la última jugada"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Pick up the piece of the square; with a piece picked up, drop it here"
+msgstr "Tomar la pieza de la casilla; con una pieza tomada, soltarla aquí"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Drop the selected piece without moving it"
+msgstr "Soltar la pieza tomada sin moverla"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Type a move, for example Nf3 or e4"
+msgstr "Escribir una jugada, por ejemplo Cf3 o e4"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Undo the last move (asks for confirmation)"
+msgstr "Deshacer la última jugada (pide confirmación)"
+
+#. Translators: description in the list of keyboard shortcuts, in lessons and Challenges.
+msgid "When an exercise is solved, Enter goes to the next one"
+msgstr "Cuando terminas un ejercicio, Intro pasa al siguiente"
+
+#. Translators: heading in the list of keyboard shortcuts.
+msgid "Moving pieces"
+msgstr "Mover piezas"
+
+#. Translators: description of F5 in the list of keyboard shortcuts, during a game.
+msgid "Whose turn it is, the move number and the last move"
+msgstr "A quién le toca, el número de jugada y la última jugada"
+
+#. Translators: description of F5 in the list of keyboard shortcuts, in lessons.
+msgid "Which exercise you are on and what you have to do"
+msgstr "En qué ejercicio estás y qué hay que hacer"
+
+#. Translators: description of F5 in the list of keyboard shortcuts, in Challenges.
+msgid "Your level and the current puzzle"
+msgstr "Tu nivel y el problema actual"
+
+#. Translators: description of F5 in the list of keyboard shortcuts, while reviewing a game.
+msgid "How many moves you have gone through, whose turn it is and the last move"
+msgstr "Cuántas jugadas llevas recorridas, a quién le toca y la última jugada"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Which pieces attack and defend this square"
+msgstr "Qué piezas atacan y defienden la casilla"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Your pieces"
+msgstr "Tus piezas"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "The opponent's pieces"
+msgstr "Las piezas del rival"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Coordinate, color and content of the square"
+msgstr "Coordenada, color y contenido de la casilla"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Score sheet with all the moves"
+msgstr "Planilla con todas las jugadas"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Time left on the clock"
+msgstr "Tiempo que queda en el reloj"
+
+#. Translators: heading in the list of keyboard shortcuts.
+msgid "Information"
+msgstr "Información"
+
+#. Translators: heading in the list of keyboard shortcuts.
+msgid "Lessons"
+msgstr "Lecciones"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Repeat the instruction of the exercise"
+msgstr "Repetir la instrucción del ejercicio"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Repeat the explanation of the lesson"
+msgstr "Repetir la explicación de la lección"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Hint: the first one helps a little, the next ones a lot more"
+msgstr "Pista: la primera ayuda un poco, las siguientes mucho más"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "How many apples are left and where"
+msgstr "Cuántas manzanas quedan y dónde"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Repeat the puzzle"
+msgstr "Repetir el problema"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Repeat the explanation (of the theme, if you chose one)"
+msgstr "Repetir la explicación (la del tema, si elegiste uno)"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Hint: first the theme, then which piece to move and finally the move"
+msgstr "Pista: primero el tema, luego qué pieza mover y, por último, la jugada"
+
+#. Translators: heading in the list of keyboard shortcuts.
+msgid "Reviewing a game"
+msgstr "Repaso de una partida"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Next move"
+msgstr "Siguiente jugada"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Go back one move"
+msgstr "Retroceder una jugada"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Go to the start or the end of the game"
+msgstr "Ir al principio o al final de la partida"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Game menu: flip board, draw, resign, clock, save, new game, hide and close"
+msgstr "Menú de la partida: girar tablero, tablas, abandonar, reloj, guardar, nueva partida, ocultar y cerrar"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Lesson menu: restart, skip, practice more, back to the list and close"
+msgstr "Menú de la lección: reiniciar, saltar, practicar más, volver a la lista y cerrar"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Challenges menu: restart, another puzzle, back to Challenges and close"
+msgstr "Menú de los Retos: reiniciar, otro problema, volver a Retos y cerrar"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Review menu: flip board, start, end, copy and close"
+msgstr "Menú del repaso: girar tablero, principio, final, copiar y cerrar"
+
+#. Translators: heading in the list of keyboard shortcuts.
+msgid "Menu and window"
+msgstr "Menú y ventana"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "This list of keyboard shortcuts"
+msgstr "Esta lista de atajos de teclado"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Close the window"
+msgstr "Cerrar la ventana"
+
+#. Translators: heading in the list of keyboard shortcuts: commands that work from anywhere.
+msgid "From anywhere"
+msgstr "Desde cualquier lugar"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Open the board: return to the game or start a new one"
+msgstr "Abrir el tablero: volver a la partida o empezar una nueva"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Open Learn to play"
+msgstr "Abrir Aprender a jugar"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Open Challenges"
+msgstr "Abrir los Retos"
+
+#. Translators: description in the list of keyboard shortcuts.
+msgid "Show My statistics"
+msgstr "Mostrar Mis estadísticas"
+
+#. Translators: shown in the list of keyboard shortcuts when a command has no key.
+msgid "no key assigned"
+msgstr "sin tecla asignada"
+
+msgid "You can change these keys in the NVDA menu, Preferences, Input gestures, category MiAjedrezAccesible (with the focus on the board for the board keys)."
+msgstr "Puedes cambiar estas teclas en el menú de NVDA, Preferencias, Gestos de entrada, categoría MiAjedrezAccesible (para las teclas del tablero, con el foco en el tablero)."
+
+#. Translators: title of the window with the list of keyboard shortcuts.
+msgid "Keyboard shortcuts"
+msgstr "Atajos de teclado"
+
+#. Translators: state of a completed lesson in the list of lessons.
+msgid "Completed, {stars} of {total} stars."
+msgstr "Completada, {stars} de {total} estrellas."
+
+#. Translators: state of a completed lesson without stars in the list of lessons.
+msgid "Completed."
+msgstr "Completada."
+
+#. Translators: state of a lesson started but not finished, in the list of lessons.
+msgid "In progress: {done} of {total} exercises."
+msgstr "En curso: {done} de {total} ejercicios."
+
+#. Translators: state of a lesson not started, in the list of lessons.
+msgid "Pending."
+msgstr "Pendiente."
+
+#. Translators: best practice round of a lesson, shown in the list of lessons.
+msgid "Best practice: {stars} of {total}."
+msgstr "Mejor práctica: {stars} de {total}."
+
+#. Translators: heading before the extra lessons in the list of lessons.
+msgid "Extras."
+msgstr "Extras."
+
+msgid "Block {block}, {title}."
+msgstr "Bloque {block}, {title}."
+
+#. Translators: label of the list of lessons.
+msgid "&Lessons:"
+msgstr "&Lecciones:"
+
+#. Translators: button that starts the selected lesson.
+#. Translators: button that starts the exercises of a lesson.
+#. Translators: button that starts the challenges.
+#. Translators: button that starts the selected challenge mode or theme.
+msgid "&Start"
+msgstr "&Empezar"
+
+#. Translators: button that starts a practice round of the selected lesson.
+msgid "&Practice"
+msgstr "&Practicar"
+
+#. Translators: button that closes the list of lessons.
+#. Translators: item of the lesson menu.
+#. Translators: button that closes the score sheet.
+#. Translators: button that closes the Challenges dialog.
+#. Translators: item of the Challenges menu.
+msgid "&Close"
+msgstr "&Cerrar"
+
+#. Translators: said at the end of a lesson explanation; {n} is the number of exercises.
+msgid "This lesson has {n} exercise."
+msgid_plural "This lesson has {n} exercises."
+msgstr[0] "Esta lección tiene {n} ejercicio."
+msgstr[1] "Esta lección tiene {n} ejercicios."
+
+#. Translators: said when a lesson is resumed; {n} is the exercise number.
+msgid "You will continue from exercise {n}."
+msgstr "Seguirás desde el ejercicio {n}."
+
+#. Translators: button that goes back to the list of lessons.
+#. Translators: button that goes back to the previous list.
+#. Translators: button that goes back to the list of Challenges modes.
+msgid "&Back"
+msgstr "&Volver"
+
+#. Translators: title of the practice window, for example "Practice - Lesson 4: The rook".
+msgid "Practice - {lesson}"
+msgstr "Práctica - {lesson}"
+
+#. Translators: title of the lesson window, for example "Learn to play - Lesson 4: The rook".
+msgid "Learn to play - {lesson}"
+msgstr "Aprender a jugar - {lesson}"
+
+#. Translators: start of each practice exercise, for example "Practice 2 of 5, level 1."
+msgid "Practice {n} of {total}, level {level}."
+msgstr "Práctica {n} de {total}, nivel {level}."
+
+#. Translators: start of each exercise, for example "Exercise 2 of 6."
+msgid "Exercise {n} of {total}."
+msgstr "Ejercicio {n} de {total}."
+
+#. Translators: said after solving an exercise, before the next one.
+#. Translators: said when trying to play after an exercise is solved.
+msgid "Press Enter to continue."
+msgstr "Pulsa Intro para seguir."
+
+msgid "Press Enter for another round. To go back to the list, open the menu with the Applications key."
+msgstr "Pulsa Intro para otra ronda. Para volver a la lista, abre el menú con la tecla Aplicaciones."
+
+#. Translators: said at the end of a lesson.
+msgid "Press Enter to go back to the list of lessons."
+msgstr "Pulsa Intro para volver a la lista de lecciones."
+
+#. Translators: said at the end of a lesson that can be practiced.
+msgid "To practice more, open the menu with the Applications key."
+msgstr "Para practicar más, abre el menú con la tecla Aplicaciones."
+
+msgid "Lesson completed! You earned {stars} of {total} stars."
+msgstr "¡Lección completada! Ganaste {stars} de {total} estrellas."
+
+#. Translators: said when a lesson without stars is completed.
+msgid "Lesson completed!"
+msgstr "¡Lección completada!"
+
+#. Translators: said when the first game of the course starts.
+msgid "Good luck in your first game!"
+msgstr "¡Mucha suerte en tu primera partida!"
+
+#. Translators: item of the practice menu.
+msgid "&Another exercise"
+msgstr "&Otro ejercicio"
+
+#. Translators: item of the lesson menu.
+msgid "&Skip exercise"
+msgstr "&Saltar ejercicio"
+
+#. Translators: item of the lesson menu.
+msgid "&Restart exercise"
+msgstr "&Reiniciar ejercicio"
+
+#. Translators: item of the lesson menu.
+msgid "&Practice more"
+msgstr "&Practicar más"
+
+#. Translators: item of the lesson menu.
+msgid "Back to the &list of lessons"
+msgstr "Volver a la &lista de lecciones"
+
+#. Translators: file type in the dialogs to open and save games.
+msgid "Chess games"
+msgstr "Partidas de ajedrez"
+
+#. Translators: file type in the dialogs to open and save games.
+msgid "All files"
+msgstr "Todos los archivos"
+
+#. Translators: title of the dialog to type a move.
+msgid "Type a move"
+msgstr "Escribir una jugada"
+
+#. Translators: label of the field where a move is typed.
+msgid "&Move:"
+msgstr "&Jugada:"
+
+#. Translators: help shown under the move field.
+msgid "Examples: Nf3, exd5, O-O, e8=Q or g1f3."
+msgstr "Ejemplos: Cf3, exd5, O-O, e8=D o g1f3."
+
+#. Translators: label of the game mode choice in the new game dialog.
+msgid "&Mode:"
+msgstr "&Modo:"
+
+#. Translators: label of the color choice in the new game dialog.
+msgid "&Play as:"
+msgstr "&Juegas con:"
+
+#. Translators: label of the difficulty level choice in the new game dialog.
+msgid "&Level:"
+msgstr "&Nivel:"
+
+#. Translators: label of the clock choice in the new game dialog.
+msgid "&Clock:"
+msgstr "&Reloj:"
+
+#. Translators: prompt of the dialog shown when a pawn reaches the last rank.
+msgid "Choose the piece for the promotion:"
+msgstr "Elige la pieza de la coronación:"
+
+#. Translators: title of the score sheet dialog.
+msgid "Score sheet"
+msgstr "Planilla"
+
+#. Translators: label of the list of moves in the score sheet.
+msgid "&Moves:"
+msgstr "&Jugadas:"
+
+#. Translators: title of the statistics window.
+msgid "My statistics"
+msgstr "Mis estadísticas"
+
+#. Translators: option for announcing moves in the settings panel.
+msgid "In words (white knight from g1 to f3)"
+msgstr "Con palabras (caballo blanco de g1 a f3)"
+
+#. Translators: option for announcing moves in the settings panel.
+msgid "In notation (Nf3)"
+msgstr "En notación (Cf3)"
+
+#. Translators: option for announcing moves in the settings panel.
+msgid "Both (Nf3, white knight from g1 to f3)"
+msgstr "De las dos formas (Cf3, caballo blanco de g1 a f3)"
+
+#. Translators: label of the choice of how moves are announced, in the settings panel.
+msgid "&Announce moves:"
+msgstr "Anunciar las &jugadas:"
+
+#. Translators: check box in the settings panel.
+msgid "Say the &square before the piece (g1, white knight)"
+msgstr "Decir la &casilla antes que la pieza (g1, caballo blanco)"
+
+#. Translators: check box in the settings panel.
+msgid "Play s&ounds (apples, correct answers, lessons completed)"
+msgstr "Reproducir &sonidos (manzanas, aciertos, lecciones completadas)"
+
+#. Translators: check box in the settings panel.
+msgid "&Warn when little time is left on the clock"
+msgstr "A&visar cuando quede poco tiempo en el reloj"
+
+#. Translators: button in the settings panel.
+msgid "&Delete my progress and statistics..."
+msgstr "&Borrar mi progreso y estadísticas..."
+
+msgid "This deletes your progress in the course and in Challenges, and the statistics of your games. It cannot be undone. Delete them?"
+msgstr "Se borrará tu progreso en el curso y en los Retos, y las estadísticas de tus partidas. No se puede deshacer. ¿Borrarlos?"
+
+#. Translators: title of the confirmation to delete the progress.
+msgid "Delete my progress and statistics"
+msgstr "Borrar mi progreso y estadísticas"
+
+#. Translators: reported after deleting the progress and statistics.
+msgid "Your progress and statistics were deleted."
+msgstr "Se borraron tu progreso y tus estadísticas."
+
+#. Translators: description of a review command in the Input gestures dialog.
+msgid "While reviewing a game, plays the next move"
+msgstr "En el repaso de una partida, hace la siguiente jugada"
+
+#. Translators: description of a review command in the Input gestures dialog.
+msgid "While reviewing a game, takes back the last move"
+msgstr "En el repaso de una partida, retrocede una jugada"
+
+#. Translators: description of a review command in the Input gestures dialog.
+msgid "While reviewing a game, goes to the starting position"
+msgstr "En el repaso de una partida, va a la posición inicial"
+
+#. Translators: description of a review command in the Input gestures dialog.
+msgid "While reviewing a game, goes to the final position"
+msgstr "En el repaso de una partida, va a la posición final"
+
+msgid "You are reviewing a game: Alt+Right arrow goes forward and Alt+Left arrow goes back."
+msgstr "Estás repasando una partida: Alt+flecha derecha avanza y Alt+flecha izquierda retrocede."
+
+#. Translators: said when trying to go forward at the end of a reviewed game.
+msgid "This is the end of the game."
+msgstr "Es el final de la partida."
+
+#. Translators: said when trying to go back at the start of a reviewed game.
+msgid "This is the starting position."
+msgstr "Es la posición inicial."
+
+#. Translators: said after going to the start of a reviewed game.
+msgid "Starting position."
+msgstr "Posición inicial."
+
+#. Translators: reported when the score sheet has no moves yet.
+msgid "The score sheet is empty."
+msgstr "La planilla está vacía."
+
+#. Translators: title of the window to review a game, for example "MiAjedrezAccesible - Review: Game.pgn".
+msgid "MiAjedrezAccesible - Review: {name}"
+msgstr "MiAjedrezAccesible - Repaso: {name}"
+
+#. Translators: said when a game is opened for review, for example
+#. "Reviewing Player against Computer, level 3: 42 moves."
+msgid "Reviewing {white} against {black}: {moves} moves."
+msgstr "Repaso de {white} contra {black}: {moves} jugadas."
+
+msgid "Alt+Right arrow goes forward, Alt+Left arrow goes back, and Alt+Home and Alt+End go to the start or the end."
+msgstr "Alt+flecha derecha avanza, Alt+flecha izquierda retrocede, y Alt+Inicio y Alt+Fin van al principio o al final."
+
+#. Translators: said when a game file had moves that could not be read.
+msgid "Some moves of the file could not be read: the game is shown up to that point."
+msgstr "Algunas jugadas del archivo no se pudieron leer: la partida se muestra hasta ese punto."
+
+#. Translators: reported after copying the game to the clipboard.
+msgid "Game copied to the clipboard in PGN format."
+msgstr "Partida copiada al portapapeles en formato PGN."
+
+#. Translators: item of the game menu.
+msgid "&Flip board"
+msgstr "&Girar tablero"
+
+#. Translators: item of the review menu.
+msgid "Go to the &start"
+msgstr "Ir al &principio"
+
+#. Translators: item of the review menu.
+msgid "Go to the &end"
+msgstr "Ir al &final"
+
+#. Translators: item of the game menu.
+msgid "C&opy game"
+msgstr "Cop&iar partida"
+
+#. Translators: item of the review menu.
+msgid "&Close review"
+msgstr "&Cerrar repaso"
+
+#. Translators: name of a Challenges mode.
+msgid "Challenge at your level"
+msgstr "Reto a tu nivel"
+
+#. Translators: name of a Challenges mode.
+msgid "By theme"
+msgstr "Por tema"
+
+#. Translators: name of a Challenges mode.
+msgid "Daily challenge"
+msgstr "Reto del día"
+
+#. Translators: name of a Challenges mode.
+msgid "Streak"
+msgstr "Racha"
+
+msgid "Challenges are real puzzles from games played on Lichess. Your opponent has just moved and it is your turn: find the best move. After each puzzle your level goes up or down, so the puzzles adapt to you."
+msgstr "Los retos son problemas reales de partidas jugadas en Lichess. Tu rival acaba de mover y te toca: encuentra la mejor jugada. Después de cada problema tu nivel sube o baja, así que los problemas se adaptan a ti."
+
+#. Translators: question asked the first time Challenges are opened.
+msgid "How much chess do you know?"
+msgstr "¿Cuánto sabes de ajedrez?"
+
+#. Translators: answer to "How much chess do you know?".
+msgid "I am learning"
+msgstr "Estoy aprendiendo"
+
+#. Translators: answer to "How much chess do you know?".
+msgid "I know how to play"
+msgstr "Sé jugar"
+
+#. Translators: answer to "How much chess do you know?".
+msgid "I play well"
+msgstr "Juego bien"
+
+#. Translators: button that confirms the starting level of the challenges.
+msgid "&OK"
+msgstr "&Aceptar"
+
+#. Translators: button that closes a dialog without saving.
+msgid "&Cancel"
+msgstr "&Cancelar"
+
+#. Translators: summary at the top of the Challenges dialog.
+msgid "Your level: {level}. Puzzles solved: {solved}."
+msgstr "Tu nivel: {level}. Problemas resueltos: {solved}."
+
+#. Translators: state of the daily challenge in the Challenges dialog.
+msgid "pending for today."
+msgstr "pendiente para hoy."
+
+#. Translators: state of the daily challenge in the Challenges dialog.
+msgid "solved today."
+msgstr "resuelto hoy."
+
+#. Translators: state of the daily challenge in the Challenges dialog.
+msgid "played today, not solved. You can try it again."
+msgstr "jugado hoy, sin resolver. Puedes volver a intentarlo."
+
+#. Translators: consecutive days with the daily challenge solved.
+msgid "{n} day in a row."
+msgid_plural "{n} days in a row."
+msgstr[0] "{n} día seguido."
+msgstr[1] "{n} días seguidos."
+
+#. Translators: description of a Challenges mode in the list of modes.
+msgid "puzzles of a difficulty similar to your level."
+msgstr "problemas de dificultad parecida a tu nivel."
+
+#. Translators: description of a Challenges mode in the list of modes.
+msgid "checkmates, double attack, pin and more."
+msgstr "mates, ataque doble, clavada y más."
+
+msgid "solve as many puzzles in a row as you can, each one a bit harder. Record: {record}."
+msgstr "resuelve seguidos todos los problemas que puedas, cada uno un poco más difícil. Récord: {record}."
+
+#. Translators: label of the list of Challenges modes.
+msgid "&Modes:"
+msgstr "&Modos:"
+
+#. Translators: a theme in the list of themes, for example "Pin. Solved: 3."
+msgid "{theme}. Solved: {n}."
+msgstr "{theme}. Resueltos: {n}."
+
+#. Translators: added to the themes that are not taught in the lessons.
+msgid "New: not in the lessons."
+msgstr "Nuevo: no está en las lecciones."
+
+#. Translators: title of the list of puzzle themes.
+msgid "Challenges by theme"
+msgstr "Retos por tema"
+
+#. Translators: label of the list of puzzle themes.
+msgid "&Themes:"
+msgstr "&Temas:"
+
+#. Translators: title of the Challenges window, for example "Challenges - Streak".
+msgid "Challenges - {mode}"
+msgstr "Retos - {mode}"
+
+#. Translators: start of each puzzle of a streak, for example "Streak: 3 solved."
+msgid "Streak: {n} solved."
+msgstr "Racha: {n} resueltos."
+
+#. Translators: start of each puzzle, for example "Difficulty 850."
+msgid "Difficulty {n}."
+msgstr "Dificultad {n}."
+
+msgid "Your opponent has just moved and it is your turn: find the best move. F1 lists your pieces and Shift+F1 those of your opponent. F6 gives hints: first the theme, then which piece to move and finally the move, but then the puzzle counts as failed."
+msgstr "Tu rival acaba de mover y te toca: encuentra la mejor jugada. F1 dice tus piezas y Mayúsculas+F1 las de tu rival. F6 da pistas: primero el tema, luego qué pieza mover y, por último, la jugada, pero entonces el problema cuenta como fallado."
+
+#. Translators: start of the progress report in Challenges, for example "Your level: 1000."
+msgid "Your level: {level}."
+msgstr "Tu nivel: {level}."
+
+#. Translators: the correct move of a puzzle, said when a streak ends.
+msgid "The move was: {move}"
+msgstr "La jugada era: {move}"
+
+msgid "Streak over: you solved {n} puzzle."
+msgid_plural "Streak over: you solved {n} puzzles."
+msgstr[0] "Racha terminada: resolviste {n} problema."
+msgstr[1] "Racha terminada: resolviste {n} problemas."
+
+#. Translators: said when a streak beats the record.
+msgid "New record!"
+msgstr "¡Récord nuevo!"
+
+#. Translators: the best streak, said when a streak ends.
+msgid "Your record is {n}."
+msgstr "Tu récord es {n}."
+
+#. Translators: said at the end of a streak.
+msgid "Press Enter to start a new streak."
+msgstr "Pulsa Intro para empezar otra racha."
+
+#. Translators: said after a wrong move in a puzzle.
+msgid "Try again, or press F6 for a hint."
+msgstr "Inténtalo de nuevo, o pulsa F6 para una pista."
+
+#. Translators: said after solving a puzzle of a streak.
+msgid "Streak: {n}. Press Enter for the next one, a bit harder."
+msgstr "Racha: {n}. Pulsa Intro para el siguiente, un poco más difícil."
+
+#. Translators: said when the daily challenge is solved again on the same day.
+msgid "You had already played today's challenge, so your level does not change."
+msgstr "Ya habías jugado el reto de hoy, así que tu nivel no cambia."
+
+msgid "Solved, but with a mistake or with the move from a hint. Your level: {level}."
+msgstr "Resuelto, pero con algún fallo o con la jugada de una pista. Tu nivel: {level}."
+
+#. Translators: said when a puzzle is solved at the first attempt.
+msgid "Your level goes up to {level}."
+msgstr "Tu nivel sube a {level}."
+
+#. Translators: said after the daily challenge.
+msgid "Come back tomorrow for a new one. Press Enter to go back to Challenges."
+msgstr "Vuelve mañana por otro. Pulsa Intro para volver a Retos."
+
+#. Translators: said after solving a puzzle.
+msgid "Press Enter for another puzzle."
+msgstr "Pulsa Intro para otro problema."
+
+#. Translators: item of the Challenges menu.
+msgid "&Restart puzzle"
+msgstr "&Reiniciar problema"
+
+#. Translators: item of the Challenges menu.
+msgid "&Another puzzle"
+msgstr "&Otro problema"
+
+#. Translators: item of the Challenges menu.
+msgid "Back to &Challenges"
+msgstr "Volver a &Retos"
+
+#. Translators: description of a chess board command in the Input gestures dialog.
+msgid "Moves to the square above"
+msgstr "Va a la casilla de arriba"
+
+#. Translators: description of a chess board command in the Input gestures dialog.
+msgid "Moves to the square below"
+msgstr "Va a la casilla de abajo"
+
+#. Translators: description of a chess board command in the Input gestures dialog.
+msgid "Moves to the square on the left"
+msgstr "Va a la casilla de la izquierda"
+
+#. Translators: description of a chess board command in the Input gestures dialog.
+msgid "Moves to the square on the right"
+msgstr "Va a la casilla de la derecha"
+
+#. Translators: description of a chess board command in the Input gestures dialog.
+msgid "Moves to the first square of the row"
+msgstr "Va a la primera casilla de la fila"
+
+#. Translators: description of a chess board command in the Input gestures dialog.
+msgid "Moves to the last square of the row"
+msgstr "Va a la última casilla de la fila"
+
+#. Translators: description of a chess board command in the Input gestures dialog.
+msgid "Moves to the rank of the number pressed, keeping the file"
+msgstr "Va a la fila del número pulsado, sin cambiar de columna"
+
+msgid "Moves to your next piece of that type (between two people, of the side to move): R king, D queen, T rook, A bishop, C knight, P pawn. With shift, the opponent's pieces"
+msgstr "Va a tu siguiente pieza de ese tipo (entre dos personas, del bando que mueve): R rey, D dama, T torre, A alfil, C caballo, P peón. Con Mayúsculas, a las piezas del rival"
+
+#. Translators: description of a chess board command in the Input gestures dialog.
+msgid "Picks up the piece on this square, or drops the selected piece here"
+msgstr "Toma la pieza de esta casilla, o suelta aquí la pieza seleccionada"
+
+#. Translators: description of a chess board command in the Input gestures dialog.
+msgid "Opens a field to type a move"
+msgstr "Abre un campo para escribir una jugada"
+
+#. Translators: description of a chess board command in the Input gestures dialog.
+msgid "Undoes the last move"
+msgstr "Deshace la última jugada"
+
+#. Translators: description of a chess board command in the Input gestures dialog.
+msgid "Reports which pieces attack and defend this square"
+msgstr "Informa qué piezas atacan y defienden esta casilla"
+
+#. Translators: description of a chess board command in the Input gestures dialog.
+msgid "Lists your pieces (between two people, those of the side to move)"
+msgstr "Enumera tus piezas (entre dos personas, las del bando que mueve)"
+
+#. Translators: description of a chess board command in the Input gestures dialog.
+msgid "Lists the opponent's pieces"
+msgstr "Enumera las piezas del rival"
+
+#. Translators: description of a chess board command in the Input gestures dialog.
+msgid "Moves to the destination square of the last move"
+msgstr "Va a la casilla de destino de la última jugada"
+
+#. Translators: description of a chess board command in the Input gestures dialog.
+msgid "Reports the coordinate, color and content of this square"
+msgstr "Informa la coordenada, el color y el contenido de esta casilla"
+
+#. Translators: description of a chess board command in the Input gestures dialog.
+msgid "Opens the score sheet with all the moves"
+msgstr "Abre la planilla con todas las jugadas"
+
+#. Translators: description of a chess board command in the Input gestures dialog.
+msgid "Reports whose turn it is, the move number and the last move"
+msgstr "Informa a quién le toca, el número de jugada y la última jugada"
+
+#. Translators: description of a chess board command in the Input gestures dialog.
+msgid "Reports the time left on the clock"
+msgstr "Dice el tiempo que queda en el reloj"
+
+#. Translators: description of a chess board command in the Input gestures dialog.
+msgid "Shows the keyboard shortcuts of this window"
+msgstr "Muestra los atajos de teclado de esta ventana"
+
+#. Translators: description of a chess board command in the Input gestures dialog.
+msgid "Opens the game menu"
+msgstr "Abre el menú de la partida"
+
+#. Translators: description of a chess board command in the Input gestures dialog.
+msgid "Drops the selected piece without moving it"
+msgstr "Suelta la pieza seleccionada sin moverla"
+
+#. Translators: reported when pressing Escape with no piece picked up.
+msgid "No piece is selected."
+msgstr "No hay ninguna pieza seleccionada."
+
+#. Translators: reported when trying to play while the computer is choosing its move.
+msgid "Wait: the computer is thinking."
+msgstr "Espera: la computadora está pensando."
+
+#. Translators: announcement of the computer's move, for example
+#. "Computer: black knight from b8 to c6. White to move."
+msgid "Computer: {move}"
+msgstr "Computadora: {move}"
+
+#. Translators: reported when the chess engine cannot be started or stops working.
+msgid "The computer could not play. Close the board and start a new game."
+msgstr "La computadora no pudo jugar. Cierra el tablero y empieza una nueva partida."
+
+#. Translators: reported when the computer accepts a draw offer; followed by the result.
+msgid "The computer accepts the draw."
+msgstr "La computadora acepta las tablas."
+
+#. Translators: reported when the computer declines a draw offer.
+msgid "The computer declines the draw."
+msgstr "La computadora rechaza las tablas."
+
+#. Translators: reported while the computer considers a draw offer.
+msgid "Offering a draw..."
+msgstr "Ofreciendo tablas..."
+
+#. Translators: added to the square name when its piece has been picked up.
+msgid "selected piece"
+msgstr "pieza seleccionada"
+
+#. Translators: added to the square name when the selected piece can move there.
+msgid "possible"
+msgstr "posible"
+
+#. Translators: reported when jumping to a piece type that is not on the board.
+msgid "There is no {piece}."
+msgstr "No hay {piece}."
+
+#. Translators: reported after flipping the board.
+msgid "Board flipped: black at the bottom."
+msgstr "Tablero girado: negras abajo."
+
+#. Translators: reported after flipping the board.
+msgid "Board flipped: white at the bottom."
+msgstr "Tablero girado: blancas abajo."
+
+#. Translators: reported when the selected piece cannot move to the current square.
+msgid "The selected piece cannot go there."
+msgstr "La pieza seleccionada no puede ir ahí."
+
+#. Translators: reported when trying to pick up a piece of the side not to move.
+msgid "That piece cannot move now."
+msgstr "Esa pieza no juega ahora."
+
+#. Translators: reported when trying to pick up a piece on an empty square.
+msgid "Empty square."
+msgstr "Casilla vacía."
+
+#. Translators: reported when trying to pick up a piece that has no legal moves.
+msgid "That piece has no legal moves."
+msgstr "Esa pieza no tiene jugadas posibles."
+
+#. Translators: reported after picking up a piece.
+msgid "Piece selected."
+msgstr "Pieza seleccionada."
+
+#. Translators: reported after dropping the selected piece back without moving it.
+msgid "Selection cancelled."
+msgstr "Selección cancelada."
+
+#. Translators: reported when the promotion dialog is cancelled.
+msgid "Promotion cancelled. The pawn stays selected."
+msgstr "Coronación cancelada. El peón sigue seleccionado."
+
+#. Translators: reported when there is no move to undo.
+msgid "There are no moves to undo."
+msgstr "No hay jugadas que deshacer."
+
+#. Translators: description of a lesson command in the Input gestures dialog.
+msgid "Repeats the instruction of the exercise"
+msgstr "Repite la instrucción del ejercicio"
+
+#. Translators: description of a lesson command in the Input gestures dialog.
+msgid "Repeats the explanation of the lesson"
+msgstr "Repite la explicación de la lección"
+
+#. Translators: description of a lesson command in the Input gestures dialog.
+msgid "Gives a hint for the exercise"
+msgstr "Da una pista para el ejercicio"
+
+#. Translators: description of a lesson command in the Input gestures dialog.
+msgid "Reports how many apples are left and where"
+msgstr "Informa cuántas manzanas quedan y dónde"
+
+msgid "To start the exercise again, open the menu with the Applications key and choose Restart exercise."
+msgstr "Para empezar el ejercicio de nuevo, abre el menú con la tecla Aplicaciones y elige Reiniciar ejercicio."
+
+msgid "In this challenge you cannot look at the board: imagine the position. Press F2 to hear it again."
+msgstr "En este reto no se puede mirar el tablero: imagina la posición. Pulsa F2 para volver a oírla."
+
+#. Translators: added to the square name when there is an apple to collect on it.
+msgid "apple"
+msgstr "manzana"
+
+#. Translators: said when trying to pick up a piece in an exercise that must be solved by typing.
+msgid "In this exercise, type the move: press J."
+msgstr "En este ejercicio, escribe la jugada: pulsa J."
+
+#. Translators: said when pressing J in an exercise where no piece has to be moved.
+msgid "In this exercise you do not move pieces: go to the square and press Enter."
+msgstr "En este ejercicio no se mueven piezas: ve a la casilla y pulsa Intro."
+
+msgid "The rook does not move like that. Remember: only in a straight line, without jumping."
+msgstr "La torre no se mueve así. Recuerda: solo en línea recta, sin saltar."
+
+msgid "The bishop does not move like that. Remember: only diagonally, without jumping."
+msgstr "El alfil no se mueve así. Recuerda: solo en diagonal, sin saltar."
+
+msgid "The queen does not move like that. Remember: in a straight line or diagonally, without jumping."
+msgstr "La dama no se mueve así. Recuerda: en línea recta o en diagonal, sin saltar."
+
+msgid "The king cannot go there. Remember: only one square, and never to a square that is attacked."
+msgstr "El rey no puede ir ahí. Recuerda: solo una casilla, y nunca a una casilla atacada."
+
+#. Translators: reminder when a knight is dropped on a square it cannot reach.
+msgid "The knight does not move like that. Remember: it moves in an L shape."
+msgstr "El caballo no se mueve así. Recuerda: se mueve en forma de L."
+
+msgid "The pawn does not move like that. Remember: it moves forward and captures diagonally."
+msgstr "El peón no se mueve así. Recuerda: avanza hacia delante y captura en diagonal."
+
+#. Translators: said when trying to pick up a black piece during a lesson.
+msgid "That piece belongs to your opponent: in these exercises it does not move."
+msgstr "Esa pieza es del rival: en estos ejercicios no se mueve."
+
+#. Translators: title of an extra lesson, for example "Extra 1: Play only by typing".
+msgid "Extra {number}: {title}"
+msgstr "Extra {number}: {title}"
+
+#. Translators: title of a lesson, for example "Lesson 4: The rook".
+msgid "Lesson {number}: {title}"
+msgstr "Lección {number}: {title}"
+
+#. Translators: accessible name of the chess board.
+msgid "Chess board"
+msgstr "Tablero de ajedrez"
+
+#. Translators: reported when pressing F7 where there is no clock.
+msgid "There is no clock here."
+msgstr "Aquí no hay reloj."
+
+#. Translators: item of the menus of the board windows.
+msgid "&Keyboard shortcuts"
+msgstr "Ata&jos de teclado"
+
+#. Translators: title of the chess board window when playing against the computer.
+msgid "MiAjedrezAccesible - Against the computer, level {level}"
+msgstr "MiAjedrezAccesible - Contra la computadora, nivel {level}"
+
+#. Translators: title of the chess board window for a game between two people.
+msgid "MiAjedrezAccesible - Two players"
+msgstr "MiAjedrezAccesible - Dos personas"
+
+#. Translators: reported after hiding the board from the game menu.
+msgid "Board hidden. To return, open Tools, MiAjedrezAccesible, Return to the game."
+msgstr "Tablero oculto. Para volver, abre Herramientas, MiAjedrezAccesible, Volver a la partida."
+
+#. Translators: asked when closing the board window during a game.
+msgid "The game is in progress. If you close the board, the game will be lost. Close it?"
+msgstr "La partida está en curso. Si cierras el tablero, se perderá. ¿Cerrarlo?"
+
+#. Translators: title of the confirmation to close the board.
+msgid "Close the board"
+msgstr "Cerrar el tablero"
+
+#. Translators: reported when pressing F7 in a game without a clock.
+msgid "This game has no clock."
+msgstr "Esta partida no tiene reloj."
+
+#. Translators: time left on your clock, for example "Your time: 4 minutes and 32 seconds."
+msgid "Your time: {time}."
+msgstr "Tu tiempo: {time}."
+
+#. Translators: time left on both clocks, for example "White: 4 minutes. Black: 3 minutes and 10 seconds."
+msgid "White: {white}. Black: {black}."
+msgstr "Blancas: {white}. Negras: {black}."
+
+#. Translators: added to the time left when the clock is paused.
+msgid "The clock is paused."
+msgstr "El reloj está en pausa."
+
+#. Translators: warning when little time is left, for example "Time left: 30 seconds."
+msgid "Time left: {time}."
+msgstr "Tiempo restante: {time}."
+
+#. Translators: warning for white when little time is left, for example "White, time left: 30 seconds."
+msgid "White, time left: {time}."
+msgstr "Blancas, tiempo restante: {time}."
+
+#. Translators: warning for black when little time is left, for example "Black, time left: 30 seconds."
+msgid "Black, time left: {time}."
+msgstr "Negras, tiempo restante: {time}."
+
+#. Translators: reported after resuming the clock from the game menu.
+msgid "Clock running."
+msgstr "Reloj en marcha."
+
+#. Translators: reported after pausing the clock from the game menu.
+msgid "Clock paused. It runs again when you play a move or choose Resume clock."
+msgstr "Reloj en pausa. Vuelve a correr cuando juegas o cuando eliges Reanudar reloj."
+
+#. Translators: title of the dialog to save a game.
+msgid "Save game"
+msgstr "Guardar partida"
+
+#. Translators: reported when a game cannot be saved.
+msgid "The game could not be saved."
+msgstr "No se pudo guardar la partida."
+
+#. Translators: reported after saving a game, for example "Game saved: Game 2026-10-03 15.30.pgn".
+msgid "Game saved: {name}"
+msgstr "Partida guardada: {name}"
+
+#. Translators: item of the game menu when playing against the computer.
+msgid "Offer a &draw"
+msgstr "Ofrecer &tablas"
+
+#. Translators: item of the game menu in a game between two people.
+msgid "Agree to a &draw"
+msgstr "&Tablas por acuerdo"
+
+#. Translators: item of the game menu.
+msgid "&Resign"
+msgstr "&Abandonar"
+
+#. Translators: item of the game menu that starts the paused clock again.
+msgid "Res&ume clock"
+msgstr "&Reanudar reloj"
+
+#. Translators: item of the game menu that pauses the clock.
+msgid "Pa&use clock"
+msgstr "&Pausar reloj"
+
+#. Translators: item of the game menu.
+msgid "&Save game..."
+msgstr "G&uardar partida..."
+
+#. Translators: item of the game menu.
+msgid "&Hide board"
+msgstr "&Ocultar tablero"
+
+#. Translators: item of the game menu.
+msgid "&Close board"
+msgstr "&Cerrar tablero"
+
+#. Translators: asked before ending the game in a draw by agreement.
+msgid "Do both players agree to a draw?"
+msgstr "¿Ambas personas aceptan tablas?"
+
+#. Translators: title of the draw confirmation.
+msgid "Draw"
+msgstr "Tablas"
+
+#. Translators: asked before resigning a game against the computer.
+msgid "Resign the game?"
+msgstr "¿Abandonar la partida?"
+
+#. Translators: title of the resign confirmation.
+msgid "Resign"
+msgstr "Abandonar"
+
+#. Translators: asked before white resigns.
+msgid "Does white resign the game?"
+msgstr "¿Las blancas abandonan la partida?"
+
+#. Translators: asked before black resigns.
+msgid "Does black resign the game?"
+msgstr "¿Las negras abandonan la partida?"
+
+#. Translators: asked before undoing the last move.
+msgid "Undo the last move?"
+msgstr "¿Deshacer la última jugada?"
+
+#. Translators: title of the undo confirmation.
+msgid "Undo"
+msgstr "Deshacer"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-on store
+msgid "Accessible chess for NVDA, for all ages.\nPlay against the computer (10 levels, powered by the Stockfish engine) or against another person on the same computer, with the whole board readable by speech and braille. Includes Learn to play, a guided 23-lesson course also designed for children; 5,000 real puzzles from Lichess that adapt to your level; an optional clock; games saved in PGN format; and your statistics.\nThe Learn to play course is currently available in Spanish only."
+msgstr "Ajedrez accesible para NVDA, para todas las edades.\nJuega contra la computadora (10 niveles, con el motor Stockfish) o contra otra persona en el mismo equipo, con todo el tablero disponible por voz y en braille. Incluye «Aprender a jugar», un curso guiado de 23 lecciones pensado también para la infancia; 5.000 problemas reales de Lichess que se adaptan a tu nivel; reloj opcional; partidas guardadas en formato PGN, y tus estadísticas.\nEl curso «Aprender a jugar» está, por ahora, solo en español."
+
+#. Brief changelog for this version
+#. Translators: what's new content for the add-on version to be shown in the add-on store
+msgid "First stable version. Play against the computer (10 levels) or between two people with an optional clock, learn with the 23-lesson course, solve 5,000 Challenges that adapt to your level, save and review games in PGN, and check your statistics. Thanks to everyone who tested the beta versions."
+msgstr "Primera versión estable. Juega contra la computadora (10 niveles) o entre dos personas con reloj opcional, aprende con el curso de 23 lecciones, resuelve 5.000 Retos que se adaptan a tu nivel, guarda y repasa partidas en PGN y consulta tus estadísticas. Gracias a todas las personas que probaron las versiones beta."
