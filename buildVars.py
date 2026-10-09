@@ -29,10 +29,10 @@ addon_info = AddonInfo(
 Play against the computer (10 levels, powered by the Stockfish engine) or against another person on the same computer, with the whole board readable by speech and braille. Includes Learn to play, a guided 23-lesson course also designed for children; 5,000 real puzzles from Lichess that adapt to your level; an optional clock; games saved in PGN format; and your statistics.
 The Learn to play course is currently available in Spanish only."""),
 	# version
-	addon_version="1.0.0",
+	addon_version="1.0.1",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_("""First stable version. Play against the computer (10 levels) or between two people with an optional clock, learn with the 23-lesson course, solve 5,000 Challenges that adapt to your level, save and review games in PGN, and check your statistics. Thanks to everyone who tested the beta versions."""),
+	addon_changelog=_("""Works together with other chess add-ons such as Chess Study, which could not load while MiAjedrezAccesible was installed. Messages after closing a menu or a dialog are no longer cut off, the Keyboard shortcuts item in the Tools menu opens again, and some errors in NVDA's log are gone."""),
 	# Author(s)
 	addon_author="Wilmer Rodríguez Vega <contacto@wilmer-rv.com>",
 	# URL for the add-on documentation support

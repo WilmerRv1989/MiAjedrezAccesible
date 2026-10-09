@@ -11,7 +11,6 @@ import addonHandler
 import globalPluginHandler
 import globalVars
 import gui
-import ui
 import wx
 from gui.message import MessageDialog, ReturnCode, displayDialogAsModal
 from logHandler import log
@@ -234,10 +233,10 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def mostrar_atajos(self) -> None:
 		"""Todas las teclas, de todas las ventanas. Se consultan con casillas creadas solo para eso."""
 		contextos = {
-			atajos.Contexto.PARTIDA: CeldaAjedrez(None, 0, 0),
-			atajos.Contexto.LECCION: CeldaLeccion(None, 0, 0),
-			atajos.Contexto.RETOS: CeldaLeccion(None, 0, 0),
-			atajos.Contexto.REPASO: CeldaRepaso(None, 0, 0),
+			atajos.Contexto.PARTIDA: CeldaAjedrez(cuadricula=None, fila=0, columna=0),
+			atajos.Contexto.LECCION: CeldaLeccion(cuadricula=None, fila=0, columna=0),
+			atajos.Contexto.RETOS: CeldaLeccion(cuadricula=None, fila=0, columna=0),
+			atajos.Contexto.REPASO: CeldaRepaso(cuadricula=None, fila=0, columna=0),
 		}
 		wx.CallAfter(atajos.mostrar, contextos)
 
@@ -352,7 +351,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
 		if cargada is not None:
 			# Translators: said when a saved game is continued; followed by the game state.
 			continuada = _("Game continued.")
-			ui.delayedMessage(f"{continuada} {cargada.partida.texto_estado()}")
+			self._ventana.cuadricula.decir_al_volver(f"{continuada} {cargada.partida.texto_estado()}")
 
 	# Abrir partidas guardadas.
 

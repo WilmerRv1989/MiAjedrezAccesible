@@ -16,7 +16,7 @@ from scriptHandler import script
 from ..ajedrez.curso.modelo import TipoEjercicio
 from ..ajedrez.curso.sesion import Resultado, SesionEjercicio
 from . import sonidos
-from .tablero_ajedrez import CATEGORIA, CeldaAjedrez, CuadriculaAjedrez, decir
+from .tablero_ajedrez import CATEGORIA, CeldaAjedrez, CuadriculaAjedrez
 
 # python-chess queda disponible después de importar el paquete «ajedrez».
 import chess  # noqa: E402
@@ -215,7 +215,7 @@ class CuadriculaLeccion(CuadriculaAjedrez):
 			tones.beep(*_TONO_AVISO)
 		if sonido is not None:
 			sonidos.reproducir(sonido)
-		decir(texto, tras_dialogo)
+		self.decir(texto, tras_dialogo)
 
 	def escribir_jugada(self) -> None:
 		if self.esperando_continuar:

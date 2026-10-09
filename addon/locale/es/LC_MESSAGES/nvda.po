@@ -2375,7 +2375,6 @@ msgstr "Negras, tiempo restante: {time}."
 msgid "Clock running."
 msgstr "Reloj en marcha."
 
-#. Translators: reported after pausing the clock from the game menu.
 msgid "Clock paused. It runs again when you play a move or choose Resume clock."
 msgstr "Reloj en pausa. Vuelve a correr cuando juegas o cuando eliges Reanudar reloj."
 
@@ -2462,5 +2461,5 @@ msgstr "Ajedrez accesible para NVDA, para todas las edades.\nJuega contra la com
 
 #. Brief changelog for this version
 #. Translators: what's new content for the add-on version to be shown in the add-on store
-msgid "First stable version. Play against the computer (10 levels) or between two people with an optional clock, learn with the 23-lesson course, solve 5,000 Challenges that adapt to your level, save and review games in PGN, and check your statistics. Thanks to everyone who tested the beta versions."
-msgstr "Primera versión estable. Juega contra la computadora (10 niveles) o entre dos personas con reloj opcional, aprende con el curso de 23 lecciones, resuelve 5.000 Retos que se adaptan a tu nivel, guarda y repasa partidas en PGN y consulta tus estadísticas. Gracias a todas las personas que probaron las versiones beta."
+msgid "Works together with other chess add-ons such as Chess Study, which could not load while MiAjedrezAccesible was installed. Messages after closing a menu or a dialog are no longer cut off, the Keyboard shortcuts item in the Tools menu opens again, and some errors in NVDA's log are gone."
+msgstr "Funciona junto a otros complementos de ajedrez como Chess Study, que no podía cargar con MiAjedrezAccesible instalado. Los mensajes después de cerrar un menú o un diálogo ya no se cortan, la opción Atajos de teclado del menú Herramientas vuelve a abrir, y desaparecen algunos errores del registro de NVDA."

@@ -8,6 +8,7 @@
 from typing import TYPE_CHECKING
 
 import addonHandler
+import core
 import speech
 import tones
 import ui
@@ -51,13 +52,8 @@ def _tono_error() -> None:
 	tones.beep(*_TONO_ERROR)
 
 
-def decir(texto: str, tras_dialogo: bool = False) -> None:
-	"""Dice un texto. Tras cerrar un diálogo, el foco vuelve al tablero y NVDA anuncia la casilla:
-	por eso el texto se retrasa un instante, para que no lo corte."""
-	if tras_dialogo:
-		ui.delayedMessage(texto)
-	else:
-		ui.message(texto)
+# Si tras cerrar un menú o un diálogo el foco no vuelve a una casilla, el mensaje se dice igual tras esta espera.
+_ESPERA_FOCO_MS = 1500
 
 
 class CeldaAjedrez(CeldaVirtual):
@@ -306,6 +302,8 @@ class CuadriculaAjedrez(CuadriculaVirtual):
 		self.girado = color_persona == chess.BLACK
 		# Casilla de la pieza tomada, o None si no hay ninguna.
 		self.origen: chess.Square | None = None
+		# Mensaje que se dirá cuando NVDA termine de anunciar la casilla (ver `decir_al_volver`).
+		self._pendiente: str | None = None
 		super().__init__(panel, filas=8, columnas=8)
 		rey = self.tablero.king(self.bando_propio)
 		self.fila, self.columna = self.posicion(rey if rey is not None else chess.E1)
@@ -395,7 +393,7 @@ class CuadriculaAjedrez(CuadriculaVirtual):
 				ui.message(_("The computer declines the draw."))
 
 		# Translators: reported while the computer considers a draw offer.
-		ui.delayedMessage(_("Offering a draw..."))
+		self.decir_al_volver(_("Offering a draw..."))
 		self.computadora.evaluar(self.tablero, al_evaluar)
 
 	# Conversión entre la cuadrícula visual (fila 0 arriba) y las casillas del ajedrez.
@@ -439,6 +437,30 @@ class CuadriculaAjedrez(CuadriculaVirtual):
 		super().al_enfocar_celda(fila, columna)
 		if self.casilla(fila, columna) in self.destinos():
 			tones.beep(*_TONO_POSIBLE)
+		self._decir_pendiente()
+
+	# Mensajes.
+
+	def decir(self, texto: str, tras_dialogo: bool = False) -> None:
+		"""Dice un texto; tras cerrar un diálogo, después del anuncio de la casilla."""
+		if tras_dialogo:
+			self.decir_al_volver(texto)
+		else:
+			ui.message(texto)
+
+	def decir_al_volver(self, texto: str) -> None:
+		"""Dice un texto después de que NVDA anuncie la ventana y la casilla al cerrar un menú o un diálogo.
+
+		`ui.delayedMessage` no basta: espera solo un instante, y el anuncio de la casilla lo corta.
+		"""
+		self._pendiente = texto
+		core.callLater(_ESPERA_FOCO_MS, self._decir_pendiente)
+
+	def _decir_pendiente(self) -> None:
+		if self._pendiente is None:
+			return
+		texto, self._pendiente = self._pendiente, None
+		ui.message(texto)
 
 	def rectangulo_celda(self, fila: int, columna: int) -> tuple[int, int, int, int] | None:
 		return self.panel.rectangulo_casilla(fila, columna)
@@ -478,10 +500,10 @@ class CuadriculaAjedrez(CuadriculaVirtual):
 		self.panel.Refresh()
 		if self.girado:
 			# Translators: reported after flipping the board.
-			ui.delayedMessage(_("Board flipped: black at the bottom."))
+			self.decir_al_volver(_("Board flipped: black at the bottom."))
 		else:
 			# Translators: reported after flipping the board.
-			ui.delayedMessage(_("Board flipped: white at the bottom."))
+			self.decir_al_volver(_("Board flipped: white at the bottom."))
 
 	# Tomar y soltar piezas.
 
@@ -562,7 +584,7 @@ class CuadriculaAjedrez(CuadriculaVirtual):
 		def al_terminar(resultado: int) -> None:
 			if resultado != wx.ID_OK:
 				# Translators: reported when the promotion dialog is cancelled.
-				ui.delayedMessage(_("Promotion cancelled. The pawn stays selected."))
+				self.decir_al_volver(_("Promotion cancelled. The pawn stays selected."))
 				return
 			pieza = dialogos.PIEZAS_CORONACION[dialogo.GetSelection()]
 			self._jugar(chess.Move(origen, destino, promotion=pieza), tras_dialogo=True)
@@ -584,7 +606,7 @@ class CuadriculaAjedrez(CuadriculaVirtual):
 
 	def _tras_jugada(self, jugada: chess.Move, anuncio: str, tras_dialogo: bool) -> None:
 		"""Anuncia la jugada de la persona y, si corresponde, da el turno a la computadora."""
-		decir(anuncio, tras_dialogo)
+		self.decir(anuncio, tras_dialogo)
 		self._turno_de_la_computadora()
 
 	def escribir_jugada(self) -> None:
@@ -645,7 +667,7 @@ class CuadriculaAjedrez(CuadriculaVirtual):
 		self.origen = None
 		self.panel.Refresh()
 		self.ventana.al_cambiar()
-		ui.delayedMessage(anuncio)
+		self.decir_al_volver(anuncio)
 
 	def mostrar_planilla(self) -> None:
 		lineas = self.partida.planilla()

@@ -20,6 +20,7 @@ import os
 import controlTypes
 import eventHandler
 import tones
+import winUser
 import wx
 from locationHelper import RectLTWH
 from NVDAObjects import NVDAObject
@@ -51,7 +52,7 @@ class CeldaVirtual(NVDAObject):
 	# La celda de tabla no se anuncia como «celda» al recibir el foco: solo se oye su nombre.
 	role = controlTypes.Role.TABLECELL
 
-	def __init__(self, cuadricula: "CuadriculaVirtual", fila: int, columna: int) -> None:
+	def __init__(self, cuadricula: "CuadriculaVirtual | None", fila: int, columna: int) -> None:
 		super().__init__()
 		self.cuadricula = cuadricula
 		self.fila = fila
@@ -60,19 +61,37 @@ class CeldaVirtual(NVDAObject):
 	def _get_processID(self) -> int:
 		return os.getpid()
 
+	# Sin cuadrícula, la celda solo sirve para consultar sus teclas (la lista de atajos de teclado).
+
 	def _get_windowHandle(self) -> int:
-		return self.cuadricula.hwnd
+		return self.cuadricula.hwnd if self.cuadricula is not None else 0
+
+	def _get_windowThreadID(self) -> int:
+		# NVDA lo consulta para saber la distribución del teclado al interpretar algunas teclas.
+		if self.cuadricula is None:
+			return 0
+		return winUser.getWindowThreadProcessID(self.cuadricula.hwnd)[1]
+
+	def _get_windowClassName(self) -> str:
+		# Algunos módulos de NVDA lo consultan al crear cualquier objeto (por ejemplo, el de NVDA).
+		if self.cuadricula is None:
+			return ""
+		return winUser.getClassName(self.cuadricula.hwnd)
 
 	def _get_parent(self) -> NVDAObject | None:
-		return self.cuadricula.objeto_panel()
+		return self.cuadricula.objeto_panel() if self.cuadricula is not None else None
 
 	def _get_name(self) -> str:
+		if self.cuadricula is None:
+			return ""
 		return self.cuadricula.nombre_celda(self.fila, self.columna)
 
 	def _get_states(self) -> set[controlTypes.State]:
 		return {controlTypes.State.FOCUSABLE, controlTypes.State.FOCUSED}
 
 	def _get_location(self) -> RectLTWH | None:
+		if self.cuadricula is None:
+			return None
 		return self.cuadricula.ubicacion_celda(self.fila, self.columna)
 
 	def _isEqual(self, other: "CeldaVirtual") -> bool:

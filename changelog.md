@@ -1,3 +1,10 @@
+## 1.0.1
+
+* MiAjedrezAccesible now works together with other chess add-ons such as Chess Study. Both include the python-chess library, and NVDA loads it only once: our copy lacked three parts we do not use, so Chess Study could not load when ours was loaded first. The library is now complete.
+* Messages said after closing a menu or a dialog (game saved, board flipped, clock paused, the move typed with J...) are no longer cut off by the announcement of the square.
+* Tools, MiAjedrezAccesible, Keyboard shortcuts opens again.
+* Moving around the board no longer leaves errors in NVDA's log, and no key press is lost.
+
 ## 1.0.0
 
 First stable version. Everything from the beta versions, reviewed and tested on several computers:

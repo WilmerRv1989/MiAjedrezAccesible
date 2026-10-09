@@ -11,6 +11,7 @@ from collections.abc import Callable
 
 import addonHandler
 import api
+import core
 import speech
 import tones
 import ui
@@ -71,6 +72,8 @@ _TAMANO_INICIAL = 640
 # Cada cuánto se mira el reloj (fin del tiempo y avisos).
 _INTERVALO_RELOJ_MS = 250
 _TONO_AVISO_RELOJ = (660, 120)
+# Al ocultar el tablero, el mensaje espera a que NVDA anuncie la ventana que recibe el foco.
+_ESPERA_OCULTAR_MS = 1000
 
 
 class PanelTablero(wx.Panel):
@@ -361,8 +364,13 @@ class VentanaTablero(VentanaBase):
 		self.guardar_automatico()
 		self.Hide()
 		self._al_ocultar()
-		# Translators: reported after hiding the board from the game menu.
-		ui.delayedMessage(_("Board hidden. To return, open Tools, MiAjedrezAccesible, Return to the game."))
+		# El foco se va a otra ventana: se espera a que NVDA la anuncie.
+		core.callLater(
+			_ESPERA_OCULTAR_MS,
+			ui.message,
+			# Translators: reported after hiding the board from the game menu.
+			_("Board hidden. To return, open Tools, MiAjedrezAccesible, Return to the game."),
+		)
 
 	def _confirmar_cierre(self) -> bool:
 		if self.partida.en_curso and not self._confirmar(
@@ -479,11 +487,13 @@ class VentanaTablero(VentanaBase):
 		if self.reloj.pausado:
 			self.reloj.reanudar()
 			# Translators: reported after resuming the clock from the game menu.
-			ui.delayedMessage(_("Clock running."))
+			self.cuadricula.decir_al_volver(_("Clock running."))
 		else:
 			self.reloj.pausar()
 			# Translators: reported after pausing the clock from the game menu.
-			ui.delayedMessage(_("Clock paused. It runs again when you play a move or choose Resume clock."))
+			self.cuadricula.decir_al_volver(
+				_("Clock paused. It runs again when you play a move or choose Resume clock."),
+			)
 		self.guardar_automatico()
 
 	# Guardar la partida.
@@ -524,17 +534,17 @@ class VentanaTablero(VentanaBase):
 			except OSError:
 				log.error("No se pudo guardar la partida", exc_info=True)
 				# Translators: reported when a game cannot be saved.
-				ui.delayedMessage(_("The game could not be saved."))
+				self.cuadricula.decir_al_volver(_("The game could not be saved."))
 				return
 			# Translators: reported after saving a game, for example "Game saved: Game 2026-10-03 15.30.pgn".
-			ui.delayedMessage(_("Game saved: {name}").format(name=os.path.basename(ruta)))
+			self.cuadricula.decir_al_volver(_("Game saved: {name}").format(name=os.path.basename(ruta)))
 
 		self.mostrar_modal(dialogo, al_terminar)
 
 	def _copiar_partida(self) -> None:
 		api.copyToClip(self.texto_pgn(), notify=False)
 		# Translators: reported after copying the game to the clipboard.
-		ui.delayedMessage(_("Game copied to the clipboard in PGN format."))
+		self.cuadricula.decir_al_volver(_("Game copied to the clipboard in PGN format."))
 
 	# Menú de la partida (tecla Aplicaciones o Mayúsculas+F10).
 
@@ -608,7 +618,7 @@ class VentanaTablero(VentanaBase):
 		self.cuadricula.origen = None
 		self.panel.Refresh()
 		self.al_cambiar()
-		ui.delayedMessage(anuncio)
+		self.cuadricula.decir_al_volver(anuncio)
 
 	def confirmar_deshacer(self) -> None:
 		def preguntar() -> None:

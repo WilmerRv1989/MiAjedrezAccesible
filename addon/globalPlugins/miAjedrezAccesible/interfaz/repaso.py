@@ -190,7 +190,7 @@ class VentanaRepaso(VentanaBase):
 	def _copiar(self) -> None:
 		api.copyToClip(self._texto, notify=False)
 		# Translators: reported after copying the game to the clipboard.
-		ui.delayedMessage(_("Game copied to the clipboard in PGN format."))
+		self.cuadricula.decir_al_volver(_("Game copied to the clipboard in PGN format."))
 
 	def mostrar_menu_partida(self) -> None:
 		self.mostrar_menu(
