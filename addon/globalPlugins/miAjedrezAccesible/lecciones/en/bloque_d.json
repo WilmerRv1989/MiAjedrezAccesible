@@ -1,0 +1,230 @@
+{
+	"id": "D",
+	"titulo": "Special rules",
+	"mensaje_final": "You finished block D! Now you know all the rules of chess.",
+	"lecciones": [
+		{
+			"id": "19",
+			"titulo": "Castling",
+			"explicacion": [
+				"Castling is a special move in which the king and a rook move at the same time. It puts the king in safety and brings the rook into play. It can only be done once per game.",
+				"In kingside castling, the king goes from e1 to g1 and the rook on h1 jumps to f1. In queenside castling, the king goes from e1 to c1 and the rook on a1 jumps to d1.",
+				"To castle on the board, pick up the king and drop it two squares towards the rook: the rook moves by itself. You can also type O-O for kingside castling and O-O-O for queenside castling.",
+				"You can only castle if neither the king nor that rook has moved, if the squares between them are empty, if the king is not in check, and if it does not pass through or land on an attacked square."
+			],
+			"ejercicios": [
+				{
+					"id": "19.1",
+					"tipo": "jugada",
+					"objetivo": "enroque",
+					"forma": "corto",
+					"posicion": "4k3/8/8/8/8/8/8/4K2R",
+					"enroques": "K",
+					"inicio": "e1",
+					"solucion": "e1g1",
+					"instruccion": "Castle kingside: pick up the king on e1 and drop it on g1.",
+					"pistas": [
+						"The king moves two squares towards the rook on h1.",
+						"Pick up the king on e1 and drop it on g1. You can also press J and type O-O."
+					]
+				},
+				{
+					"id": "19.2",
+					"tipo": "jugada",
+					"objetivo": "enroque",
+					"forma": "largo",
+					"posicion": "4k3/8/8/8/8/8/8/R3K3",
+					"enroques": "Q",
+					"inicio": "e1",
+					"solucion": "e1c1",
+					"instruccion": "Now castle queenside: the king goes from e1 to c1 and the rook on a1 jumps to d1.",
+					"pistas": [
+						"The king moves two squares towards the rook on a1.",
+						"Pick up the king on e1 and drop it on c1. Or press J and type O-O-O."
+					]
+				},
+				{
+					"id": "19.3",
+					"tipo": "ir_a",
+					"posicion": "4k3/8/8/8/8/8/8/R3K2R",
+					"enroques": "KQ",
+					"inicio": "e1",
+					"respuestas": [
+						"f1"
+					],
+					"instruccion": "Without moving anything: if you castle kingside, which square will your rook on h1 go to? Go to it and press Enter.",
+					"pistas": [
+						"In kingside castling, the rook jumps over the king and lands next to it.",
+						"The king goes to g1 and the rook to f1."
+					]
+				},
+				{
+					"id": "19.4",
+					"titulo": "A forbidden castling",
+					"tipo": "jugada",
+					"objetivo": "enroque",
+					"posicion": "4kr2/8/8/8/8/8/8/R3K2R",
+					"enroques": "KQ",
+					"inicio": "e1",
+					"solucion": "e1c1",
+					"instruccion": "A forbidden castling. The black rook on f8 attacks the square f1. The king cannot pass through an attacked square, so kingside castling is forbidden. Castle on the other side.",
+					"pistas": [
+						"If kingside castling is not possible, queenside castling is left.",
+						"Pick up the king on e1 and drop it on c1."
+					]
+				},
+				{
+					"id": "19.5",
+					"titulo": "No castling in check",
+					"tipo": "jugada",
+					"objetivo": "salir_jaque",
+					"posicion": "4k3/8/8/8/1b6/8/8/R3K2R",
+					"enroques": "KQ",
+					"inicio": "e1",
+					"solucion": "e1f1",
+					"instruccion": "No castling in check. The black bishop on b4 gives check to your king. With the king in check you cannot castle: get out of check another way.",
+					"pistas": [
+						"Move the king to a square the bishop does not attack.",
+						"For example, king from e1 to f1."
+					]
+				}
+			]
+		},
+		{
+			"id": "20",
+			"titulo": "En passant",
+			"explicacion": [
+				"En passant is a special pawn rule.",
+				"When an opponent's pawn moves two squares from its starting position and lands right next to one of your pawns, you can capture it as if it had moved only one: your pawn goes diagonally to the square the opponent's pawn skipped, and the opponent's pawn leaves the board.",
+				"It can only be done on the very next move. If you wait, the chance is gone."
+			],
+			"ejercicios": [
+				{
+					"id": "20.1",
+					"tipo": "jugada",
+					"objetivo": "al_paso",
+					"posicion": "4k3/8/8/3pP3/8/8/8/4K3",
+					"al_paso": "d6",
+					"inicio": "e5",
+					"solucion": "e5d6",
+					"instruccion": "The black pawn has just moved two squares, from d7 to d5, and landed next to your pawn on e5. Capture it en passant: your pawn goes to d6, the square the black pawn skipped.",
+					"pistas": [
+						"Your pawn goes diagonally forward, to an empty square.",
+						"Pick up the pawn on e5 and drop it on d6."
+					]
+				},
+				{
+					"id": "20.2",
+					"tipo": "ir_a",
+					"posicion": "4k3/8/8/4Pp2/8/8/8/4K3",
+					"al_paso": "f6",
+					"inicio": "e5",
+					"respuestas": [
+						"f6"
+					],
+					"instruccion": "The black pawn has just reached f5 from f7. If you capture en passant, which square will your pawn go to? Go to it and press Enter.",
+					"pistas": [
+						"It is the square the black pawn skipped when it moved two.",
+						"It is f6."
+					]
+				},
+				{
+					"id": "20.3",
+					"tipo": "jugada",
+					"objetivo": "al_paso",
+					"posicion": "4k3/8/8/4Pp2/8/8/8/4K3",
+					"al_paso": "f6",
+					"inicio": "e5",
+					"solucion": "e5f6",
+					"instruccion": "Now do it: capture the pawn on f5 en passant.",
+					"pistas": [
+						"Your pawn goes to f6.",
+						"Pick up the pawn on e5 and drop it on f6."
+					]
+				},
+				{
+					"id": "20.4",
+					"tipo": "jugada",
+					"objetivo": "al_paso",
+					"posicion": "4k3/8/8/pP6/8/8/8/4K3",
+					"al_paso": "a6",
+					"inicio": "b5",
+					"solucion": "b5a6",
+					"instruccion": "On the other side of the board: the black pawn has just moved from a7 to a5. Capture it en passant with your pawn on b5.",
+					"pistas": [
+						"The square the black pawn skipped is a6.",
+						"Pick up the pawn on b5 and drop it on a6."
+					]
+				}
+			]
+		},
+		{
+			"id": "21",
+			"titulo": "Draws and stalemate",
+			"explicacion": [
+				"A chess game can also end in a draw, that is, in a tie.",
+				"There is a draw by stalemate: when the side to move is not in check but has no move at all. By insufficient material: when nobody can give mate anymore, for example king against king, or king and bishop against king. By threefold repetition: when the same position is repeated three times. By the 50-move rule: if in 50 moves in a row nobody moves a pawn or captures. And by agreement: when both players accept it.",
+				"When you are winning, be careful not to stalemate the opponent's king. When you are losing, a draw can save you."
+			],
+			"ejercicios": [
+				{
+					"id": "21.1",
+					"tipo": "jugada",
+					"objetivo": "mate",
+					"posicion": "k7/8/K7/8/8/8/8/7R",
+					"inicio": "h1",
+					"solucion": "h1h8",
+					"instruccion": "Give checkmate with the rook. Careful: there is a rook move that would stalemate the black king.",
+					"pistas": [
+						"Your king on a6 already takes a7 and b7 away from the black king. Attack rank 8.",
+						"Rook from h1 to h8. Instead, rook to b1 would be stalemate."
+					]
+				},
+				{
+					"id": "21.2",
+					"tipo": "ir_a",
+					"posicion": "1k6/3K4/Q7/8/8/8/8/8",
+					"inicio": "d7",
+					"respuestas": [
+						"d8",
+						"d6",
+						"c6"
+					],
+					"instruccion": "Your king is on d7. There are three squares you should not move it to, because the black king would be stalemated. Go to one of them and press Enter, just to recognize it.",
+					"pistas": [
+						"The black king on b8 can only go to c8 or c7. If your king takes those squares away without giving check, it is stalemated.",
+						"They are d8, d6 and c6."
+					]
+				},
+				{
+					"id": "21.3",
+					"tipo": "jugada",
+					"objetivo": "no_ahogar",
+					"posicion": "1k6/3K4/Q7/8/8/8/8/8",
+					"inicio": "d7",
+					"solucion": "a6b6",
+					"instruccion": "In the same position, make a move that does not stalemate the black king.",
+					"pistas": [
+						"Avoid taking the king to d8, d6 or c6.",
+						"For example, queen from a6 to b6: it is check, and the black king can still go to a8."
+					]
+				},
+				{
+					"id": "21.4",
+					"titulo": "No material to win",
+					"tipo": "jugada",
+					"objetivo": "capturar",
+					"casilla": "a5",
+					"posicion": "4k3/8/8/p7/8/8/8/R3K2b",
+					"inicio": "a1",
+					"solucion": "a1a5",
+					"instruccion": "No material to win. Black has a king, a bishop and a pawn. A king with a lone bishop cannot give mate: if you capture the pawn, black will never be able to beat you. Capture the pawn on a5.",
+					"pistas": [
+						"Your rook on a1 is on the same file as the pawn.",
+						"Rook from a1 to a5."
+					]
+				}
+			]
+		}
+	]
+}

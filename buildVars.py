@@ -27,12 +27,12 @@ addon_info = AddonInfo(
 	# Translators: Long description to be shown for this add-on on add-on information from add-on store
 	addon_description=_("""Accessible chess for NVDA, for all ages.
 Play against the computer (10 levels, powered by the Stockfish engine) or against another person on the same computer, with the whole board readable by speech and braille. Includes Learn to play, a guided 23-lesson course also designed for children; 5,000 real puzzles from Lichess that adapt to your level; an optional clock; games saved in PGN format; and your statistics.
-The Learn to play course is currently available in Spanish only."""),
+The Learn to play course is available in English and Spanish."""),
 	# version
-	addon_version="1.0.1",
+	addon_version="1.1.0",
 	# Brief changelog for this version
 	# Translators: what's new content for the add-on version to be shown in the add-on store
-	addon_changelog=_("""Works together with other chess add-ons such as Chess Study, which could not load while MiAjedrezAccesible was installed. Messages after closing a menu or a dialog are no longer cut off, the Keyboard shortcuts item in the Tools menu opens again, and some errors in NVDA's log are gone."""),
+	addon_changelog=_("""The Learn to play course is now also in English, shown when NVDA is not in Spanish. With NVDA in another language, moves are typed and shown with the English piece letters (K, Q, R, B, N) and the piece keys are K, Q, R, B, N and P. The board stays centered when the window is maximized."""),
 	# Author(s)
 	addon_author="Wilmer Rodríguez Vega <contacto@wilmer-rv.com>",
 	# URL for the add-on documentation support

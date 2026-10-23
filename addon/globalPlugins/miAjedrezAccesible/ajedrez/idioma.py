@@ -23,12 +23,29 @@ def _plural_sin_traduccion(singular: str, plural: str, cantidad: int) -> str:
 
 _gettext: Callable[[str], str] = _sin_traduccion
 _ngettext: Callable[[str, str, int], str] = _plural_sin_traduccion
+# Letras de pieza: las españolas (R rey, D dama, T torre, A alfil, C caballo) con NVDA en español,
+# las inglesas (K, Q, R, B, N) en cualquier otro idioma.
+_letras_espanolas = True
 
 
 def configurar(gettext: Callable[[str], str], ngettext_: Callable[[str, str, int], str]) -> None:
 	global _gettext, _ngettext
 	_gettext = gettext
 	_ngettext = ngettext_
+
+
+def es_espanol(codigo_idioma: str) -> bool:
+	"""Si un código de idioma de NVDA («es», «es_CO», «en»…) es español."""
+	return codigo_idioma.split("_")[0].lower() == "es"
+
+
+def configurar_letras(espanolas: bool) -> None:
+	global _letras_espanolas
+	_letras_espanolas = espanolas
+
+
+def letras_espanolas() -> bool:
+	return _letras_espanolas
 
 
 def _(texto: str) -> str:

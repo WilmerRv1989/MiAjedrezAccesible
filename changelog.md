@@ -1,3 +1,15 @@
+## 1.1.0
+
+* The Learn to play course is now also in English: the 23 lessons and Extra 1, with English notation in the lessons about typing moves (Nf3, Bxf7, e8=Q, Nbd2). It is shown when NVDA is in any language other than Spanish. Thanks to Muhammad for asking for it.
+* With NVDA in a language other than Spanish, moves are typed, announced in notation and written in the score sheet with the English piece letters: K king, Q queen, R rook, B bishop, N knight. Before, R always meant the king, as in Spanish.
+* With NVDA in a language other than Spanish, the keys to jump to the pieces are K, Q, R, B, N and P (with Shift, the opponent's pieces). With NVDA in Spanish nothing changes.
+* New section in the manual for anyone who wants to translate the course into another language.
+* Includes 1.0.2: the board stays centered when the window is maximized.
+
+## 1.0.2
+
+* The board stays centered when the window is maximized, instead of staying on the left side. This helps people with low vision who enlarge the window.
+
 ## 1.0.1
 
 * MiAjedrezAccesible now works together with other chess add-ons such as Chess Study. Both include the python-chess library, and NVDA loads it only once: our copy lacked three parts we do not use, so Chess Study could not load when ours was loaded first. The library is now complete.

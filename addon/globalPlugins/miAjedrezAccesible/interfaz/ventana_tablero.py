@@ -95,9 +95,20 @@ class PanelTablero(wx.Panel):
 		ancho, alto = self.GetClientSize()
 		return max(8, (min(ancho, alto) - 2 * _MARGEN) // 8)
 
+	def _esquina_tablero(self, lado: int) -> tuple[int, int]:
+		"""Dónde empieza el tablero: centrado en el panel, con al menos el margen alrededor.
+
+		Al maximizar la ventana sobra ancho (o alto): el espacio se reparte a los dos lados.
+		"""
+		ancho, alto = self.GetClientSize()
+		x = max(_MARGEN, (ancho - 8 * lado) // 2)
+		y = max(_MARGEN, (alto - 8 * lado) // 2)
+		return x, y
+
 	def rectangulo_casilla(self, fila: int, columna: int) -> tuple[int, int, int, int]:
 		lado = self._lado_casilla()
-		return (_MARGEN + columna * lado, _MARGEN + fila * lado, lado, lado)
+		x, y = self._esquina_tablero(lado)
+		return (x + columna * lado, y + fila * lado, lado, lado)
 
 	def _al_pintar(self, evento: wx.PaintEvent) -> None:
 		dc = wx.AutoBufferedPaintDC(self)
@@ -159,7 +170,7 @@ class PanelTablero(wx.Panel):
 			numero = chess.RANK_NAMES[chess.square_rank(casilla_fila)]
 			x, y, _ancho, _alto = self.rectangulo_casilla(indice, 0)
 			ancho_texto, alto_texto = dc.GetTextExtent(numero)
-			dc.DrawText(numero, (_MARGEN - ancho_texto) // 2, y + (lado - alto_texto) // 2)
+			dc.DrawText(numero, x - _MARGEN + (_MARGEN - ancho_texto) // 2, y + (lado - alto_texto) // 2)
 
 
 class VentanaBase(wx.Frame):

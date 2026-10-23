@@ -8,6 +8,7 @@
 from typing import TYPE_CHECKING
 
 import addonHandler
+import languageHandler
 import core
 import speech
 import tones
@@ -16,6 +17,7 @@ import wx
 from scriptHandler import script
 
 from ..ajedrez import anunciador, motor, notacion
+from ..ajedrez.idioma import es_espanol
 from ..ajedrez.notacion import ErrorJugada
 from ..ajedrez.partida import Partida
 from ..nucleo.tablero_virtual import CeldaVirtual, CuadriculaVirtual
@@ -33,8 +35,8 @@ addonHandler.initTranslation()
 # Translators: category of the add-on commands in the Input gestures dialog.
 CATEGORIA = _("MiAjedrezAccesible")
 
-# Letras españolas para saltar a las piezas.
-LETRAS_PIEZAS = {
+# Letras para saltar a las piezas: las españolas con NVDA en español, las inglesas en otro idioma.
+LETRAS_ESPANOLAS = {
 	"r": chess.KING,
 	"d": chess.QUEEN,
 	"t": chess.ROOK,
@@ -42,6 +44,29 @@ LETRAS_PIEZAS = {
 	"c": chess.KNIGHT,
 	"p": chess.PAWN,
 }
+LETRAS_INGLESAS = {
+	"k": chess.KING,
+	"q": chess.QUEEN,
+	"r": chess.ROOK,
+	"b": chess.BISHOP,
+	"n": chess.KNIGHT,
+	"p": chess.PAWN,
+}
+ESPANOL = es_espanol(languageHandler.getLanguage())
+LETRAS_PIEZAS = LETRAS_ESPANOLAS if ESPANOL else LETRAS_INGLESAS
+if ESPANOL:
+	_DESCRIPCION_SALTAR = _(
+		# Translators: description of a chess board command in the Input gestures dialog.
+		"Moves to your next piece of that type (between two people, of the side to move): "
+		"R king, D queen, T rook, A bishop, C knight, P pawn. With shift, the opponent's pieces",
+	)
+else:
+	_DESCRIPCION_SALTAR = _(
+		# Translators: description of a chess board command in the Input gestures dialog,
+		# with the English piece letters (used when NVDA is not in Spanish).
+		"Moves to your next piece of that type (between two people, of the side to move): "
+		"K king, Q queen, R rook, B bishop, N knight, P pawn. With shift, the opponent's pieces",
+	)
 
 # Tonos: error y destino posible.
 _TONO_ERROR = (220, 80)
@@ -127,11 +152,7 @@ class CeldaAjedrez(CeldaVirtual):
 		self.cuadricula.ir_a_fila_del_tablero(int(gesture.mainKeyName) - 1)
 
 	@script(
-		# Translators: description of a chess board command in the Input gestures dialog.
-		description=_(
-			"Moves to your next piece of that type (between two people, of the side to move): "
-			"R king, D queen, T rook, A bishop, C knight, P pawn. With shift, the opponent's pieces",
-		),
+		description=_DESCRIPCION_SALTAR,
 		category=CATEGORIA,
 		gestures=[f"kb:{letra}" for letra in LETRAS_PIEZAS]
 		+ [f"kb:shift+{letra}" for letra in LETRAS_PIEZAS],

@@ -13,7 +13,7 @@ It is a new add-on for NVDA 2026.1 and later, inspired by [Chessmart](https://gi
 Version 1.0. It includes:
 
 * **Games** against the computer, with ten difficulty levels, and between two people on the same computer, with an optional clock. Games can be saved, continued and reviewed.
-* **Learn to play:** a guided course of 23 lessons, with endless practice and an Extras section. The course is currently available in Spanish only.
+* **Learn to play:** a guided course of 23 lessons, with endless practice and an Extras section, in English and Spanish.
 * **Challenges:** 5,000 real puzzles that adapt to your level.
 * **My statistics** and a settings panel in NVDA's options.
 
@@ -42,7 +42,7 @@ You can also assign a key to the "Opens the chess board" command in NVDA's Input
 
 ## Board keys
 
-The piece letters follow the Spanish names: R king (rey), D queen (dama), T rook (torre), A bishop (alfil), C knight (caballo), P pawn (peón).
+The piece keys depend on NVDA's language. With NVDA in English or any language other than Spanish: K king, Q queen, R rook, B bishop, N knight, P pawn. With NVDA in Spanish they follow the Spanish names: R king (rey), D queen (dama), T rook (torre), A bishop (alfil), C knight (caballo), P pawn (peón).
 
 | Key | Action |
 |---|---|
@@ -50,8 +50,8 @@ The piece letters follow the Spanish names: R king (rey), D queen (dama), T rook
 | Home / End | First or last square of the row |
 | 1 to 8 | Go to that rank, keeping the file |
 | Enter or Space | Pick up the piece on the square; with a piece picked up, drop it here |
-| R, D, T, A, C, P | Your next piece of that type |
-| Shift + R, D, T, A, C, P | Same with the opponent's pieces |
+| K, Q, R, B, N, P | Your next piece of that type |
+| Shift + K, Q, R, B, N, P | Same with the opponent's pieces |
 | L | Go to the destination square of the last move |
 | J | Type a move |
 | X | Which pieces attack and defend this square |
@@ -93,7 +93,7 @@ In NVDA's menu, Preferences, Options, MiAjedrezAccesible: announce moves in word
 
 ## Learn to play
 
-A guided course for people who have never played chess, also designed for children (Tools, MiAjedrezAccesible, Learn to play). Block A teaches the board and the coordinates; block B, how each piece moves; block C, the fundamentals: capturing, protecting, piece values, check, checkmate and double attacks; block D, castling, en passant and draws; and block E, saying moves aloud, the pawn war mini-game and your first game against the computer. Lesson keys: F2 repeats the instruction, Shift+F2 the explanation, F6 gives a hint, M lists the apples left, F5 says which exercise you are on, Enter continues after an exercise, and Applications opens the lesson menu (restart exercise, skip exercise, practice more, back to the list, close). An Extras section at the end of the list holds optional content: Extra 1, Play only by typing, practices notation, a written game and blindfold mate challenges. Progress is saved automatically. The Practice button (or Practice more in the lesson menu) starts endless practice: rounds of 5 exercises created on the fly, with three levels that adapt to your results.
+A guided course for people who have never played chess, also designed for children (Tools, MiAjedrezAccesible, Learn to play). It is in English when NVDA is in any language other than Spanish, and in Spanish when NVDA is in Spanish. Block A teaches the board and the coordinates; block B, how each piece moves; block C, the fundamentals: capturing, protecting, piece values, check, checkmate and double attacks; block D, castling, en passant and draws; and block E, saying moves aloud, the pawn war mini-game and your first game against the computer. Lesson keys: F2 repeats the instruction, Shift+F2 the explanation, F6 gives a hint, M lists the apples left, F5 says which exercise you are on, Enter continues after an exercise, and Applications opens the lesson menu (restart exercise, skip exercise, practice more, back to the list, close). An Extras section at the end of the list holds optional content: Extra 1, Play only by typing, practices notation, a written game and blindfold mate challenges. Progress is saved automatically. The Practice button (or Practice more in the lesson menu) starts endless practice: rounds of 5 exercises created on the fly, with three levels that adapt to your results.
 
 ## Challenges
 
@@ -113,7 +113,18 @@ A wrong move is taken back and you can try again, but your level no longer goes 
 
 ## Typing moves
 
-Press J on the board. Accepted: Spanish algebraic notation (Cf3, Axf7), the English letters N, B, Q and K (Nf3), coordinates (g1f3), castling (O-O, 0-0-0) and promotion (e8=D, e7e8d).
+Press J on the board. With NVDA in a language other than Spanish, type moves in English algebraic notation: Nf3, Bxf7, Qd1, Rfe1 (R is the rook), exd5. Also accepted: coordinates (g1f3), castling (O-O, 0-0-0, with letters or zeros) and promotion (e8=Q, e8Q or e7e8q). If two identical pieces can go to the same square, add the starting file or rank: Nbd2. The score sheet (F4) and the option to announce moves in notation use the same English letters. With NVDA in Spanish, the Spanish letters are used instead (Cf3, Axf7, and R is the king).
+
+## Translating the course
+
+The lessons are JSON files in `addon/globalPlugins/miAjedrezAccesible/lecciones/`, one folder per language: `es` (Spanish) and `en` (English). The add-on uses the folder that matches NVDA's language (for example `fr` or `pt_BR`), and English when there is none. To translate the course:
+
+1. Copy the `en` folder (or `es`) to a new folder named with the language code, for example `fr`.
+2. Translate only the texts: `titulo`, `explicacion`, `instruccion`, `pistas`, `mensaje_error`, `corona_dama`, `corona_otra` and `mensaje_final`. Leave the positions, moves and everything else as they are. Keep `{faltan}` where it appears: it is replaced by the squares still to visit.
+3. Translate the rest of the add-on as usual, in `addon/locale/<language>/LC_MESSAGES/nvda.po`.
+4. Send it as a pull request on GitHub, or write to me.
+
+The lessons about typing moves use the English piece letters in every language except Spanish, because those are the letters the add-on accepts outside Spanish.
 
 ## How this add-on was made
 

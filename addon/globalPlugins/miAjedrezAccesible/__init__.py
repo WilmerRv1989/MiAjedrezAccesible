@@ -11,6 +11,7 @@ import addonHandler
 import globalPluginHandler
 import globalVars
 import gui
+import languageHandler
 import wx
 from gui.message import MessageDialog, ReturnCode, displayDialogAsModal
 from logHandler import log
@@ -35,6 +36,8 @@ from .nucleo import tablero_virtual
 
 addonHandler.initTranslation()
 idioma.configurar(_, ngettext)
+# Notación y letras de pieza: las españolas con NVDA en español, las inglesas en cualquier otro idioma.
+idioma.configurar_letras(idioma.es_espanol(languageHandler.getLanguage()))
 
 # Translators: name of the add-on, used as the submenu label and the input gestures category.
 NOMBRE = _("MiAjedrezAccesible")

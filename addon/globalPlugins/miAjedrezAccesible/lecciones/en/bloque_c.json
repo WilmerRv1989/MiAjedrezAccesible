@@ -1,0 +1,726 @@
+{
+	"id": "C",
+	"titulo": "Fundamentals",
+	"mensaje_final": "You finished block C! Now you know how to capture, protect, give check and give checkmate.",
+	"lecciones": [
+		{
+			"id": "10",
+			"titulo": "Capturing",
+			"explicacion": [
+				"Capturing means moving a piece to the square where an opponent's piece is. The opponent's piece leaves the board.",
+				"All pieces capture the same way they move, except the pawn, which captures diagonally forward.",
+				"When a piece can capture another one on the next move, we say it attacks it. The X key tells you which pieces attack a square."
+			],
+			"ejercicios": [
+				{
+					"id": "10.1",
+					"tipo": "ir_a",
+					"posicion": "n7/6b1/8/8/3R4/8/8/8",
+					"inicio": "d4",
+					"respuestas": [
+						"g7"
+					],
+					"instruccion": "You are on your rook on d4. A black piece attacks it. Go to that piece and press Enter.",
+					"pistas": [
+						"Press X on your rook: it will tell you who attacks it.",
+						"It is the black bishop on g7."
+					]
+				},
+				{
+					"id": "10.2",
+					"tipo": "jugada",
+					"objetivo": "capturar",
+					"casilla": "b7",
+					"posicion": "8/1r6/8/5n2/8/8/8/1Q6",
+					"inicio": "b1",
+					"solucion": "b1b7",
+					"instruccion": "Your queen on b1 can capture two pieces. Capture the black rook.",
+					"pistas": [
+						"Press Shift+R to find the black rook.",
+						"Pick up the queen on b1 and drop it on b7."
+					]
+				},
+				{
+					"id": "10.3",
+					"tipo": "jugada",
+					"objetivo": "capturar",
+					"casilla": "e5",
+					"posicion": "8/8/8/2nbr3/3P4/8/8/8",
+					"inicio": "d4",
+					"solucion": "d4e5",
+					"instruccion": "Your pawn on d4 has a bishop in front of it and, diagonally, a knight and a rook. Capture the rook. Remember: the pawn captures diagonally.",
+					"pistas": [
+						"The rook is in front and to the right of the pawn.",
+						"Pick up the pawn on d4 and drop it on e5."
+					]
+				},
+				{
+					"id": "10.4",
+					"tipo": "ir_a",
+					"posicion": "8/1r2q2n/8/8/4B3/8/8/8",
+					"inicio": "e4",
+					"respuestas": [
+						"b7",
+						"h7"
+					],
+					"instruccion": "Your bishop on e4 attacks two black pieces, but not the queen. Go to one of the attacked pieces and press Enter.",
+					"pistas": [
+						"The bishop attacks diagonally: go up to the left and to the right from e4.",
+						"It attacks the rook on b7 and the knight on h7."
+					]
+				},
+				{
+					"id": "10.5",
+					"titulo": "Chain of captures",
+					"tipo": "manzanas",
+					"posicion": "5q2/8/n4b2/8/8/8/8/R7",
+					"capturar": "todas",
+					"minimo": 3,
+					"instruccion": "Chain of captures. Your rook can capture the three black pieces, one after another. Do it.",
+					"pistas": [
+						"The first piece is on your own file.",
+						"Knight on a6, then bishop on f6 and finally queen on f8."
+					]
+				}
+			]
+		},
+		{
+			"id": "11",
+			"titulo": "Protecting",
+			"explicacion": [
+				"If one of your pieces is attacked, your opponent could capture it. You can save it in several ways.",
+				"One: move it to a square where nobody attacks it. Another: protect it with another piece, so that if your opponent captures it, you can capture back. And sometimes you can capture the attacking piece.",
+				"A protected piece is also called defended. The X key tells you which pieces defend a square."
+			],
+			"ejercicios": [
+				{
+					"id": "11.1",
+					"tipo": "jugada",
+					"objetivo": "proteger",
+					"forma": "mover",
+					"casilla": "c3",
+					"posicion": "2r5/7b/8/8/8/2N5/8/8",
+					"inicio": "c3",
+					"solucion": "c3d5",
+					"instruccion": "The black rook on c8 attacks your knight on c3. Move it to a square where nobody attacks it.",
+					"pistas": [
+						"Watch out for the black bishop on h7: it attacks the square e4.",
+						"For example, take the knight to d5."
+					]
+				},
+				{
+					"id": "11.2",
+					"tipo": "jugada",
+					"objetivo": "proteger",
+					"forma": "defender",
+					"casilla": "e4",
+					"posicion": "8/8/5n2/8/4P3/8/3P4/1N1Q4",
+					"inicio": "e4",
+					"solucion": "b1c3",
+					"instruccion": "The black knight on f6 attacks your pawn on e4. Protect it with another piece, without moving the pawn.",
+					"pistas": [
+						"Your knight, your queen or your other pawn can help.",
+						"For example, knight from b1 to c3, or pawn from d2 to d3."
+					]
+				},
+				{
+					"id": "11.3",
+					"tipo": "jugada",
+					"objetivo": "proteger",
+					"forma": "mover",
+					"casilla": "d5",
+					"posicion": "8/8/4p3/3Q4/8/8/8/8",
+					"inicio": "d5",
+					"solucion": "d5d1",
+					"instruccion": "A black pawn attacks your queen on d5. Protecting her is no use: a pawn is worth much less than a queen. Put her somewhere safe.",
+					"pistas": [
+						"The pawn on e6 attacks the squares d5 and f5.",
+						"For example, move her back to d1."
+					]
+				},
+				{
+					"id": "11.4",
+					"tipo": "jugada",
+					"objetivo": "capturar",
+					"casilla": "a5",
+					"posicion": "8/8/8/n7/1PB5/8/8/8",
+					"inicio": "c4",
+					"solucion": "b4a5",
+					"instruccion": "The black knight on a5 attacks your bishop on c4. Sometimes the best defense is to capture the attacker. Do it!",
+					"pistas": [
+						"Your bishop cannot capture it, but your pawn can.",
+						"Pick up the pawn on b4 and drop it on a5."
+					]
+				},
+				{
+					"id": "11.5",
+					"tipo": "jugada",
+					"objetivo": "proteger",
+					"forma": "defender",
+					"casilla": "f5",
+					"posicion": "5r2/8/8/5P2/8/4K3/8/8",
+					"inicio": "e3",
+					"solucion": "e3e4",
+					"instruccion": "The black rook attacks your pawn on f5. The king can also protect. Take it next to the pawn.",
+					"pistas": [
+						"The king protects the squares around it.",
+						"For example, king from e3 to e4."
+					]
+				}
+			]
+		},
+		{
+			"id": "12",
+			"titulo": "Capturing without losing your piece",
+			"explicacion": [
+				"Before capturing, think: can my opponent capture my piece back?",
+				"If the piece you capture is protected, your piece will be attacked on that square, and you could lose it.",
+				"Use the X key on each black piece: if it says it has defenders, be careful."
+			],
+			"ejercicios": [
+				{
+					"id": "12.1",
+					"tipo": "jugada",
+					"objetivo": "captura_segura",
+					"posicion": "2b5/3n4/8/7p/8/8/8/3Q4",
+					"inicio": "d1",
+					"solucion": "d1h5",
+					"instruccion": "Your queen can capture the knight on d7 or the pawn on h5. Only one of those captures is safe. Choose it.",
+					"pistas": [
+						"Press X on the knight on d7: who defends it?",
+						"The bishop on c8 defends the knight. Capture the pawn on h5."
+					]
+				},
+				{
+					"id": "12.2",
+					"tipo": "jugada",
+					"objetivo": "captura_segura",
+					"posicion": "r7/p7/8/8/8/8/8/R3n3",
+					"inicio": "a1",
+					"solucion": "a1e1",
+					"instruccion": "Your rook can capture the pawn on a7 or the knight on e1. Capture without losing the rook.",
+					"pistas": [
+						"The black rook on a8 defends the pawn on a7.",
+						"Capture the knight on e1."
+					]
+				},
+				{
+					"id": "12.3",
+					"tipo": "jugada",
+					"objetivo": "captura_segura",
+					"posicion": "8/8/3p3p/4p1p1/8/5N2/7b/8",
+					"inicio": "f3",
+					"solucion": "f3h2",
+					"instruccion": "Your knight on f3 can capture three pieces. Two of them are protected. Capture the one that is not.",
+					"pistas": [
+						"The black pawns protect each other diagonally.",
+						"Capture the bishop on h2."
+					]
+				},
+				{
+					"id": "12.4",
+					"tipo": "jugada",
+					"objetivo": "captura_segura",
+					"posicion": "8/8/2p5/3p1p2/4P3/8/8/8",
+					"inicio": "e4",
+					"solucion": "e4f5",
+					"instruccion": "Your pawn on e4 can capture on d5 or on f5. Choose the safe capture.",
+					"pistas": [
+						"The black pawn on c6 protects the square d5.",
+						"Capture on f5."
+					]
+				},
+				{
+					"id": "12.5",
+					"tipo": "jugada",
+					"objetivo": "captura_segura",
+					"posicion": "8/1p3p2/n3b3/8/2B5/8/4n3/8",
+					"inicio": "c4",
+					"solucion": "c4e2",
+					"instruccion": "Your bishop on c4 can capture three pieces. Only one is not protected. Which one?",
+					"pistas": [
+						"Check with X the knight on a6, the bishop on e6 and the knight on e2.",
+						"Capture the knight on e2."
+					]
+				}
+			]
+		},
+		{
+			"id": "13",
+			"titulo": "The value of the pieces",
+			"explicacion": [
+				"Pieces are not worth the same. They are counted in pawns: the pawn is worth 1; the knight, 3; the bishop, 3; the rook, 5; and the queen, 9.",
+				"The king is priceless: if it is trapped, you lose the game.",
+				"When you can capture several pieces, choose the one worth the most. And before trading pieces, count: giving a pawn for a knight is a good deal; giving a queen for a knight is not."
+			],
+			"ejercicios": [
+				{
+					"id": "13.1",
+					"tipo": "ir_a",
+					"posicion": "8/4b3/1n6/8/8/6r1/2p5/8",
+					"inicio": "a1",
+					"respuestas": [
+						"g3"
+					],
+					"instruccion": "There are four black pieces on the board. Go to the one worth the most and press Enter.",
+					"pistas": [
+						"Remember: pawn 1, knight 3, bishop 3, rook 5, queen 9.",
+						"The rook is worth 5: it is on g3."
+					]
+				},
+				{
+					"id": "13.2",
+					"tipo": "jugada",
+					"objetivo": "mejor_captura",
+					"posicion": "8/8/3p1r2/2b5/4N3/8/8/8",
+					"inicio": "e4",
+					"solucion": "e4f6",
+					"instruccion": "Your knight on e4 can capture a pawn, a bishop or a rook. Capture the piece worth the most.",
+					"pistas": [
+						"The rook is worth 5; the bishop, 3; the pawn, 1.",
+						"Capture the rook on f6."
+					]
+				},
+				{
+					"id": "13.3",
+					"tipo": "jugada",
+					"objetivo": "mejor_captura",
+					"posicion": "8/r2n2q1/8/8/3Q4/8/8/8",
+					"inicio": "d4",
+					"solucion": "d4g7",
+					"instruccion": "Your queen on d4 can capture three pieces. Choose the one worth the most.",
+					"pistas": [
+						"There is a knight, a rook and a queen.",
+						"Capture the queen on g7: she is worth 9."
+					]
+				},
+				{
+					"id": "13.4",
+					"titulo": "A good trade",
+					"tipo": "jugada",
+					"objetivo": "capturar",
+					"casilla": "d5",
+					"posicion": "8/8/2p5/3n1p2/4P3/8/8/8",
+					"inicio": "e4",
+					"solucion": "e4d5",
+					"instruccion": "A good trade. Your pawn can capture the knight on d5, even though it is protected, or the free pawn on f5. If you capture the knight and they take your pawn, you give 1 and win 3. Capture the knight.",
+					"pistas": [
+						"The knight is worth 3 and your pawn, 1.",
+						"Pick up the pawn on e4 and drop it on d5."
+					]
+				},
+				{
+					"id": "13.5",
+					"titulo": "With the right piece",
+					"tipo": "jugada",
+					"objetivo": "capturar",
+					"jugadas": [
+						"c4d5"
+					],
+					"mensaje_error": "If you capture with the queen, the pawn on e6 takes her: you would give 9 for 3.",
+					"posicion": "8/8/4p3/3n4/2P5/8/8/3Q4",
+					"inicio": "c4",
+					"solucion": "c4d5",
+					"instruccion": "With the right piece. The black knight on d5 is protected by a pawn. You can capture it with your pawn on c4 or with your queen. Choose well: if they capture back, what would you rather lose?",
+					"pistas": [
+						"If you capture with the queen, the black pawn takes your queen.",
+						"Capture with the pawn: from c4 to d5."
+					]
+				}
+			]
+		},
+		{
+			"id": "14",
+			"titulo": "Check",
+			"explicacion": [
+				"When a piece attacks the opponent's king, we say it gives check.",
+				"A king in check has to get out of check on the next move: it can never stay attacked.",
+				"When you give check, NVDA says so when it announces your move."
+			],
+			"ejercicios": [
+				{
+					"id": "14.1",
+					"tipo": "jugada",
+					"objetivo": "jaque",
+					"posicion": "4k3/8/8/8/8/8/8/R5K1",
+					"inicio": "a1",
+					"solucion": "a1a8",
+					"instruccion": "Give check to the black king on e8 with your rook.",
+					"pistas": [
+						"The rook attacks in a straight line: look for the king's rank or file.",
+						"For example, rook to a8, or rook to e1."
+					]
+				},
+				{
+					"id": "14.2",
+					"tipo": "jugada",
+					"objetivo": "jaque",
+					"posicion": "4k3/8/8/8/8/8/8/5BK1",
+					"inicio": "f1",
+					"solucion": "f1b5",
+					"instruccion": "Now give check with your bishop on f1.",
+					"pistas": [
+						"The bishop attacks diagonally. From the king on e8, a diagonal goes down through d7, c6 and b5.",
+						"Take the bishop to b5."
+					]
+				},
+				{
+					"id": "14.3",
+					"tipo": "jugada",
+					"objetivo": "jaque",
+					"posicion": "4k3/8/8/8/4N3/8/8/6K1",
+					"inicio": "e4",
+					"solucion": "e4d6",
+					"instruccion": "Give check with your knight on e4.",
+					"pistas": [
+						"The knight attacks in an L shape. There are two squares from which it attacks the king.",
+						"Knight to d6 or to f6."
+					]
+				},
+				{
+					"id": "14.4",
+					"tipo": "jugada",
+					"objetivo": "jaque",
+					"posicion": "7k/8/8/8/8/8/8/3Q2K1",
+					"inicio": "d1",
+					"solucion": "d1d4",
+					"instruccion": "Your queen can give check in many ways. Find one.",
+					"pistas": [
+						"The queen attacks in a straight line and diagonally.",
+						"For example, queen to d4: the diagonal from d4 reaches h8."
+					]
+				},
+				{
+					"id": "14.5",
+					"tipo": "jugada",
+					"objetivo": "jaque",
+					"posicion": "5k2/8/4P3/8/8/8/8/6K1",
+					"inicio": "e6",
+					"solucion": "e6e7",
+					"instruccion": "The pawn can give check too. Your pawn on e6 can give check to the black king on f8. How?",
+					"pistas": [
+						"The pawn attacks diagonally forward.",
+						"Move the pawn to e7: from there it attacks d8 and f8."
+					]
+				}
+			]
+		},
+		{
+			"id": "15",
+			"titulo": "Getting out of check",
+			"explicacion": [
+				"If your king is in check, you have to get out of check. There are three ways.",
+				"One: move the king to a square where nobody attacks it. Two: block the check, putting a piece between the king and the piece giving check. Three: capture the piece giving check.",
+				"When you are in check, the board only lets you make moves that get out of check."
+			],
+			"ejercicios": [
+				{
+					"id": "15.1",
+					"tipo": "jugada",
+					"objetivo": "salir_jaque",
+					"forma": "rey",
+					"posicion": "4r3/8/8/8/8/8/8/4K3",
+					"inicio": "e1",
+					"solucion": "e1d1",
+					"instruccion": "The black rook on e8 gives check to your king on e1. Get out of check by moving the king.",
+					"pistas": [
+						"The whole e-file is attacked: get off it.",
+						"For example, king to d1 or to f2."
+					]
+				},
+				{
+					"id": "15.2",
+					"tipo": "jugada",
+					"objetivo": "salir_jaque",
+					"forma": "tapar",
+					"posicion": "4r3/8/8/8/8/8/8/2B1K3",
+					"inicio": "c1",
+					"solucion": "c1e3",
+					"instruccion": "The rook gives check again. This time block the check with your bishop.",
+					"pistas": [
+						"The bishop has to stand on the e-file, between the rook and the king.",
+						"Bishop from c1 to e3."
+					]
+				},
+				{
+					"id": "15.3",
+					"tipo": "jugada",
+					"objetivo": "salir_jaque",
+					"forma": "capturar",
+					"posicion": "8/8/8/7b/8/8/R3q3/4K3",
+					"inicio": "a2",
+					"solucion": "a2e2",
+					"instruccion": "The black queen on e2 gives check. Capture her. Careful: the black bishop on h5 protects her, so your king cannot capture her.",
+					"pistas": [
+						"Your rook on a2 is on the same rank as the queen.",
+						"Rook from a2 to e2."
+					]
+				},
+				{
+					"id": "15.4",
+					"tipo": "jugada",
+					"objetivo": "salir_jaque",
+					"posicion": "8/8/8/8/8/5n2/6P1/6K1",
+					"inicio": "g1",
+					"solucion": "g2f3",
+					"instruccion": "The black knight on f3 gives check. Get out of check however you like. Hint: there is a way that also wins a piece.",
+					"pistas": [
+						"Your pawn on g2 attacks the square f3.",
+						"Pawn from g2 to f3, capturing the knight."
+					]
+				},
+				{
+					"id": "15.5",
+					"tipo": "jugada",
+					"objetivo": "salir_jaque",
+					"posicion": "8/8/8/8/8/3n4/8/4KB2",
+					"inicio": "e1",
+					"solucion": "f1d3",
+					"instruccion": "A knight check cannot be blocked, because the knight jumps. Get out of check.",
+					"pistas": [
+						"You can move the king or capture the knight with your bishop.",
+						"Bishop from f1 to d3."
+					]
+				}
+			]
+		},
+		{
+			"id": "16",
+			"titulo": "Checkmate",
+			"explicacion": [
+				"Checkmate is a check the king cannot get out of: it cannot go to any safe square, nobody can block the check and nobody can capture the piece giving it.",
+				"Whoever gives checkmate wins the game.",
+				"To find a mate, think: which squares could the king escape to? With which move do I give check and close all of them at once?"
+			],
+			"ejercicios": [
+				{
+					"id": "16.1",
+					"titulo": "The back rank mate",
+					"tipo": "jugada",
+					"objetivo": "mate",
+					"posicion": "6k1/5ppp/8/8/8/8/8/R5K1",
+					"inicio": "a1",
+					"solucion": "a1a8",
+					"instruccion": "The back rank mate. The black king on g8 is shut in by its own pawns. Give it checkmate with the rook.",
+					"pistas": [
+						"The king cannot go up: its pawns block the way out.",
+						"Rook from a1 to a8."
+					]
+				},
+				{
+					"id": "16.2",
+					"tipo": "jugada",
+					"objetivo": "mate",
+					"posicion": "7k/8/6K1/8/8/8/8/3Q4",
+					"inicio": "d1",
+					"solucion": "d1d8",
+					"instruccion": "Your queen and your king work together. Give checkmate to the king on h8.",
+					"pistas": [
+						"Your king on g6 already takes the squares g7 and h7 away from the black king. You still need to attack it along rank 8.",
+						"Queen from d1 to d8."
+					]
+				},
+				{
+					"id": "16.3",
+					"tipo": "jugada",
+					"objetivo": "mate",
+					"posicion": "4k3/8/4K3/8/8/8/8/R7",
+					"inicio": "a1",
+					"solucion": "a1a8",
+					"instruccion": "Your king on e6 takes the squares on rank 7 away from the black king. Finish it off with the rook.",
+					"pistas": [
+						"Attack the king along its rank, rank 8.",
+						"Rook from a1 to a8."
+					]
+				},
+				{
+					"id": "16.4",
+					"titulo": "The two rooks",
+					"tipo": "jugada",
+					"objetivo": "mate",
+					"posicion": "7k/R7/8/8/8/8/8/1R4K1",
+					"inicio": "b1",
+					"solucion": "b1b8",
+					"instruccion": "The two rooks. One rook already closes rank 7. Give checkmate with the other one.",
+					"pistas": [
+						"The rook on b1 can go up to rank 8.",
+						"Rook from b1 to b8."
+					]
+				},
+				{
+					"id": "16.5",
+					"titulo": "The smothered mate",
+					"tipo": "jugada",
+					"objetivo": "mate",
+					"posicion": "6rk/6pp/8/6N1/8/8/8/6K1",
+					"inicio": "g5",
+					"solucion": "g5f7",
+					"instruccion": "The smothered mate. The black king on h8 is surrounded by its own pieces. Your knight can give it mate.",
+					"pistas": [
+						"The knight attacks h8 from f7 or from g6.",
+						"Knight from g5 to f7."
+					]
+				}
+			]
+		},
+		{
+			"id": "17",
+			"titulo": "Mate with queen and king",
+			"explicacion": [
+				"With queen and king against a lone king, you can always give mate.",
+				"The idea: with the queen, you push the opponent's king to the edge. Then you bring your king closer and give mate with the queen, protected by your king.",
+				"Watch out for stalemate: if the opponent's king is not in check but has no move at all, the game ends in a draw.",
+				"In the mate in two exercises, black defends: it will answer with its best move."
+			],
+			"ejercicios": [
+				{
+					"id": "17.1",
+					"tipo": "jugada",
+					"objetivo": "mate",
+					"posicion": "k7/8/1K6/8/8/8/7Q/8",
+					"inicio": "h2",
+					"solucion": "h2h8",
+					"instruccion": "The black king is in the corner, on a8. Give checkmate.",
+					"pistas": [
+						"Your king on b6 protects a7, b7 and c7.",
+						"For example, queen from h2 to h8."
+					]
+				},
+				{
+					"id": "17.2",
+					"tipo": "jugada",
+					"objetivo": "mate",
+					"posicion": "4k3/8/4K3/8/8/8/8/Q7",
+					"inicio": "a1",
+					"solucion": "a1a8",
+					"instruccion": "Your king is already facing the black king. Give checkmate with the queen.",
+					"pistas": [
+						"Attack the king along rank 8.",
+						"Queen from a1 to a8."
+					]
+				},
+				{
+					"id": "17.3",
+					"titulo": "Don't stalemate it!",
+					"tipo": "jugada",
+					"objetivo": "mate",
+					"posicion": "k7/2K5/8/8/8/8/8/1Q6",
+					"inicio": "b1",
+					"solucion": "b1b7",
+					"instruccion": "Don't stalemate it! There is a mate, but also a move that stalemates the black king. Find the mate.",
+					"pistas": [
+						"If the queen goes to b6, the black king is not in check and cannot move: it would be stalemate.",
+						"Queen to b7 or to b8: your king on c7 protects her."
+					]
+				},
+				{
+					"id": "17.4",
+					"titulo": "Mate in two",
+					"tipo": "mate",
+					"jugadas_mate": 2,
+					"posicion": "7k/8/Q4K2/8/8/8/8/8",
+					"inicio": "a6",
+					"solucion": "a6a7",
+					"instruccion": "Mate in two. You have two moves to give checkmate, and black defends. The black king is on h8. First shut it in on the last rank; then finish it off.",
+					"pistas": [
+						"If your queen takes rank 7, the black king will only be able to move along rank 8.",
+						"Queen from a6 to a7. Then look for the mate with the queen protected by your king."
+					]
+				},
+				{
+					"id": "17.5",
+					"titulo": "Another mate in two",
+					"tipo": "mate",
+					"jugadas_mate": 2,
+					"posicion": "k7/8/2K4Q/8/8/8/8/8",
+					"inicio": "h6",
+					"solucion": "h6h7",
+					"instruccion": "Another mate in two. The black king is on a8 and your king on c6. Use the same idea: shut it in and finish it off.",
+					"pistas": [
+						"With the queen on rank 7, the black king only has the square b8 left.",
+						"Queen from h6 to h7. Then, queen to b7, protected by your king."
+					]
+				}
+			]
+		},
+		{
+			"id": "18",
+			"titulo": "The double attack",
+			"explicacion": [
+				"A double attack is a move that attacks two of the opponent's pieces at once. Your opponent can only save one, so you win the other.",
+				"The knight is an expert in double attacks: its double attacks are called forks. So is the queen, which attacks in many directions.",
+				"The best double attack is one that includes a check: the king has to get out of check and the other piece is left undefended."
+			],
+			"ejercicios": [
+				{
+					"id": "18.1",
+					"titulo": "The fork",
+					"tipo": "jugada",
+					"objetivo": "ataque_doble",
+					"posicion": "r3k3/8/8/1N6/8/8/8/6K1",
+					"inicio": "b5",
+					"solucion": "b5c7",
+					"instruccion": "The fork. With your knight on b5, attack the black king on e8 and the rook on a8 at the same time.",
+					"pistas": [
+						"Find a square from which the knight reaches a8 and e8.",
+						"Knight from b5 to c7."
+					]
+				},
+				{
+					"id": "18.2",
+					"tipo": "jugada",
+					"objetivo": "ataque_doble",
+					"posicion": "3q3r/8/8/6N1/8/8/8/6K1",
+					"inicio": "g5",
+					"solucion": "g5f7",
+					"instruccion": "Now attack the queen on d8 and the rook on h8 at the same time.",
+					"pistas": [
+						"A square on rank 7 will do.",
+						"Knight from g5 to f7."
+					]
+				},
+				{
+					"id": "18.3",
+					"tipo": "jugada",
+					"objetivo": "ataque_doble",
+					"posicion": "4k3/8/8/b7/8/8/7Q/6K1",
+					"inicio": "h2",
+					"solucion": "h2e5",
+					"instruccion": "The queen also makes double attacks. Give check to the king on e8 and attack the bishop on a5 at the same time.",
+					"pistas": [
+						"Find a square on the e-file and on rank 5.",
+						"Queen from h2 to e5."
+					]
+				},
+				{
+					"id": "18.4",
+					"titulo": "The pawn too",
+					"tipo": "jugada",
+					"objetivo": "ataque_doble",
+					"posicion": "8/8/2n1b3/8/3PP3/8/8/6K1",
+					"inicio": "d4",
+					"solucion": "d4d5",
+					"instruccion": "The pawn too can attack two pieces. Move a pawn forward to attack the knight on c6 and the bishop on e6 at the same time.",
+					"pistas": [
+						"The pawn attacks diagonally forward.",
+						"Pawn from d4 to d5."
+					]
+				},
+				{
+					"id": "18.5",
+					"titulo": "The royal fork",
+					"tipo": "jugada",
+					"objetivo": "ataque_doble",
+					"posicion": "3q1k2/8/8/6N1/8/8/8/6K1",
+					"inicio": "g5",
+					"solucion": "g5e6",
+					"instruccion": "The royal fork. Give check to the king on f8 and attack the queen on d8 at the same time.",
+					"pistas": [
+						"Find the square that attacks d8 and f8 at the same time.",
+						"Knight from g5 to e6."
+					]
+				}
+			]
+		}
+	]
+}

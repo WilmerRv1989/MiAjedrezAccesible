@@ -127,7 +127,8 @@ class PruebaContenido(unittest.TestCase):
 
 	def test_carpeta_de_idioma(self):
 		self.assertTrue(modelo.carpeta_de_idioma("es_CR").endswith(os.path.join("lecciones", "es")))
-		self.assertTrue(modelo.carpeta_de_idioma("fr").endswith(os.path.join("lecciones", "es")))
+		# Otros idiomas sin lecciones propias: el curso en inglés.
+		self.assertTrue(modelo.carpeta_de_idioma("fr").endswith(os.path.join("lecciones", "en")))
 
 
 class PruebaSesion(unittest.TestCase):

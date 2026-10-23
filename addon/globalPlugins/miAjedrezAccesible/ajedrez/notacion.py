@@ -3,12 +3,14 @@
 # This file is covered by the GNU General Public License, version 2 or later.
 # See the file COPYING.txt for more details.
 
-"""Jugadas escritas por la persona y notación algebraica en español.
+"""Jugadas escritas por la persona y notación algebraica.
 
-Se aceptan:
+Con NVDA en español se aceptan:
 - Notación algebraica en español: Cf3, Axf7, Dd1, Tfe1, O-O, e8=D.
 - Las letras inglesas que no chocan con las españolas: K, Q, B y N (Nf3, Bxf7).
   La R es siempre «rey», como en español.
+Con NVDA en otro idioma, la notación inglesa: Nf3, Bxf7, Qd1, Rfe1 (la R es la torre).
+En los dos casos:
 - Coordenadas: g1f3, g1-f3, e7e8d (la última letra es la pieza de coronación).
 - Enroques con letra o con cero: O-O, 0-0, O-O-O, 0-0-0.
 """
@@ -17,11 +19,12 @@ import re
 
 import chess
 
-from .idioma import _
+from .idioma import _, letras_espanolas
 
 # Letras de pieza en español y su equivalente inglés (el que entiende python-chess).
 _ESPANOL_A_INGLES = {"R": "K", "D": "Q", "T": "R", "A": "B", "C": "N"}
 _LETRAS_INGLESAS_ACEPTADAS = set("KQBN")
+_LETRAS_INGLESAS = set("KQRBN")
 _INGLES_A_ESPANOL = str.maketrans("KQRBN", "RDTAC")
 
 _COORDENADAS = re.compile(r"^([a-h][1-8])[-x:]?([a-h][1-8])=?([dtacqrbn])?$")
@@ -43,8 +46,9 @@ class ErrorJugada(ValueError):
 
 
 def san_en_espanol(tablero: chess.Board, jugada: chess.Move) -> str:
-	"""Notación algebraica de una jugada, con letras españolas: «Cf3», «exd8=D»."""
-	return tablero.san(jugada).translate(_INGLES_A_ESPANOL)
+	"""Notación algebraica de una jugada con las letras del idioma: «Cf3», «exd8=D» (en inglés, «Nf3»)."""
+	san = tablero.san(jugada)
+	return san.translate(_INGLES_A_ESPANOL) if letras_espanolas() else san
 
 
 def _mensaje_no_entendida() -> str:
@@ -68,6 +72,11 @@ def _mensaje_ambigua() -> str:
 def _a_san_ingles(texto: str) -> str:
 	"""Pasa las letras de pieza españolas a inglesas, sin tocar columnas ni enroques."""
 	primera = texto[0]
+	if not letras_espanolas():
+		# Notación inglesa: se deja tal cual; solo se comprueba que la letra sea de una pieza.
+		if primera.isupper() and primera not in _LETRAS_INGLESAS and primera != "O":
+			raise ErrorJugada(_mensaje_no_entendida())
+		return texto
 	if primera in _ESPANOL_A_INGLES:
 		texto = _ESPANOL_A_INGLES[primera] + texto[1:]
 	elif primera.isupper() and primera not in _LETRAS_INGLESAS_ACEPTADAS and primera != "O":
@@ -121,7 +130,7 @@ def interpretar(tablero: chess.Board, texto: str) -> chess.Move:
 	# de pieza, se prueba también en mayúscula («cf3» → «Cf3»).
 	# Así «axb5» sigue siendo una captura de peón y «cf3» funciona como caballo.
 	candidatos = [limpio]
-	if limpio[0] in "rdtackqbn":
+	if limpio[0] in ("rdtackqbn" if letras_espanolas() else "kqrbn"):
 		candidatos.append(limpio[0].upper() + limpio[1:])
 	error: ErrorJugada | None = None
 	for candidato in candidatos:

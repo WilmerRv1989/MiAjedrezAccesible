@@ -38,6 +38,7 @@ def _instalar_traduccion() -> None:
 # Simulación mínima de los módulos de NVDA que usa interfaz/atajos.py.
 sys.modules.setdefault("addonHandler", _modulo("addonHandler", initTranslation=_instalar_traduccion))
 sys.modules.setdefault("ui", _modulo("ui", browseableMessage=lambda *a, **k: None))
+sys.modules.setdefault("languageHandler", _modulo("languageHandler", getLanguage=lambda: "es"))
 sys.modules.setdefault(
 	"logHandler",
 	_modulo("logHandler", log=SimpleNamespace(debugWarning=lambda *a, **k: None)),

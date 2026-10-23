@@ -16,6 +16,7 @@ from html import escape
 
 import addonHandler
 import inputCore
+import languageHandler
 import ui
 from logHandler import log
 
@@ -37,6 +38,22 @@ class Contexto(StrEnum):
 Entrada = tuple[tuple[str, ...] | None, str, str]
 
 
+def _texto_saltar() -> str:
+	# Las letras españolas con NVDA en español (como `idioma.es_espanol`), las inglesas en otro idioma.
+	if languageHandler.getLanguage().split("_")[0].lower() == "es":
+		return _(
+			# Translators: description in the list of keyboard shortcuts.
+			"Go to your next king, queen, rook, bishop, knight or pawn (R, D, T, A, C, P); "
+			"with shift, to the opponent's pieces",
+		)
+	return _(
+		# Translators: description in the list of keyboard shortcuts, with the English piece letters
+		# (used when NVDA is not in Spanish).
+		"Go to your next king, queen, rook, bishop, knight or pawn (K, Q, R, B, N, P); "
+		"with shift, to the opponent's pieces",
+	)
+
+
 def _moverse() -> tuple[str, list[Entrada]]:
 	return (
 		# Translators: heading in the list of keyboard shortcuts.
@@ -51,11 +68,7 @@ def _moverse() -> tuple[str, list[Entrada]]:
 			(
 				("saltar_a_pieza",),
 				"",
-				# Translators: description in the list of keyboard shortcuts.
-				_(
-					"Go to your next king, queen, rook, bishop, knight or pawn (R, D, T, A, C, P); "
-					"with shift, to the opponent's pieces",
-				),
+				_texto_saltar(),
 			),
 			# Translators: description in the list of keyboard shortcuts.
 			(("ultima_jugada",), "", _("Go to the square of the last move")),

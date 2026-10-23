@@ -83,6 +83,8 @@ Todas estas teclas se pueden cambiar en Gestos de entrada, en la categoría MiAj
 
 Un curso guiado para quien nunca ha jugado al ajedrez, pensado también para la infancia. Ábrelo desde Herramientas, MiAjedrezAccesible, «Aprender a jugar».
 
+El curso también está en inglés: aparece en inglés cuando NVDA está en un idioma distinto del español. En ese caso, las teclas de las piezas y la notación usan las letras inglesas (K rey, Q dama, R torre, B alfil, N caballo). Con NVDA en español, todo funciona como se explica en este manual.
+
 Tiene cinco bloques, con 23 lecciones:
 
 * **Bloque A. Conocer el tablero:** filas, columnas y coordenadas; diagonales y el centro; la posición inicial.

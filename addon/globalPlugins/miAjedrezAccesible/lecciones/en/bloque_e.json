@@ -1,0 +1,151 @@
+{
+	"id": "E",
+	"titulo": "Let's play!",
+	"mensaje_final": "You finished the course! Now you know how to play chess. Time to enjoy your games.",
+	"lecciones": [
+		{
+			"id": "22",
+			"titulo": "Saying the moves",
+			"explicacion": [
+				"When you play on a real board, especially a tactile board, each move is said aloud, and your opponent repeats it. That is what algebraic notation is for.",
+				"You say the letter of the piece and the square it goes to: K king, Q queen, R rook, B bishop, N knight (because K is already the king). The pawn has no letter: you only say the square. For example, Nf3 is knight to f3, and e4 is a pawn going to e4.",
+				"If the move captures, an x is added: Bxf7 is bishop captures on f7. Kingside castling is O-O and queenside castling, O-O-O. If it gives check, a plus sign is added at the end.",
+				"In MiAjedrezAccesible, the J key opens a field to type the move like this. In these exercises, use J.",
+				"You can play a whole game typing like this, from the first move to checkmate, without picking up any piece with Enter. To practice it thoroughly, at the end of the list of lessons, in Extras, there is Play only by typing."
+			],
+			"ejercicios": [
+				{
+					"id": "22.1",
+					"tipo": "jugada",
+					"objetivo": "notacion",
+					"jugadas": [
+						"e2e4"
+					],
+					"mensaje_error": "That is not the requested move. Press J and type e4.",
+					"posicion": "inicial",
+					"inicio": "e2",
+					"solucion": "e2e4",
+					"instruccion": "Press J and type your first move: e4. It is the pawn going to e4; the pawn has no letter.",
+					"pistas": [
+						"Press J, type e4 and press Enter.",
+						"Type the letter e and the number 4, without spaces."
+					]
+				},
+				{
+					"id": "22.2",
+					"tipo": "jugada",
+					"objetivo": "notacion",
+					"jugadas": [
+						"g1f3"
+					],
+					"mensaje_error": "That is not the requested move. Press J and type Nf3.",
+					"posicion": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR",
+					"inicio": "g1",
+					"solucion": "g1f3",
+					"instruccion": "Now the knight: press J and type Nf3. N is for knight and f3 is the square it goes to.",
+					"pistas": [
+						"Piece letters are written in capitals. The knight is N, because K is already the king.",
+						"Press J, type Nf3 and press Enter."
+					]
+				},
+				{
+					"id": "22.3",
+					"tipo": "jugada",
+					"objetivo": "notacion",
+					"jugadas": [
+						"f3e5"
+					],
+					"mensaje_error": "That is not the requested move. Press J and type Nxe5.",
+					"posicion": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R",
+					"inicio": "f3",
+					"solucion": "f3e5",
+					"instruccion": "A capture: press J and type Nxe5. It means: the knight captures on e5. The x means capture.",
+					"pistas": [
+						"Type the N, the x and the square e5.",
+						"Press J, type Nxe5 and press Enter."
+					]
+				},
+				{
+					"id": "22.4",
+					"tipo": "jugada",
+					"objetivo": "enroque",
+					"forma": "corto",
+					"posicion": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R",
+					"enroques": "KQkq",
+					"inicio": "e1",
+					"solucion": "e1g1",
+					"instruccion": "Castling: press J and type O-O. It is two capital letters O separated by a hyphen. Zeros also work: 0-0.",
+					"pistas": [
+						"O-O is kingside castling, towards the king's side.",
+						"Press J, type O-O and press Enter."
+					]
+				},
+				{
+					"id": "22.5",
+					"tipo": "jugada",
+					"objetivo": "notacion",
+					"jugadas": [
+						"c4f7"
+					],
+					"mensaje_error": "That is not the requested move. Press J and type Bxf7+.",
+					"posicion": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/8/PPPP1PPP/RNBQK1NR",
+					"inicio": "c4",
+					"solucion": "c4f7",
+					"instruccion": "Capture with check: press J and type Bxf7+. The bishop captures on f7 and gives check; the plus sign means check, and you can type it or not.",
+					"pistas": [
+						"B is for bishop.",
+						"Press J, type Bxf7 and press Enter."
+					]
+				}
+			]
+		},
+		{
+			"id": "23",
+			"titulo": "The pawn war and your first game",
+			"explicacion": [
+				"The pawn war is a game from chess schools. There are only pawns. Whoever promotes a pawn first wins, or whoever leaves the opponent without moves. Black moves by itself.",
+				"Tips for the pawn war: move forward the pawns nobody can stop, and do not let an opponent's pawn slip away unwatched.",
+				"And for your first game: take the center with your pawns; bring out the knights and bishops early; castle to protect your king; do not bring out the queen too early; and before each move, ask yourself what your opponent is threatening.",
+				"Remember: if you prefer, you can play the whole game typing the moves with the J key."
+			],
+			"ejercicios": [
+				{
+					"id": "23.1",
+					"titulo": "Three against three",
+					"tipo": "guerra_peones",
+					"posicion": "8/ppp5/8/8/8/8/PPP5/8",
+					"inicio": "a2",
+					"instruccion": "Three against three. Play the pawn war with three pawns each. Whoever promotes first wins.",
+					"pistas": [
+						"A pawn with no opponent's pawns in front of it, neither on its file nor on the files next to it, cannot be stopped.",
+						"Move forward carefully: if you leave a pawn unwatched, your opponent can capture it."
+					]
+				},
+				{
+					"id": "23.2",
+					"titulo": "The full war",
+					"tipo": "guerra_peones",
+					"posicion": "8/pppppppp/8/8/8/8/PPPPPPPP/8",
+					"inicio": "e2",
+					"instruccion": "The full war: eight pawns against eight. Remember that on its first move a pawn can move two squares.",
+					"pistas": [
+						"Try to create a passed pawn: one with no opponent's pawns in front of it.",
+						"Pawn trades can open the way for one of yours."
+					]
+				},
+				{
+					"id": "23.3",
+					"titulo": "Your first game",
+					"tipo": "partida",
+					"posicion": "inicial",
+					"inicio": "e2",
+					"instruccion": "Your first game! You will play white against the computer on level 1, the easiest. Press Enter when you want to start.",
+					"pistas": [
+						"Remember the tips: center, knights and bishops out, castling, and watch what your opponent threatens.",
+						"Press Enter to start the game."
+					]
+				}
+			]
+		}
+	]
+}

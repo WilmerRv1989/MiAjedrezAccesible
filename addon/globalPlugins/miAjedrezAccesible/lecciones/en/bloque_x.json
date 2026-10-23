@@ -1,0 +1,161 @@
+{
+	"id": "X",
+	"titulo": "Extras",
+	"extra": true,
+	"mensaje_final": "There will soon be more extras to keep practicing.",
+	"lecciones": [
+		{
+			"id": "x1",
+			"titulo": "Play only by typing",
+			"solo_escrito": true,
+			"explicacion": [
+				"In this extra you will play like in tournament blindfold chess: every move is typed with the J key, without picking up any piece with Enter.",
+				"You can still go around the board with the arrow keys to look at the position, except in the challenges without looking.",
+				"Remember the notation: the letter of the piece (K king, Q queen, R rook, B bishop, N knight; the pawn has none), an x if it captures, and the destination square. To promote, the piece is added: e8=Q. If two identical pieces can go to the same square, the starting file or rank is added: Nbd2."
+			],
+			"ejercicios": [
+				{
+					"id": "x1.1",
+					"titulo": "Promoting by typing",
+					"tipo": "jugada",
+					"objetivo": "notacion",
+					"jugadas": [
+						"b7b8q"
+					],
+					"mensaje_error": "That is not the requested move. Press J and type b8=Q.",
+					"posicion": "4k3/1P6/8/8/8/8/8/4K3",
+					"inicio": "b7",
+					"solucion": "b7b8q",
+					"instruccion": "Promoting by typing. Your pawn on b7 is about to promote. Press J and type b8=Q: the pawn reaches b8 and becomes a queen. b8Q also works.",
+					"pistas": [
+						"First the destination square, then the equals sign and the letter of the new piece.",
+						"Press J, type b8=Q and press Enter."
+					]
+				},
+				{
+					"id": "x1.2",
+					"titulo": "Two pieces can go",
+					"tipo": "jugada",
+					"objetivo": "notacion",
+					"jugadas": [
+						"b1d2"
+					],
+					"mensaje_error": "That is not the requested move. Press J and type Nbd2.",
+					"posicion": "4k3/8/8/8/8/5N2/8/1N2K3",
+					"inicio": "b1",
+					"solucion": "b1d2",
+					"instruccion": "Two pieces can go. Your two knights, the one on b1 and the one on f3, can go to d2. Take the knight on b1 to d2. If you type only Nd2, nobody knows which one: type Nbd2, with the starting file.",
+					"pistas": [
+						"The b means that the knight comes from file b.",
+						"Press J, type Nbd2 and press Enter."
+					]
+				},
+				{
+					"id": "x1.3",
+					"titulo": "En passant, typed",
+					"tipo": "jugada",
+					"objetivo": "al_paso",
+					"posicion": "4k3/8/8/3pP3/8/8/8/4K3",
+					"al_paso": "d6",
+					"inicio": "e5",
+					"solucion": "e5d6",
+					"instruccion": "En passant, typed. The black pawn has just moved from d7 to d5. Capture it en passant by typing exd6: the pawn on file e captures on d6.",
+					"pistas": [
+						"Pawn captures start with the file of the capturing pawn.",
+						"Press J, type exd6 and press Enter."
+					]
+				},
+				{
+					"id": "x1.4",
+					"titulo": "Queenside castling",
+					"tipo": "jugada",
+					"objetivo": "enroque",
+					"forma": "largo",
+					"posicion": "4k3/8/8/8/8/8/8/R3K3",
+					"enroques": "Q",
+					"inicio": "e1",
+					"solucion": "e1c1",
+					"instruccion": "Queenside castling. Press J and type O-O-O: three capital letters O separated by hyphens. Zeros also work: 0-0-0.",
+					"pistas": [
+						"Queenside castling has one more O than kingside castling.",
+						"Press J, type O-O-O and press Enter."
+					]
+				},
+				{
+					"id": "x1.5",
+					"titulo": "Mate in two, typed",
+					"tipo": "mate",
+					"jugadas_mate": 2,
+					"posicion": "k7/8/2K4Q/8/8/8/8/8",
+					"inicio": "h6",
+					"solucion": "h6h7",
+					"instruccion": "Mate in two, typed. The black king is on a8, your king on c6 and your queen on h6. Type the two moves that give mate; black will defend.",
+					"pistas": [
+						"First shut the black king in: take the queen to rank 7 without giving check. It is written Qh7.",
+						"After Qh7, the black king will go to b8. Finish it off with Qb7."
+					]
+				},
+				{
+					"id": "x1.6",
+					"titulo": "A typed game",
+					"tipo": "partida_escrita",
+					"posicion": "inicial",
+					"enroques": "KQkq",
+					"inicio": "e2",
+					"guion": [
+						[
+							"e2e4",
+							"e7e5"
+						],
+						[
+							"f1c4",
+							"b8c6"
+						],
+						[
+							"d1h5",
+							"g8f6"
+						],
+						[
+							"h5f7"
+						]
+					],
+					"instruccion": "A typed game. You are going to play a short and famous game, the Scholar's mate. On each move I will tell you in words what to move, and you type it in notation. Black answers by itself.",
+					"pistas": [
+						"Type the letter of the piece and the destination square; the pawn has no letter.",
+						"Listen again to what I ask with F2, and translate it: for example, bishop from f1 to c4 is written Bc4."
+					]
+				},
+				{
+					"id": "x1.7",
+					"titulo": "Without looking",
+					"tipo": "jugada",
+					"objetivo": "mate",
+					"a_ciegas": true,
+					"posicion": "6k1/5ppp/8/8/8/8/8/3R2K1",
+					"inicio": "a1",
+					"solucion": "d1d8",
+					"instruccion": "Without looking. In this challenge the board does not tell you what is on each square: imagine the position. The black king is on g8, with its pawns on f7, g7 and h7. You have a rook on d1 and the king on g1. Type the move that gives checkmate.",
+					"pistas": [
+						"It is the back rank mate: the black king cannot go up because its pawns block the way out.",
+						"Type Rd8."
+					]
+				},
+				{
+					"id": "x1.8",
+					"titulo": "Without looking, with the queen",
+					"tipo": "jugada",
+					"objetivo": "mate",
+					"a_ciegas": true,
+					"posicion": "7k/8/6K1/8/8/8/8/3Q4",
+					"inicio": "a1",
+					"solucion": "d1d8",
+					"instruccion": "Without looking, with the queen. The black king is on h8. Your king is on g6 and your queen on d1. Type the move that gives checkmate.",
+					"pistas": [
+						"Your king already takes the squares g7 and h7 away from the black king. You still need to attack it along rank 8.",
+						"Type Qd8."
+					]
+				}
+			]
+		}
+	]
+}

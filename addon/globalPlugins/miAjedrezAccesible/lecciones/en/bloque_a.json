@@ -1,0 +1,272 @@
+{
+	"id": "A",
+	"titulo": "Getting to know the board",
+	"mensaje_final": "You finished block A! Now you know how to move around the board.",
+	"lecciones": [
+		{
+			"id": "1",
+			"titulo": "Ranks, files and coordinates",
+			"explicacion": [
+				"The chessboard is a square with 64 squares: eight rows and eight columns.",
+				"The columns, called files, have letters, from a to h, from left to right. The rows, called ranks, have numbers, from 1 to 8, from your side towards your opponent's side.",
+				"Each square is named by its letter and its number. For example, e4 is the square on file e and rank 4.",
+				"Move with the arrow keys: NVDA will tell you which square you are on. When you reach the square you are asked for, press Enter."
+			],
+			"ejercicios": [
+				{
+					"id": "1.1",
+					"tipo": "ir_a",
+					"posicion": "vacio",
+					"inicio": "a1",
+					"respuestas": [
+						"h1"
+					],
+					"instruccion": "You are on a1, the bottom left corner. Go to h1, the bottom right corner, and press Enter.",
+					"pistas": [
+						"Use the right arrow: each time you press it, you move one file.",
+						"Press the right arrow seven times and then Enter."
+					]
+				},
+				{
+					"id": "1.2",
+					"tipo": "ir_a",
+					"posicion": "vacio",
+					"inicio": "h1",
+					"respuestas": [
+						"h8"
+					],
+					"instruccion": "Now go up to h8, the top right corner, and press Enter.",
+					"pistas": [
+						"The up arrow moves one rank towards your opponent's side.",
+						"Press the up arrow seven times and then Enter."
+					]
+				},
+				{
+					"id": "1.3",
+					"tipo": "ir_a",
+					"posicion": "vacio",
+					"inicio": "a1",
+					"respuestas": [
+						"e4"
+					],
+					"instruccion": "Go to the square e4 and press Enter. It is one of the squares in the center of the board.",
+					"pistas": [
+						"First find file e with the right or left arrow; then go up to rank 4.",
+						"e is the fifth file: from a1, press the right arrow four times and the up arrow three times."
+					]
+				},
+				{
+					"id": "1.4",
+					"tipo": "ir_a",
+					"posicion": "vacio",
+					"inicio": "e4",
+					"respuestas": [
+						"d5"
+					],
+					"instruccion": "Go to d5 and press Enter.",
+					"pistas": [
+						"d5 is very close to e4: one file to the left and one rank up.",
+						"Press the left arrow once, the up arrow once and then Enter."
+					]
+				},
+				{
+					"id": "1.5",
+					"tipo": "ir_a",
+					"posicion": "vacio",
+					"inicio": "b1",
+					"respuestas": [
+						"b7"
+					],
+					"instruccion": "A trick: the keys 1 to 8 take you to that rank without changing the file. Go to b7 by pressing the 7 key, and then Enter.",
+					"pistas": [
+						"Press the 7 key on the number row, the one above the letters.",
+						"Press 7 and then Enter."
+					]
+				},
+				{
+					"id": "1.6",
+					"tipo": "ir_a",
+					"posicion": "vacio",
+					"inicio": "a1",
+					"respuestas": [
+						"c1",
+						"e1",
+						"g1"
+					],
+					"instruccion": "Squares are light or dark, alternating. The square a1 is dark. Go to another dark square on rank 1 and press Enter. With F3 you can ask for the color of any square.",
+					"pistas": [
+						"If a1 is dark, b1 is light. What will c1 be?",
+						"c1, e1 and g1 are dark. Go to any of them."
+					]
+				}
+			]
+		},
+		{
+			"id": "2",
+			"titulo": "Diagonals and the center",
+			"explicacion": [
+				"Besides ranks and files, the board has diagonals: lines of squares that touch at their corners. All the squares of a diagonal have the same color.",
+				"For example, from a1 a diagonal goes up through b2, c3, d4, e5, f6, g7 and h8. To move along a diagonal with the keyboard, press one arrow up and another one to the side.",
+				"The four center squares are d4, e4, d5 and e5. They are very important: a piece in the center reaches more squares than one on the edge."
+			],
+			"ejercicios": [
+				{
+					"id": "2.1",
+					"tipo": "ir_a",
+					"posicion": "vacio",
+					"inicio": "a1",
+					"respuestas": [
+						"b2"
+					],
+					"instruccion": "You are on a1. Go to the next square of the diagonal, b2, and press Enter.",
+					"pistas": [
+						"A diagonal step is one step up and one step to the right at the same time.",
+						"Press the up arrow, the right arrow and then Enter."
+					]
+				},
+				{
+					"id": "2.2",
+					"tipo": "ir_a",
+					"posicion": "vacio",
+					"inicio": "b2",
+					"respuestas": [
+						"d4"
+					],
+					"instruccion": "Keep going along the same diagonal up to d4 and press Enter.",
+					"pistas": [
+						"After b2 comes c3, and then d4.",
+						"Repeat twice: up arrow and right arrow."
+					]
+				},
+				{
+					"id": "2.3",
+					"tipo": "ir_a",
+					"posicion": "vacio",
+					"inicio": "h1",
+					"respuestas": [
+						"e4"
+					],
+					"instruccion": "The other long diagonal goes from h1 to a8. Go to the square of that diagonal that is on rank 4 and press Enter.",
+					"pistas": [
+						"From h1, the diagonal goes up to the left: g2, f3…",
+						"It is e4."
+					]
+				},
+				{
+					"id": "2.4",
+					"tipo": "visitar",
+					"posicion": "vacio",
+					"inicio": "a1",
+					"respuestas": [
+						"d4",
+						"e4",
+						"d5",
+						"e5"
+					],
+					"instruccion": "Visit the four center squares, d4, e4, d5 and e5, and press Enter on each one. The order does not matter.",
+					"pistas": [
+						"The four are together, forming a square in the middle of the board.",
+						"You still need: {faltan}."
+					]
+				},
+				{
+					"id": "2.5",
+					"tipo": "ir_a",
+					"posicion": "vacio",
+					"inicio": "e4",
+					"respuestas": [
+						"h7"
+					],
+					"instruccion": "Four diagonals start from e4. Go to the end of the one that goes up to the right and press Enter.",
+					"pistas": [
+						"Go up one rank and one file to the right, again and again, until you cannot go any further.",
+						"f5, g6 and h7. It is h7."
+					]
+				}
+			]
+		},
+		{
+			"id": "3",
+			"titulo": "The starting position",
+			"explicacion": [
+				"At the start of a game, each side has 16 pieces: a king, a queen, two rooks, two bishops, two knights and eight pawns.",
+				"White takes ranks 1 and 2; black, ranks 7 and 8.",
+				"On rank 1, from a to h, there are: rook, knight, bishop, queen, king, bishop, knight and rook. The eight pawns stand in front, on rank 2. Black is set up the same way, facing them.",
+				"A trick to remember: the queen starts on a square of her own color. The white queen is on d1, which is light; the black queen, on d8, which is dark."
+			],
+			"ejercicios": [
+				{
+					"id": "3.1",
+					"tipo": "ir_a",
+					"posicion": "inicial",
+					"inicio": "a1",
+					"respuestas": [
+						"h1"
+					],
+					"instruccion": "Go along rank 1, from a1 to h1, with the right arrow. Listen to each piece. When you reach h1, press Enter.",
+					"pistas": [
+						"Go to the right until the last square of the rank.",
+						"Press the right arrow until h1 and then Enter."
+					]
+				},
+				{
+					"id": "3.2",
+					"tipo": "ir_a",
+					"posicion": "inicial",
+					"inicio": "a1",
+					"respuestas": [
+						"e1"
+					],
+					"instruccion": "Go to the white king and press Enter. Trick: the K key jumps to your king.",
+					"pistas": [
+						"The king is next to the queen, on rank 1.",
+						"Press K and then Enter."
+					]
+				},
+				{
+					"id": "3.3",
+					"tipo": "ir_a",
+					"posicion": "inicial",
+					"inicio": "e1",
+					"respuestas": [
+						"d8"
+					],
+					"instruccion": "Now go to the black queen and press Enter. Trick: Shift with Q jumps to your opponent's queen.",
+					"pistas": [
+						"The black queen is on rank 8, on a dark square.",
+						"Press Shift+Q and then Enter."
+					]
+				},
+				{
+					"id": "3.4",
+					"tipo": "ir_a",
+					"posicion": "inicial",
+					"inicio": "e1",
+					"respuestas": [
+						"b1",
+						"g1"
+					],
+					"instruccion": "Where are the white knights? Go to one of them and press Enter.",
+					"pistas": [
+						"The knights are next to the rooks.",
+						"Press N and then Enter."
+					]
+				},
+				{
+					"id": "3.5",
+					"tipo": "ir_a",
+					"posicion": "inicial",
+					"inicio": "e1",
+					"respuestas": [
+						"e7"
+					],
+					"instruccion": "Go to the square right in front of the black king, the one its pawn is on, and press Enter.",
+					"pistas": [
+						"The black king is on e8. In front of it, from its side, is rank 7.",
+						"It is e7: press 7 from file e."
+					]
+				}
+			]
+		}
+	]
+}

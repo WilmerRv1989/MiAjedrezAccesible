@@ -1,0 +1,524 @@
+{
+	"id": "B",
+	"titulo": "The pieces",
+	"mensaje_final": "You finished block B! Now you know all the pieces.",
+	"lecciones": [
+		{
+			"id": "4",
+			"titulo": "The rook",
+			"explicacion": [
+				"The rook moves in a straight line: forward, backward and sideways, as many squares as it likes. It cannot jump over other pieces.",
+				"In these exercises there are apples on some squares. Take your piece to each apple: pick up the piece with Enter, go to the square of the apple and press Enter again.",
+				"If you do it with few moves, you will earn up to three stars. Press M to find out where apples are left."
+			],
+			"ejercicios": [
+				{
+					"id": "4.1",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/3R4/8/8/8",
+					"manzanas": [
+						"d7"
+					],
+					"minimo": 1,
+					"instruccion": "Take the rook to the apple on d7.",
+					"pistas": [
+						"d7 is on the same file as the rook, further up.",
+						"Pick up the rook on d4 and drop it on d7."
+					]
+				},
+				{
+					"id": "4.2",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/R7",
+					"manzanas": [
+						"a6",
+						"f6"
+					],
+					"minimo": 2,
+					"instruccion": "Collect the two apples.",
+					"pistas": [
+						"First go up file a; then go along rank 6.",
+						"Rook from a1 to a6, and from a6 to f6."
+					]
+				},
+				{
+					"id": "4.3",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/7R",
+					"manzanas": [
+						"h5",
+						"c5",
+						"c8"
+					],
+					"minimo": 3,
+					"instruccion": "Collect the three apples with as few moves as you can.",
+					"pistas": [
+						"Each apple is in a straight line with the next one.",
+						"h5, then c5, then c8."
+					]
+				},
+				{
+					"id": "4.4",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/4P3/8/8/4R3",
+					"inicio": "e1",
+					"manzanas": [
+						"e7"
+					],
+					"minimo": 3,
+					"instruccion": "Your own pawn is on e4 and the rook cannot jump over it. Find another way to the apple on e7.",
+					"pistas": [
+						"Go around the pawn: leave file e, go up and come back.",
+						"For example: rook to d1, then to d7 and then to e7."
+					]
+				},
+				{
+					"id": "4.5",
+					"titulo": "Capture the pawns!",
+					"tipo": "manzanas",
+					"posicion": "4p3/8/8/p3p3/8/8/8/R7",
+					"capturar": "todas",
+					"minimo": 3,
+					"instruccion": "Capture the pawns! The rook also captures: if it reaches a square with an opponent's piece, it takes it. Capture the three black pawns. The pawns do not move.",
+					"pistas": [
+						"The first pawn is on the same file as your rook.",
+						"a5, then e5, then e8."
+					]
+				},
+				{
+					"id": "4.6",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/R6R",
+					"manzanas": [
+						"a7",
+						"h7",
+						"d1",
+						"e8"
+					],
+					"minimo": 5,
+					"instruccion": "Now you have two rooks. Use them to collect the four apples.",
+					"pistas": [
+						"One of the rooks only needs one move for its apple. The other one goes on a longer trip.",
+						"The rook on a1 goes to d1. The one on h1 goes to h7, then to a7, to a8 and to e8."
+					]
+				}
+			]
+		},
+		{
+			"id": "5",
+			"titulo": "The bishop",
+			"explicacion": [
+				"The bishop moves diagonally, as many squares as it likes, forward or backward. It cannot jump over other pieces either.",
+				"Since diagonals have a single color, a bishop that starts on light squares always stays on light squares, and one that starts on dark squares is always on dark ones. That is why each side has two bishops: one for each color."
+			],
+			"ejercicios": [
+				{
+					"id": "5.1",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/2B5",
+					"manzanas": [
+						"f4"
+					],
+					"minimo": 1,
+					"instruccion": "Take the bishop to the apple on f4.",
+					"pistas": [
+						"f4 is on a diagonal that goes up to the right from c1.",
+						"Pick up the bishop on c1 and drop it on f4."
+					]
+				},
+				{
+					"id": "5.2",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/5B2",
+					"manzanas": [
+						"c4",
+						"e6"
+					],
+					"minimo": 2,
+					"instruccion": "Collect the two apples.",
+					"pistas": [
+						"First go to the left along the diagonal.",
+						"f1 to c4, and c4 to e6."
+					]
+				},
+				{
+					"id": "5.3",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/2B5",
+					"manzanas": [
+						"h6",
+						"f8",
+						"a3"
+					],
+					"minimo": 3,
+					"instruccion": "Collect the three apples.",
+					"pistas": [
+						"Start with the apple on h6.",
+						"h6, then f8, then a3."
+					]
+				},
+				{
+					"id": "5.4",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/4B3/8/8/8",
+					"manzanas": [
+						"b7",
+						"h7",
+						"c2"
+					],
+					"minimo": 4,
+					"instruccion": "Your bishop is on e4, a light square. The three apples are also on light squares. Collect them.",
+					"pistas": [
+						"h7 and c2 are on the same diagonal, which goes through e4.",
+						"h7, then c2, back to e4 and finish on b7."
+					]
+				},
+				{
+					"id": "5.5",
+					"titulo": "Capture the pawns!",
+					"tipo": "manzanas",
+					"posicion": "7p/8/5p2/8/3p4/8/8/B7",
+					"capturar": "todas",
+					"minimo": 3,
+					"instruccion": "Capture the pawns! Capture the three black pawns with your bishop.",
+					"pistas": [
+						"The three are on the same long diagonal.",
+						"d4, f6 and h8."
+					]
+				}
+			]
+		},
+		{
+			"id": "6",
+			"titulo": "The queen",
+			"explicacion": [
+				"The queen is the most powerful piece: she moves like the rook and like the bishop at the same time. She goes in a straight line or diagonally, as many squares as she likes, but she cannot jump either."
+			],
+			"ejercicios": [
+				{
+					"id": "6.1",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/3Q4",
+					"manzanas": [
+						"h5"
+					],
+					"minimo": 1,
+					"instruccion": "Take the queen to the apple on h5.",
+					"pistas": [
+						"h5 is on a diagonal from d1.",
+						"From d1 to h5 in a single move."
+					]
+				},
+				{
+					"id": "6.2",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/Q7",
+					"manzanas": [
+						"a8",
+						"h8",
+						"h1"
+					],
+					"minimo": 3,
+					"instruccion": "Collect the three apples in the corners.",
+					"pistas": [
+						"The corners are joined by ranks and files.",
+						"a8, h8 and h1."
+					]
+				},
+				{
+					"id": "6.3",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/4Q3/8/8/8",
+					"manzanas": [
+						"b7",
+						"b1",
+						"h1",
+						"h7"
+					],
+					"minimo": 4,
+					"instruccion": "Collect the four apples. Combine straight lines and diagonals.",
+					"pistas": [
+						"From e4 you reach b7 diagonally.",
+						"b7, b1, h1 and h7: after the first one, they are all in straight lines."
+					]
+				},
+				{
+					"id": "6.4",
+					"titulo": "Capture the pawns!",
+					"tipo": "manzanas",
+					"posicion": "8/8/3p4/7p/8/p4p2/8/3Q4",
+					"capturar": "todas",
+					"minimo": 4,
+					"instruccion": "Capture the pawns! Capture the four black pawns.",
+					"pistas": [
+						"Find an order in which each pawn is in line with the next one. Start with the one on file d.",
+						"d6, then a3, then f3 and finally h5."
+					]
+				},
+				{
+					"id": "6.5",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/P7/1P6/Q7",
+					"inicio": "a1",
+					"manzanas": [
+						"h8"
+					],
+					"minimo": 2,
+					"instruccion": "Your pawns block two of the queen's paths. Reach the apple on h8.",
+					"pistas": [
+						"Rank 1 is free.",
+						"For example: a1 to h1, and h1 to h8."
+					]
+				}
+			]
+		},
+		{
+			"id": "7",
+			"titulo": "The king",
+			"explicacion": [
+				"The king is the most important piece: if it is trapped, the game is lost. That is why it moves carefully: only one square, in any direction.",
+				"Besides, the king can never go to a square where an opponent's piece could capture it. The board will not let you do it."
+			],
+			"ejercicios": [
+				{
+					"id": "7.1",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/4K3",
+					"manzanas": [
+						"e2"
+					],
+					"minimo": 1,
+					"instruccion": "Take the king to the apple on e2.",
+					"pistas": [
+						"It is right in front.",
+						"Pick up the king on e1 and drop it on e2."
+					]
+				},
+				{
+					"id": "7.2",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/4K3",
+					"manzanas": [
+						"e4"
+					],
+					"minimo": 3,
+					"instruccion": "Now the apple is further away, on e4. Remember: the king moves one square at a time.",
+					"pistas": [
+						"You need three moves.",
+						"e2, e3 and e4."
+					]
+				},
+				{
+					"id": "7.3",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/K7",
+					"manzanas": [
+						"b2",
+						"c3",
+						"d4"
+					],
+					"minimo": 3,
+					"instruccion": "The king also moves diagonally. Collect the three apples.",
+					"pistas": [
+						"They are in a row, on a diagonal.",
+						"b2, c3 and d4."
+					]
+				},
+				{
+					"id": "7.4",
+					"titulo": "Watch out for the pawn!",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/3p4/8/8/8/4K3",
+					"manzanas": [
+						"e5"
+					],
+					"minimo": 4,
+					"instruccion": "Watch out for the pawn! The black pawn on d5 attacks the squares c4 and e4: your king cannot step on them. Reach the apple on e5 without going through them.",
+					"pistas": [
+						"Go around the square e4 on one side.",
+						"For example: e2, f3, f4 and e5."
+					]
+				},
+				{
+					"id": "7.5",
+					"titulo": "Capture the pawns!",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/5p2/3p4/8/4K3",
+					"capturar": "todas",
+					"minimo": 4,
+					"instruccion": "Capture the pawns! The king also captures. Capture the two black pawns.",
+					"pistas": [
+						"Careful: the pawn on d3 attacks e2, and the one on f4 attacks e3. Your king cannot step on those squares.",
+						"King to d2, capture on d3, go to e4 and capture on f4."
+					]
+				}
+			]
+		},
+		{
+			"id": "8",
+			"titulo": "The knight",
+			"explicacion": [
+				"The knight is the most special piece: it moves in an L shape. It goes two squares in a straight line and then one to the side. Or the other way round: one in a straight line and two to the side.",
+				"And it is the only piece that can jump over the others.",
+				"A curious fact: every time the knight jumps, it changes the color of its square. If it is on a light one, it goes to a dark one, and the other way round."
+			],
+			"ejercicios": [
+				{
+					"id": "8.1",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/6N1",
+					"manzanas": [
+						"f3"
+					],
+					"minimo": 1,
+					"instruccion": "Take the knight to the apple on f3.",
+					"pistas": [
+						"Two up and one to the left.",
+						"Pick up the knight on g1 and drop it on f3."
+					]
+				},
+				{
+					"id": "8.2",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/5PPP/6N1",
+					"inicio": "g1",
+					"manzanas": [
+						"f3"
+					],
+					"minimo": 1,
+					"instruccion": "This time your pawns surround the knight. It does not matter: the knight jumps. Reach f3.",
+					"pistas": [
+						"The knight jumps over the pawns.",
+						"Exactly the same as before: from g1 to f3."
+					]
+				},
+				{
+					"id": "8.3",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/8/1N6",
+					"manzanas": [
+						"c3",
+						"d5"
+					],
+					"minimo": 2,
+					"instruccion": "Collect the two apples.",
+					"pistas": [
+						"From c3, d5 is also one jump away.",
+						"b1 to c3, and c3 to d5."
+					]
+				},
+				{
+					"id": "8.4",
+					"titulo": "The square next door",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/3N4/8/8/8",
+					"manzanas": [
+						"d5"
+					],
+					"minimo": 3,
+					"instruccion": "The square next door. The apple is right in front of the knight, but for the knight it is hard to get there. Give it a try.",
+					"pistas": [
+						"You need three jumps.",
+						"For example: d4 to c6, c6 to e7, e7 to d5."
+					]
+				},
+				{
+					"id": "8.5",
+					"titulo": "Capture the pawns!",
+					"tipo": "manzanas",
+					"posicion": "8/8/4p3/2p5/8/1p6/8/N7",
+					"capturar": "todas",
+					"minimo": 3,
+					"instruccion": "Capture the pawns! Capture the three black pawns with the knight.",
+					"pistas": [
+						"Each pawn is one jump away from the previous one.",
+						"b3, c5 and e6."
+					]
+				}
+			]
+		},
+		{
+			"id": "9",
+			"titulo": "The pawn and promotion",
+			"explicacion": [
+				"The pawn is the smallest piece, but it can become the most powerful one.",
+				"The pawn only moves forward, one square at a time. It never goes back. On its first move, it can move one or two squares.",
+				"And it captures in a different way from how it moves: diagonally forward, one square.",
+				"When a pawn reaches the last rank, it becomes the piece you choose, except a king. A queen is chosen almost always. This is called promotion."
+			],
+			"ejercicios": [
+				{
+					"id": "9.1",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/4P3/8",
+					"manzanas": [
+						"e4"
+					],
+					"minimo": 1,
+					"instruccion": "On its first move, the pawn can move two squares. Take it to e4 in a single move.",
+					"pistas": [
+						"From 2 to 4 is two squares.",
+						"Pick up the pawn on e2 and drop it on e4."
+					]
+				},
+				{
+					"id": "9.2",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/8/8/8/3P4/8",
+					"manzanas": [
+						"d6"
+					],
+					"minimo": 3,
+					"instruccion": "Move the pawn forward to the apple on d6.",
+					"pistas": [
+						"First two squares, then one at a time.",
+						"d4, d5 and d6."
+					]
+				},
+				{
+					"id": "9.3",
+					"titulo": "The pawn captures diagonally",
+					"tipo": "manzanas",
+					"posicion": "8/8/8/3pp3/3P4/8/8/8",
+					"capturar": [
+						"e5"
+					],
+					"minimo": 1,
+					"instruccion": "The black pawn on d5 blocks your way: the pawn cannot capture forward. But it can capture diagonally. Capture the pawn on e5.",
+					"pistas": [
+						"Look at the square in front and to the right.",
+						"Pick up the pawn on d4 and drop it on e5."
+					]
+				},
+				{
+					"id": "9.4",
+					"titulo": "Promote!",
+					"tipo": "coronar",
+					"posicion": "8/2P5/8/8/8/8/8/8",
+					"minimo": 1,
+					"instruccion": "Promote! Your pawn is one step from the last rank. Take it to c8 and choose which piece it becomes.",
+					"corona_dama": "You promoted! Now you have a new queen.",
+					"corona_otra": "You promoted! The queen is almost always best, but sometimes another piece is better.",
+					"pistas": [
+						"Move one square forward.",
+						"Pick up the pawn on c7, drop it on c8 and choose queen."
+					]
+				},
+				{
+					"id": "9.5",
+					"titulo": "Capture and promote",
+					"tipo": "coronar",
+					"posicion": "6br/6P1/8/8/8/8/8/8",
+					"minimo": 1,
+					"instruccion": "The black bishop blocks your pawn. But you can capture the rook diagonally and promote at the same time.",
+					"corona_dama": "You captured and promoted in a single move!",
+					"corona_otra": "You captured and promoted in a single move! The queen is almost always best.",
+					"pistas": [
+						"The rook is on the square in front and to the right.",
+						"Pick up the pawn on g7, drop it on h8 and choose queen."
+					]
+				}
+			]
+		}
+	]
+}

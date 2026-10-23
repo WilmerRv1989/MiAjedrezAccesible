@@ -253,8 +253,14 @@ def _bloque(datos: dict) -> Bloque:
 
 
 def carpeta_de_idioma(idioma: str, carpeta: str = CARPETA_LECCIONES) -> str:
-	"""Carpeta de lecciones para un idioma como «es_CR»: prueba «es_CR», luego «es», luego el idioma base."""
-	for candidato in (idioma, idioma.split("_")[0], IDIOMA_POR_DEFECTO):
+	"""Carpeta de lecciones para un idioma como «es_CR»: prueba «es_CR», luego «es».
+
+	Si no hay lecciones en ese idioma: en español para cualquier variante del español, y en inglés
+	para el resto de los idiomas (lo entiende más gente que el español).
+	"""
+	base = idioma.split("_")[0]
+	respaldo = IDIOMA_POR_DEFECTO if base.lower() == "es" else "en"
+	for candidato in (idioma, base, respaldo, IDIOMA_POR_DEFECTO):
 		ruta = os.path.join(carpeta, candidato)
 		if candidato and os.path.isdir(ruta):
 			return ruta
